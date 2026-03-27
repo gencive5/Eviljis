@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fce91c;
+      }
+
+      .cls-2 {
+        fill: #132cb7;
+      }
+
+      .cls-3 {
+        fill: #fc4abb;
+        stroke: #fc4abb;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        fill: #ff76d4;
+      }
+
+      .cls-5 {
+        fill: #e9116d;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-3" cx="59.5" cy="59.5" r="57.5"/>
+    <ellipse class="cls-1" cx="59.5" cy="55.5" rx="57" ry="49"/>
+    <ellipse class="cls-5" cx="59.5" cy="48.5" rx="55" ry="42"/>
+    <ellipse class="cls-1" cx="59" cy="37.5" rx="45.5" ry="35"/>
+    <ellipse class="cls-4" cx="58.5" cy="33" rx="39" ry="30.5"/>
+    <ellipse class="cls-1" cx="57.5" cy="21" rx="26" ry="18.5"/>
+    <circle class="cls-2" cx="62.5" cy="16.5" r="4"/>
+    <circle class="cls-2" cx="48.5" cy="14.5" r="4"/>
+  </g>
+</svg>

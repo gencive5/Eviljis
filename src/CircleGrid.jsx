@@ -8,9 +8,11 @@ const CircleGrid = ({
   mobileMaxCircleSize = 25,
   gapRatio = 0.2,
   circleStyle = {},
-  customCircles = {}, // e.g. { c3: { style: {...}, linger: 600 } }
-  lingerMs = 30000,     // Changed default to 30 seconds (30000ms)
-  modalContent = "Inspired from Betelgeuse from the portfolio Cinétique III, 1959 - Victor Vasarely", // Content for the modal
+  customCircles = {},
+  lingerMs = 30000,
+  modalContent = "Inspired from Betelgeuse from the portfolio Cinétique III, 1959 - Victor Vasarely",
+  svgFolder = '/emojis/', // Path to your SVG folder
+  svgNamePattern = 'emoji', // Pattern for SVG names (emoji1.svg, emoji2.svg, etc.)
 }) => {
   const gridRef = useRef(null);
   const [circleSize, setCircleSize] = useState(maxCircleSize);
@@ -20,6 +22,7 @@ const CircleGrid = ({
   const [showModal, setShowModal] = useState(false);
   const [lastCircleId, setLastCircleId] = useState('');
   const [modalLetters, setModalLetters] = useState([]);
+  const [failedSvgs, setFailedSvgs] = useState(new Set()); // Track failed SVG loads
 
   // Active ids stored as a Set so multiple circles can linger at once.
   const [activeIds, setActiveIds] = useState(() => new Set());
@@ -48,7 +51,6 @@ const CircleGrid = ({
       const effectiveMin = isMobile ? mobileMinCircleSize : minCircleSize;
       const effectiveMax = isMobile ? mobileMaxCircleSize : maxCircleSize;
 
-      // defensively avoid division by zero: floor at least 1
       const widthSlots = Math.max(1, Math.floor(containerWidth / (effectiveMax * (1 + gapRatio))));
       const heightSlots = Math.max(1, Math.floor(containerHeight / (effectiveMax * (1 + gapRatio))));
 
@@ -65,7 +67,6 @@ const CircleGrid = ({
       setCols(calculatedCols);
       setRows(calculatedRows);
       
-      // Calculate the last circle ID
       const lastId = `c${calculatedCols * calculatedRows}`;
       setLastCircleId(lastId);
     };
@@ -82,7 +83,6 @@ const CircleGrid = ({
   // Prepare letters for modal text when modal opens
   useEffect(() => {
     if (showModal) {
-      // Split into characters (including spaces)
       const letters = modalContent.split('').map((char, index) => ({
         char: char,
         id: index
@@ -90,6 +90,16 @@ const CircleGrid = ({
       setModalLetters(letters);
     }
   }, [showModal, modalContent]);
+
+  // Function to get SVG path for a circle
+  const getSvgPath = (id) => {
+    // Extract the number from c1, c2, etc.
+    const circleNumber = parseInt(id.substring(1));
+    
+    // Cycle through SVGs (adjust 50 to the number of unique SVGs you have)
+    const svgIndex = ((circleNumber - 1) % 50) + 1;
+    return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
+  };
 
   // --- helpers for active state & scheduling ---
   const addActive = (id) => {
@@ -132,20 +142,18 @@ const CircleGrid = ({
 
   // Toggle modal on last circle click
   const handleLastCircleClick = (e) => {
-    e.stopPropagation(); // Prevent event bubbling
+    e.stopPropagation();
     setShowModal(!showModal);
   };
 
   // --- Desktop hover handlers ---
   const handleMouseEnter = (id) => {
     if (id === lastCircleId) return;
-    
     clearScheduled(id);
     addActive(id);
   };
 
   const handleMouseLeave = (id) => {
-    // Schedule removal after 30 seconds (or custom linger time)
     scheduleRemove(id, getLinger(id));
   };
 
@@ -156,10 +164,7 @@ const CircleGrid = ({
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
     if (el && el.classList.contains('circle')) {
       const id = el.id;
-      
-      // If it's the last circle, don't activate the normal touch behavior
       if (id === lastCircleId) return;
-      
       clearScheduled(id);
       addActive(id);
       currentRef.current = id;
@@ -173,20 +178,16 @@ const CircleGrid = ({
 
     if (el && el.classList.contains('circle')) {
       const id = el.id;
-      
-      // If it's the last circle, don't activate the normal touch behavior
       if (id === lastCircleId) return;
       
       const prev = currentRef.current;
       if (prev && prev !== id) {
-        // schedule previous to linger (don't remove immediately)
         scheduleRemove(prev, getLinger(prev));
       }
-      clearScheduled(id); // cancel removal if it was scheduled
+      clearScheduled(id);
       addActive(id);
       currentRef.current = id;
     } else {
-      // not over any circle: schedule removal of current (so it lingers)
       const prev = currentRef.current;
       if (prev) {
         scheduleRemove(prev, getLinger(prev));
@@ -212,14 +213,12 @@ const CircleGrid = ({
     }
   };
 
-  // Handle click (for desktop on last circle)
   const handleClick = (e) => {
-    if (e.target.id === lastCircleId) {
+    if (e.target.id === lastCircleId || e.target.closest?.('.circle')?.id === lastCircleId) {
       handleLastCircleClick(e);
     }
   };
 
-  // Handle modal overlay click
   const handleOverlayClick = () => {
     setShowModal(false);
   };
@@ -233,6 +232,14 @@ const CircleGrid = ({
   }, []);
 
   const gapSize = circleSize * gapRatio;
+
+  // Helper function to get circle background color
+  const getCircleBackgroundColor = (id, isLastCircle, hasSvg, svgFailed) => {
+    if (isLastCircle) return undefined; // Last circle has its own CSS
+    if (hasSvg && !svgFailed) return 'transparent';
+    if (svgFailed) return '#cccccc'; // Fallback color for failed SVGs
+    return undefined; // Let CSS handle default background
+  };
 
   return (
     <>
@@ -257,6 +264,14 @@ const CircleGrid = ({
             const custom = customCircles[id] || {};
             const customStyle = custom.style || {};
             const isLastCircle = id === lastCircleId;
+            const svgPath = !isLastCircle ? getSvgPath(id) : null;
+            const svgFailed = failedSvgs.has(id);
+            
+            // Determine if we should show SVG (has path and not failed)
+            const showSvg = svgPath && !svgFailed;
+            
+            // Get background color without mixing shorthand and longhand
+            const backgroundColor = getCircleBackgroundColor(id, isLastCircle, !!svgPath, svgFailed);
             
             return (
               <div
@@ -268,32 +283,48 @@ const CircleGrid = ({
                   height: `${circleSize}px`,
                   ...circleStyle,
                   ...customStyle,
-                  cursor: isLastCircle ? 'pointer' : 'default',
+                  cursor: 'pointer',
+                  // Only set backgroundColor if needed, don't mix with background
+                  ...(backgroundColor && { backgroundColor }),
+                  // Add a default background for circles without SVGs (from your original CSS)
+                  ...(!isLastCircle && !svgPath && !backgroundColor && { backgroundColor: 'rgb(48, 219, 156)' }),
                 }}
                 onMouseEnter={() => !isLastCircle && handleMouseEnter(id)}
                 onMouseLeave={() => !isLastCircle && handleMouseLeave(id)}
-                onClick={isLastCircle ? handleLastCircleClick : undefined}
               >
                 {isLastCircle ? (
-                  // Show "i" when modal is closed, "×" when modal is open
                   <span className="circle-letter toggle-icon">
                     {showModal ? '×' : 'i'}
                   </span>
-                ) : (
-                  // Show letters from modal content when modal is open
-                  showModal && modalLetters[index] && (
-                    <span className="circle-letter">
-                      {modalLetters[index].char}
-                    </span>
-                  )
-                )}
+                ) : showSvg ? (
+                  <img 
+                    src={svgPath} 
+                    alt={`${id}`}
+                    className="circle-svg"
+                    loading="lazy"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain',
+                      pointerEvents: 'none',
+                      borderRadius: '50%',
+                    }}
+                    onError={() => {
+                      // Mark this SVG as failed
+                      setFailedSvgs(prev => new Set(prev).add(id));
+                    }}
+                  />
+                ) : showModal && modalLetters[index] ? (
+                  <span className="circle-letter">
+                    {modalLetters[index].char}
+                  </span>
+                ) : null}
               </div>
             );
           })}
         </div>
       </div>
       
-      {/* Modal - simple overlay without close button (now in the circle) */}
       {showModal && (
         <div className="modal-overlay" onClick={handleOverlayClick} />
       )}

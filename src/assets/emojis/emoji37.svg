@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e9338a;
+      }
+
+      .cls-2 {
+        fill: #f97e4e;
+      }
+
+      .cls-3 {
+        stroke: #f349b9;
+        stroke-width: 4px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #d50055;
+      }
+
+      .cls-4 {
+        stroke: #62e449;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-3" cx="59.5" cy="59.5" r="57.5"/>
+    <circle class="cls-5" cx="99.5" cy="37.5" r="9"/>
+    <circle class="cls-5" cx="25.5" cy="43.5" r="9"/>
+    <ellipse class="cls-2" cx="60" cy="97.5" rx="33.5" ry="13"/>
+    <line class="cls-4" x1="41.5" y1="10.5" x2="59.5" y2="49.5"/>
+    <line class="cls-4" x1="56" y1="8" x2="81" y2="44"/>
+    <line class="cls-4" x1="75" y1="11" x2="86" y2="29"/>
+    <path class="cls-1" d="M18,96h84.61s-10.65-28.19-18.13-27.1-15.98,9.1-15.98,9.1c0,0-3.84-11.69-15.17-6.85-11.33,4.85-35.33,24.85-35.33,24.85Z"/>
+  </g>
+</svg>

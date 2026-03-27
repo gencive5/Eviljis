@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #e41776;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke: #27cafa;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-5 {
+        fill: #e41776;
+      }
+
+      .cls-6 {
+        fill: #ff6afd;
+      }
+
+      .cls-3 {
+        stroke: #ff6afd;
+      }
+
+      .cls-4 {
+        stroke: #1d2edc;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-2" cx="59.5" cy="59.5" r="57.5"/>
+    <circle class="cls-1" cx="89.14" cy="46.14" r="10.86"/>
+    <circle class="cls-1" cx="35.03" cy="41.36" r="10.86"/>
+    <circle class="cls-5" cx="35" cy="41" r="3.5"/>
+    <circle class="cls-5" cx="92" cy="44" r="3.5"/>
+    <line class="cls-4" x1="74.5" y1="32.5" x2="66.5" y2="25.5"/>
+    <line class="cls-4" x1="82.5" y1="27.5" x2="82.5" y2="19.5"/>
+    <line class="cls-4" x1="92.5" y1="29.5" x2="92.5" y2="19.5"/>
+    <line class="cls-4" x1="23.5" y1="52.5" x2="11.5" y2="63.5"/>
+    <line class="cls-4" x1="29.5" y1="57.5" x2="24.5" y2="68.5"/>
+    <line class="cls-4" x1="42.5" y1="55.5" x2="43.5" y2="64.5"/>
+    <line class="cls-3" x1="29.5" y1="86.5" x2="89.5" y2="85.5"/>
+    <path class="cls-6" d="M60.35,83.5c-.56-5.12-3.22-9-6.43-9s-5.87,3.88-6.43,9h12.85Z"/>
+    <path class="cls-6" d="M73.06,83.5c-.56-5.12-3.22-9-6.43-9s-5.87,3.88-6.43,9h12.85Z"/>
+  </g>
+</svg>

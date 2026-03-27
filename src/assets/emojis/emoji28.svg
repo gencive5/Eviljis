@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #80e95c;
+        stroke-width: 6px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fd3da4;
+      }
+
+      .cls-4 {
+        fill: #80e95c;
+      }
+
+      .cls-2 {
+        stroke: #fd3da4;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-2" cx="59.5" cy="59.5" r="57.5"/>
+    <path class="cls-1" d="M28.12,22.5c-12.75,14.46-16.15,34.93-8.77,52,8.69,20.1,30.77,31.86,51.64,27,21-4.89,38.49-26.07,35.08-47-2.6-15.94-16.22-24.96-19.49-27"/>
+    <circle class="cls-4" cx="46" cy="50" r="6.5"/>
+    <circle class="cls-4" cx="70" cy="49" r="6.5"/>
+    <circle class="cls-3" cx="38.14" cy="71.37" r="2.87"/>
+    <circle class="cls-3" cx="30.27" cy="62.01" r="2.87"/>
+    <circle class="cls-3" cx="47.27" cy="67.01" r="2.87"/>
+    <circle class="cls-3" cx="29.27" cy="48.01" r="2.87"/>
+    <circle class="cls-3" cx="77.27" cy="60.01" r="2.87"/>
+    <circle class="cls-3" cx="86.27" cy="50.01" r="2.87"/>
+    <circle class="cls-3" cx="84.27" cy="67.01" r="2.87"/>
+    <circle class="cls-3" cx="92.27" cy="63.01" r="2.87"/>
+    <circle class="cls-3" cx="96.27" cy="74.01" r="2.87"/>
+    <circle class="cls-3" cx="7.63" cy="55.01" r="2.87"/>
+    <circle class="cls-3" cx="10.63" cy="42.01" r="2.87"/>
+  </g>
+</svg>

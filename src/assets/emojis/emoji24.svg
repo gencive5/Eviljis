@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fb65f8;
+        stroke-width: 6px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #6a16cc;
+      }
+
+      .cls-2 {
+        stroke: #192fd0;
+        stroke-width: 5px;
+      }
+
+      .cls-6 {
+        fill: #08a9e8;
+      }
+
+      .cls-3 {
+        stroke: #ee2d88;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke: #ff8856;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-3" cx="59.5" cy="59.5" r="57.5"/>
+    <ellipse class="cls-6" cx="96" cy="61.5" rx="14.5" ry="12"/>
+    <circle class="cls-5" cx="101.5" cy="61.5" r="9"/>
+    <ellipse class="cls-6" cx="18" cy="57.5" rx="14.5" ry="12"/>
+    <circle class="cls-5" cx="12.5" cy="57.5" r="9"/>
+    <ellipse class="cls-2" cx="85" cy="61.5" rx="27" ry="12.5"/>
+    <ellipse class="cls-2" cx="31" cy="57.5" rx="27" ry="12.5"/>
+    <line class="cls-4" x1="25" y1="41" x2="22" y2="19"/>
+    <line class="cls-4" x1="39" y1="40" x2="39" y2="16"/>
+    <line class="cls-4" x1="53" y1="46" x2="52" y2="23"/>
+    <line class="cls-4" x1="70" y1="46" x2="79" y2="25"/>
+    <line class="cls-4" x1="87" y1="45" x2="96" y2="28"/>
+    <line class="cls-4" x1="102" y1="49" x2="108" y2="36"/>
+    <line class="cls-1" x1="22" y1="74" x2="29" y2="99"/>
+    <line class="cls-1" x1="38.5" y1="77.5" x2="42.5" y2="95.5"/>
+    <line class="cls-1" x1="49.5" y1="74.5" x2="58.5" y2="96.5"/>
+    <line class="cls-1" x1="70.5" y1="78.5" x2="66.5" y2="95.5"/>
+    <line class="cls-1" x1="84.5" y1="82.5" x2="73.5" y2="99.5"/>
+    <line class="cls-1" x1="101.5" y1="80.5" x2="88.5" y2="102.5"/>
+  </g>
+</svg>
