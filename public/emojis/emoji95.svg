@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #f66e59;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: #8d9efc;
+      }
+
+      .cls-4 {
+        fill: #232321;
+      }
+
+      .cls-3 {
+        stroke: #f7ad7c;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <circle class="cls-4" cx="51.25" cy="50.25" r="6.25"/>
+    <circle class="cls-4" cx="69.43" cy="52.6" r="6.25"/>
+    <path class="cls-1" d="M41,82c2.53,6.67,8.95,11.07,16,11,7.31-.07,13.81-4.94,16-12"/>
+    <path class="cls-1" d="M46.75,20.29c-6.5-2.93-14.16-1.5-19.09,3.54-5.11,5.22-6.28,13.26-2.83,19.8"/>
+    <path class="cls-1" d="M102.23,49.71c2.93-6.5,1.5-14.16-3.54-19.09-5.22-5.11-13.26-6.28-19.8-2.83"/>
+    <path class="cls-3" d="M22.5,88.5c1.7,2.2,13.47,16.96,34,18,17.48.89,29.38-8.77,32-11"/>
+    <path class="cls-3" d="M58.74,10.35c-2.76-.36-21.52-2.47-36.77,11.31-12.98,11.73-14.58,26.98-14.85,30.41"/>
+    <path class="cls-3" d="M111.61,62.58c.36-2.76,2.47-21.52-11.31-36.77-11.73-12.98-26.98-14.58-30.41-14.85"/>
+  </g>
+</svg>

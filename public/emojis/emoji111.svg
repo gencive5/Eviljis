@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ff7465;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #d91c5f;
+      }
+
+      .cls-2 {
+        stroke: #040707;
+      }
+
+      .cls-3 {
+        stroke: #ee594a;
+      }
+
+      .cls-4 {
+        stroke: #f88365;
+      }
+
+      .cls-6 {
+        fill: #ec623e;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
+    <path class="cls-4" d="M29.5,22.5s-10,11-2,18,16-5,16-5l12,13"/>
+    <path class="cls-4" d="M94.13,22.53s10,11,2,18c-8,7-16-5-16-5l-12,13"/>
+    <path class="cls-2" d="M73.5,63.5s20.91,7.06,37.46-14.97"/>
+    <path class="cls-2" d="M53.1,63.33s-20.91,7.06-37.46-14.97"/>
+    <path class="cls-3" d="M42.69,93.29s-22.07-.47-30.14-26.81"/>
+    <path class="cls-3" d="M77.35,92.19s22.07-.47,30.14-26.81"/>
+    <circle class="cls-6" cx="57.5" cy="103.5" r="5.5"/>
+    <circle class="cls-5" cx="35.5" cy="75.5" r="5.5"/>
+    <circle class="cls-5" cx="79.5" cy="76.5" r="5.5"/>
+  </g>
+</svg>

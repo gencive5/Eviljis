@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffe552;
+      }
+
+      .cls-2 {
+        fill: #ff7e42;
+      }
+
+      .cls-3 {
+        fill: #de054e;
+      }
+
+      .cls-4 {
+        fill: #f5339d;
+        stroke: #ff8a5d;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="feutre_emojis">
+    <circle class="cls-4" cx="59.5" cy="59.5" r="57.5"/>
+    <rect class="cls-2" x="22.5" y="34.5" width="79" height="27"/>
+    <rect class="cls-1" x="29.5" y="39.5" width="18" height="18"/>
+    <rect class="cls-1" x="76.5" y="39.5" width="18" height="18"/>
+    <rect class="cls-3" x="53.5" y="75.5" width="19" height="19"/>
+  </g>
+</svg>

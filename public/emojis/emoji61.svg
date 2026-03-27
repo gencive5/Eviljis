@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #07a99b;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #f05af4;
+      }
+
+      .cls-3 {
+        stroke: #31bfb1;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <g>
+      <circle class="cls-1" cx="38.5" cy="49.5" r="4.5"/>
+      <path d="M38.5,47c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5M38.5,43c-3.59,0-6.5,2.91-6.5,6.5s2.91,6.5,6.5,6.5,6.5-2.91,6.5-6.5-2.91-6.5-6.5-6.5h0Z"/>
+    </g>
+    <g>
+      <circle class="cls-1" cx="80.5" cy="49.5" r="4.5"/>
+      <path d="M80.5,47c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5M80.5,43c-3.59,0-6.5,2.91-6.5,6.5s2.91,6.5,6.5,6.5,6.5-2.91,6.5-6.5-2.91-6.5-6.5-6.5h0Z"/>
+    </g>
+    <circle cx="24" cy="31" r="4"/>
+    <circle cx="94" cy="31" r="4"/>
+    <ellipse class="cls-4" cx="19.5" cy="62.5" rx="8.5" ry="16.5" transform="translate(-9.64 3.87) rotate(-9.1)"/>
+    <ellipse class="cls-4" cx="99.28" cy="65.11" rx="16.5" ry="8.5" transform="translate(19.28 152.83) rotate(-80.9)"/>
+    <rect class="cls-3" x="37.5" y="74.5" width="46" height="21" rx="10.5" ry="10.5"/>
+    <line class="cls-3" x1="37.5" y1="85" x2="83.5" y2="85"/>
+    <line class="cls-3" x1="49.81" y1="74.5" x2="49.81" y2="95.5"/>
+    <line class="cls-3" x1="60.5" y1="74.5" x2="60.5" y2="95.5"/>
+    <line class="cls-3" x1="73" y1="74.5" x2="73" y2="95.5"/>
+  </g>
+</svg>

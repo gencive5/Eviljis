@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa89ff;
+      }
+
+      .cls-2 {
+        fill: #5df5af;
+      }
+
+      .cls-3 {
+        stroke: #3b276d;
+        stroke-width: 4px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke: #ff794a;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-4" cx="59" cy="59" r="57.5"/>
+    <ellipse class="cls-2" cx="26.5" cy="54" rx="8.5" ry="19" transform="translate(-32.69 64.72) rotate(-74.13)"/>
+    <ellipse class="cls-2" cx="94.62" cy="47.43" rx="19" ry="8.5" transform="translate(-11.12 52.05) rotate(-29.13)"/>
+    <line class="cls-3" x1="16" y1="38" x2="97" y2="31"/>
+    <line class="cls-3" x1="23.35" y1="99.93" x2="104.35" y2="92.93"/>
+    <ellipse class="cls-1" cx="102.61" cy="68.57" rx="10.06" ry="4.5" transform="translate(-20.4 58.62) rotate(-29.13)"/>
+    <ellipse class="cls-1" cx="17.85" cy="73.43" rx="4.5" ry="10.06" transform="translate(-57.66 70.51) rotate(-74.13)"/>
+  </g>
+</svg>

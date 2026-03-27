@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3fddf2;
+      }
+
+      .cls-2 {
+        stroke: #ce0033;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #dd2269;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
+    <circle class="cls-2" cx="11.43" cy="64.06" r="5.94"/>
+    <circle class="cls-2" cx="106.07" cy="61.94" r="5.94"/>
+    <line class="cls-2" x1="12" y1="30" x2="11" y2="52"/>
+    <line class="cls-2" x1="22" y1="20" x2="22" y2="52"/>
+    <line class="cls-2" x1="33" y1="13" x2="33" y2="70"/>
+    <line class="cls-2" x1="47" y1="9" x2="47" y2="65"/>
+    <line class="cls-2" x1="70" y1="9" x2="57" y2="25"/>
+    <line class="cls-2" x1="79" y1="15" x2="56" y2="43"/>
+    <line class="cls-2" x1="88" y1="20" x2="55" y2="59"/>
+    <line class="cls-2" x1="98" y1="29" x2="64" y2="67"/>
+    <line class="cls-2" x1="107" y1="38" x2="81" y2="63"/>
+    <polygon class="cls-1" points="83 101 37 101 29.31 83.69 72.42 83.46 83 101"/>
+  </g>
+</svg>

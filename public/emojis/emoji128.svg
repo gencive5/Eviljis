@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #8dd1f6;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke-width: 6px;
+      }
+
+      .cls-4 {
+        fill: #f6f154;
+      }
+
+      .cls-2 {
+        fill: #d9ecee;
+        stroke: #82d1d2;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: #2d4ab9;
+      }
+
+      .cls-5 {
+        fill: #82d1d2;
+      }
+    </style>
+  </defs>
+  <g id="aquarelle_emojis">
+    <circle class="cls-2" cx="60" cy="60" r="57.5"/>
+    <path class="cls-5" d="M44.5,7.5s27.22-4.96,39.11,3.52,27.79,23.19,27.79,23.19c0,0-25.38-21.33-37.14-23.02s-29.76-3.69-29.76-3.69Z"/>
+    <polygon class="cls-5" points="103 52 117 67.59 117 62.94 101.5 45.62 103 52"/>
+    <path class="cls-4" d="M110,86l-6-6s3-6.11,3-8.55l7,7.55-3,8-1-1h0Z"/>
+    <polygon class="cls-5" points="96 84 105 96 103 98 95 87 96 84"/>
+    <path class="cls-4" d="M89,109l-6-7s5-3,6-4l1-1,6.37,7.54-7.05,4.46"/>
+    <polygon class="cls-5" points="69 106 76 115 80 114 73 105 69 106"/>
+    <path class="cls-4" d="M50,116l-2-4h10.17l3.19,5.48-11.07-.8-.29-.68Z"/>
+    <path class="cls-3" d="M35.62,27.31s-.19,11.98,12.6,9.34"/>
+    <path class="cls-3" d="M65.43,47.43s-.19,11.8,12.6,9.19"/>
+    <path class="cls-1" d="M79,42.02s31.11,29.98-13.45,29.98"/>
+  </g>
+</svg>

@@ -97,7 +97,7 @@ const CircleGrid = ({
     const circleNumber = parseInt(id.substring(1));
     
     // Cycle through SVGs (adjust 50 to the number of unique SVGs you have)
-    const svgIndex = ((circleNumber - 1) % 50) + 1;
+    const svgIndex = ((circleNumber - 1) % 153) + 1;
     return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
   };
 

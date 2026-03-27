@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3612aa;
+      }
+
+      .cls-2 {
+        fill: #be0944;
+      }
+
+      .cls-3 {
+        stroke: #05b49a;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: #e2365d;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
+    <path class="cls-4" d="M10.5,58.5c3.88-16.78,10.36-28.46,15-28,4.72.47,8.88,13.66,9,32"/>
+    <path class="cls-4" d="M107.98,58.09c-3.88-16.78-10.36-28.46-15-28-4.72.47-8.88,13.66-9,32"/>
+    <ellipse class="cls-1" cx="96.5" cy="68.5" rx="13.5" ry="5.5"/>
+    <ellipse class="cls-1" cx="22.5" cy="74.5" rx="13.5" ry="5.5"/>
+    <circle class="cls-2" cx="62" cy="102" r="4"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef0ee;
+      }
+
+      .cls-2 {
+        fill: #d1e7ea;
+        stroke: #8ed0ef;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #c6c8c6;
+      }
+    </style>
+  </defs>
+  <g id="aquarelle_emojis">
+    <circle class="cls-2" cx="60" cy="60" r="57.5"/>
+    <path class="cls-1" d="M80.5,24.5c-10.67,0-19.56,7.6-21.57,17.68-3.7-6.95-11.01-11.68-19.43-11.68-12.15,0-22,9.85-22,22s9.85,22,22,22c10.67,0,19.56-7.6,21.57-17.68,3.7,6.95,11.01,11.68,19.43,11.68,12.15,0,22-9.85,22-22s-9.85-22-22-22Z"/>
+    <circle class="cls-3" cx="40" cy="50" r="10.5"/>
+    <circle class="cls-3" cx="85" cy="46" r="10.5"/>
+  </g>
+</svg>

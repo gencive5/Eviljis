@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #f9a369;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #f665fa;
+      }
+
+      .cls-2 {
+        stroke: #121212;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #f9a369;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <circle class="cls-4" cx="80.5" cy="20.5" r="4.5"/>
+    <circle class="cls-4" cx="32.5" cy="22.5" r="4.5"/>
+    <path class="cls-1" d="M36,103c-3.26-22.06,11.7-38.7,24-39,12.14-.29,27.64,15.17,26,37"/>
+    <ellipse class="cls-3" cx="90" cy="51.5" rx="10" ry="18.5" transform="translate(-11.36 29.65) rotate(-17.61)"/>
+    <ellipse class="cls-3" cx="24.98" cy="52.81" rx="18.5" ry="10" transform="translate(-32.91 60.64) rotate(-72.39)"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #5ef5ba;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #d92c73;
+      }
+
+      .cls-2 {
+        stroke: #1a1a1a;
+      }
+
+      .cls-4 {
+        fill: #f16fef;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <polygon class="cls-1" points="28.7 33 45.7 54.5 28.7 76 11.7 54.5 28.7 33"/>
+    <polygon class="cls-1" points="84.94 31.59 101.94 53.09 84.94 74.59 67.94 53.09 84.94 31.59"/>
+    <polyline class="cls-1" points="44.72 21.5 54.83 9.2 64.55 21.5"/>
+    <polyline class="cls-1" points="68.2 90.85 58.1 103.14 48.37 90.85"/>
+    <circle class="cls-4" cx="28" cy="54" r="8"/>
+    <circle class="cls-3" cx="29" cy="56" r="4"/>
+    <circle class="cls-4" cx="85" cy="51" r="8"/>
+    <circle class="cls-3" cx="85" cy="53" r="4"/>
+  </g>
+</svg>

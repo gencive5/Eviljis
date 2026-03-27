@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #3d2194;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fca0fd;
+      }
+
+      .cls-4 {
+        fill: #efb289;
+      }
+
+      .cls-2 {
+        stroke: #90e1b1;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <ellipse class="cls-4" cx="32.27" cy="44.72" rx="9.82" ry="17.5" transform="translate(-22.83 47) rotate(-56.56)"/>
+    <ellipse class="cls-4" cx="86.02" cy="44.77" rx="17.5" ry="9.82" transform="translate(-10.43 54.82) rotate(-33.44)"/>
+    <circle class="cls-3" cx="98" cy="63" r="6"/>
+    <circle class="cls-3" cx="14" cy="62" r="6"/>
+    <path class="cls-1" d="M56.5,104.5c13.25,0,24-10.75,24-24h-48c0,13.25,10.75,24,24,24Z"/>
+    <line class="cls-1" x1="35.5" y1="92.5" x2="36.5" y2="92.5"/>
+    <line class="cls-1" x1="77.5" y1="92.5" x2="78.5" y2="92.5"/>
+    <line class="cls-1" x1="35.5" y1="90.5" x2="77.5" y2="90.5"/>
+    <line class="cls-1" x1="64.5" y1="80.5" x2="64.5" y2="103.5"/>
+    <line class="cls-1" x1="53.5" y1="80.5" x2="53.5" y2="103.5"/>
+    <line class="cls-1" x1="45.5" y1="80.5" x2="45.5" y2="101.5"/>
+  </g>
+</svg>

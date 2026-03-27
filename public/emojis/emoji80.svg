@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #111413;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #db2754;
+      }
+    </style>
+  </defs>
+  <g id="stylo_emojis">
+    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+    <path class="cls-1" d="M32.5,95.5l26.5-7s3.5-1,4.5-2"/>
+    <circle cx="99" cy="73" r="3"/>
+    <circle cx="28" cy="27" r="3"/>
+    <circle class="cls-3" cx="34.77" cy="38.21" r="2.21"/>
+    <circle class="cls-3" cx="22.98" cy="44.41" r="2.21"/>
+    <circle class="cls-3" cx="43.98" cy="50.41" r="2.21"/>
+    <circle class="cls-3" cx="41.98" cy="24.41" r="2.21"/>
+    <circle class="cls-3" cx="32.98" cy="15.9" r="2.21"/>
+    <circle class="cls-3" cx="51.77" cy="34.22" r="2.21"/>
+    <circle class="cls-3" cx="56.77" cy="47.22" r="2.21"/>
+    <circle class="cls-3" cx="65.77" cy="43.22" r="2.21"/>
+    <circle class="cls-3" cx="68.77" cy="52.22" r="2.21"/>
+    <circle class="cls-3" cx="74.77" cy="45.22" r="2.21"/>
+    <circle class="cls-3" cx="48.77" cy="67.07" r="2.21"/>
+    <circle class="cls-3" cx="27.77" cy="70.07" r="2.21"/>
+    <circle class="cls-3" cx="15.77" cy="59.07" r="2.21"/>
+    <circle class="cls-3" cx="76.77" cy="70.39" r="2.21"/>
+    <circle class="cls-3" cx="58.77" cy="59.39" r="2.21"/>
+    <circle class="cls-3" cx="82.77" cy="61.39" r="2.21"/>
+    <circle class="cls-3" cx="85.55" cy="85.39" r="2.21"/>
+    <circle class="cls-3" cx="93.55" cy="50.01" r="2.21"/>
+    <circle class="cls-3" cx="108.34" cy="50.01" r="2.21"/>
+    <circle class="cls-3" cx="107.34" cy="64.01" r="2.21"/>
+  </g>
+</svg>

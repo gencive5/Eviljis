@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc86d2;
+      }
+
+      .cls-2 {
+        fill: #9960be;
+      }
+
+      .cls-3 {
+        fill: #f46782;
+      }
+
+      .cls-4 {
+        fill: #fdfffb;
+      }
+
+      .cls-5 {
+        fill: #baacb4;
+      }
+    </style>
+  </defs>
+  <g id="aquarelle_emojis">
+    <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+    <circle class="cls-1" cx="57" cy="58" r="53.5"/>
+    <ellipse class="cls-2" cx="84" cy="56" rx="18.5" ry="7.5"/>
+    <ellipse class="cls-2" cx="33" cy="54" rx="18.5" ry="7.5"/>
+    <ellipse class="cls-4" cx="41.69" cy="54.46" rx="9.77" ry="3.96"/>
+    <ellipse class="cls-4" cx="92.97" cy="55.93" rx="9.77" ry="3.96"/>
+    <ellipse class="cls-5" cx="30" cy="67.78" rx="15.5" ry="6.28"/>
+    <ellipse class="cls-5" cx="88.97" cy="69.93" rx="15.5" ry="6.28"/>
+  </g>
+</svg>

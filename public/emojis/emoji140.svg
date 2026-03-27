@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4f2394;
+      }
+
+      .cls-2 {
+        fill: #ff7882;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #ea429a;
+      }
+
+      .cls-5 {
+        fill: #61b9bb;
+      }
+    </style>
+  </defs>
+  <g id="aquarelle_emojis">
+    <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+    <ellipse class="cls-5" cx="82.46" cy="49.8" rx="18" ry="10.5" transform="translate(-11.06 72.89) rotate(-45)"/>
+    <ellipse class="cls-5" cx="34.46" cy="47.31" rx="10.5" ry="18" transform="translate(-23.36 38.22) rotate(-45)"/>
+    <ellipse class="cls-3" cx="35.5" cy="50.65" rx="10.08" ry="17.28" transform="translate(-25.41 39.94) rotate(-45)"/>
+    <ellipse class="cls-1" cx="26.5" cy="46.5" rx="6" ry="11"/>
+    <ellipse class="cls-3" cx="83.45" cy="51.9" rx="17.28" ry="10.08" transform="translate(-12.26 74.21) rotate(-45)"/>
+    <ellipse class="cls-1" cx="74.5" cy="55.5" rx="6" ry="11"/>
+    <ellipse class="cls-4" cx="69.88" cy="86.78" rx="13.1" ry="7.15" transform="translate(-27.37 32.4) rotate(-21.95)"/>
+  </g>
+</svg>
