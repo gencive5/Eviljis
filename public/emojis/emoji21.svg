@@ -3,35 +3,32 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #6119be;
-        stroke-width: 6px;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
+        fill: #ff5793;
+        stroke: #ff8e50;
         stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        fill: #0da5ed;
-      }
-
-      .cls-4 {
-        fill: #cb23c4;
+        stroke-width: 4px;
       }
 
       .cls-2 {
-        stroke: #f289fe;
-        stroke-width: 4px;
+        fill: #ff8e50;
+      }
+
+      .cls-3 {
+        fill: #ffbd6e;
+      }
+
+      .cls-4 {
+        fill: #e92047;
       }
     </style>
   </defs>
   <g id="feutre_emojis">
-    <circle class="cls-2" cx="59.5" cy="59.5" r="57.5"/>
-    <polygon class="cls-4" points="81.44 15.5 79.5 45.5 102.5 36.77 81.44 15.5"/>
-    <path class="cls-3" d="M98.08,65.6c17.19-5.33-11.02-32.18-11.02-32.18,0,0-6.17,37.51,11.02,32.18"/>
-    <polygon class="cls-4" points="38.36 16.72 40.3 46.72 17.3 38 38.36 16.72"/>
-    <path class="cls-3" d="M21.72,66.82c-17.19-5.33,11.02-32.18,11.02-32.18,0,0,6.17,37.51-11.02,32.18"/>
-    <path class="cls-1" d="M40.5,57.5c.19,9.62,1.19,19.38,3.87,28.65,1.46,5.06,4.72,16.15,11.41,16.32,6.07.15,10.56-9,12.8-13.56,3.63-7.4,6.09-15.39,7.92-23.4"/>
+    <g>
+      <circle class="cls-1" cx="59.5" cy="59.5" r="57.5"/>
+      <rect class="cls-2" x="22.5" y="34.5" width="79" height="27"/>
+      <rect class="cls-3" x="29.5" y="39.5" width="18" height="18"/>
+      <rect class="cls-3" x="76.5" y="39.5" width="18" height="18"/>
+      <rect class="cls-4" x="53.5" y="75.5" width="19" height="19"/>
+    </g>
   </g>
 </svg>

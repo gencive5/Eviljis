@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115.36">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
-      .cls-1 {
-        stroke: #3160be;
-        stroke-width: 6px;
-      }
-
       .cls-1, .cls-2 {
         fill: none;
-        stroke-miterlimit: 10;
       }
 
-      .cls-3 {
-        fill: #3160be;
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #2d25a7;
       }
 
       .cls-4 {
-        fill: #c8eef0;
+        fill: #ff8e50;
+      }
+
+      .cls-5 {
+        fill: #ff7dd7;
       }
 
       .cls-2 {
-        stroke: #4eb79b;
-        stroke-width: 3px;
+        stroke: #3d2194;
+      }
+
+      .cls-3 {
+        fill: #e3fffe;
+      }
+
+      .cls-6 {
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
-    <circle class="cls-4" cx="57.5" cy="57.86" r="57.5"/>
-    <path class="cls-1" d="M42,74.36s9,12,32,5"/>
-    <ellipse class="cls-3" cx="53.5" cy="43.86" rx="4" ry="7"/>
-    <polyline class="cls-2" points="36.78 4.21 30.5 30.86 36 35.86 45.5 33.86 43.5 45.86 47.5 54.86"/>
-    <polyline class="cls-2" points="55.59 .36 53.5 8.86 58 12.92 49.5 19.86 56.5 23.13 43.5 25.86 45.5 33.86"/>
-    <path class="cls-2" d="M76.5,25.86l9,6,9.57-10.5s11.83,12.5,14.13,26.5"/>
-    <polyline class="cls-2" points="24.5 43.86 27.33 54.86 18.5 55.86 21.5 69.86 12.86 69.86 7.37 86.04"/>
-    <ellipse class="cls-3" cx="72.5" cy="43.86" rx="4" ry="7"/>
+  <g id="stylo_emojis">
+    <g>
+      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-4" cx="30.77" cy="43.22" rx="9.82" ry="17.5" transform="translate(-22.25 45.07) rotate(-56.56)"/>
+      <ellipse class="cls-4" cx="84.52" cy="43.27" rx="17.5" ry="9.82" transform="translate(-9.85 53.74) rotate(-33.44)"/>
+      <circle class="cls-5" cx="96.5" cy="61.5" r="6"/>
+      <circle class="cls-5" cx="12.5" cy="60.5" r="6"/>
+      <path class="cls-3" d="M55,103c13.25,0,24-10.75,24-24H31c0,13.25,10.75,24,24,24Z"/>
+      <line class="cls-2" x1="34" y1="91" x2="35" y2="91"/>
+      <line class="cls-2" x1="76" y1="91" x2="77" y2="91"/>
+      <line class="cls-1" x1="34" y1="89" x2="76" y2="89"/>
+      <line class="cls-1" x1="63" y1="79" x2="63" y2="102"/>
+      <line class="cls-1" x1="52" y1="79" x2="52" y2="102"/>
+      <line class="cls-1" x1="44" y1="79" x2="44" y2="100"/>
+    </g>
   </g>
 </svg>

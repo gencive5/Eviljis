@@ -3,40 +3,39 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d72cce;
+        fill: #18d4e8;
       }
 
       .cls-2 {
-        fill: #ec42a3;
+        fill: #232321;
       }
 
       .cls-3 {
-        stroke: #0aa8ec;
-        stroke-width: 7px;
-      }
-
-      .cls-3, .cls-4 {
         fill: none;
+        stroke: #5d72f8;
         stroke-miterlimit: 10;
+        stroke-width: 5px;
       }
 
       .cls-4 {
-        stroke: #f33993;
-        stroke-width: 4px;
+        fill: #e3fffe;
       }
     </style>
   </defs>
   <g id="feutre_emojis">
-    <circle class="cls-1" cx="48.5" cy="90.5" r="5"/>
-    <circle class="cls-1" cx="66.5" cy="90.5" r="5"/>
-    <ellipse class="cls-2" cx="76" cy="102" rx="8.5" ry="4.5" transform="translate(-33.89 37.93) rotate(-23.07)"/>
-    <ellipse class="cls-2" cx="34.99" cy="98.97" rx="4.5" ry="8.5" transform="translate(-69.77 92.38) rotate(-66.93)"/>
-    <line class="cls-3" x1="14" y1="27" x2="13" y2="80"/>
-    <line class="cls-3" x1="33" y1="9" x2="30" y2="85"/>
-    <line class="cls-3" x1="51" y1="5" x2="48" y2="82"/>
-    <line class="cls-3" x1="68" y1="5" x2="66" y2="81"/>
-    <line class="cls-3" x1="84" y1="9" x2="84" y2="83"/>
-    <line class="cls-3" x1="100" y1="21" x2="100" y2="84"/>
-    <circle class="cls-4" cx="59.5" cy="59.5" r="57.5"/>
+    <g>
+      <circle class="cls-4" cx="59.5" cy="59.5" r="59.5"/>
+      <path class="cls-1" d="M87.23,67.26c0-17.34,8.06-32.79,20.63-42.84C97.03,9.62,79.55,0,59.81,0S22.58,9.62,11.76,24.42c12.57,10.05,20.63,25.5,20.63,42.84,0,13.63-4.98,26.09-13.21,35.68,10.64,9.95,24.92,16.06,40.64,16.06s30-6.1,40.64-16.06c-8.23-9.59-13.21-22.05-13.21-35.68Z"/>
+      <circle class="cls-2" cx="105" cy="57" r="7"/>
+      <circle class="cls-2" cx="14" cy="59" r="7"/>
+      <line class="cls-3" x1="14" y1="40" x2="32" y2="35"/>
+      <line class="cls-3" x1="22.5" y1="53.5" x2="38.5" y2="49.5"/>
+      <line class="cls-3" x1="24.5" y1="71.5" x2="40.5" y2="74.5"/>
+      <line class="cls-3" x1="22.5" y1="86.5" x2="39.5" y2="90.5"/>
+      <line class="cls-3" x1="85.5" y1="32.5" x2="101.5" y2="42.5"/>
+      <line class="cls-3" x1="76.5" y1="47.5" x2="95.5" y2="51.5"/>
+      <line class="cls-3" x1="76.5" y1="71.5" x2="93.5" y2="67.5"/>
+      <line class="cls-3" x1="78.5" y1="90.5" x2="96.5" y2="84.5"/>
+    </g>
   </g>
 </svg>

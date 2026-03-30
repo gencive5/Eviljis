@@ -3,28 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ce1940;
+        fill: #ff8e50;
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 5px;
+        fill: #f665fa;
+      }
+
+      .cls-3 {
+        fill: #2d25a7;
+      }
+
+      .cls-4 {
+        fill: #61d9d8;
+      }
+
+      .cls-5 {
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
-    <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-    <path d="M28.5,52l-9-18,13,7,9-16v16.9l13.5-13.62-7.3,23.71s-11.2-8-19.2,0Z"/>
-    <path d="M69.5,50.7l-9-18,13,7,9-16v16.9l13.5-13.62-7.3,23.71s-11.2-8-19.2,0Z"/>
-    <line class="cls-2" x1="31.5" y1="59.5" x2="20.5" y2="65.5"/>
-    <line class="cls-2" x1="37.57" y1="62.55" x2="34.03" y2="74.57"/>
-    <line class="cls-2" x1="49.8" y1="70.06" x2="43.8" y2="59.06"/>
-    <line class="cls-2" x1="75.3" y1="56.56" x2="64.3" y2="62.56"/>
-    <line class="cls-2" x1="80.57" y1="59.55" x2="77.03" y2="71.57"/>
-    <line class="cls-2" x1="93.8" y1="67.06" x2="87.8" y2="56.06"/>
-    <circle cx="38" cy="52" r="4"/>
-    <circle cx="78.5" cy="50.5" r="4"/>
+  <g id="stylo_emojis">
+    <g>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-5" cx="34.75" cy="15.75" r="4.25"/>
+      <circle class="cls-5" cx="15.39" cy="35.8" r="4.25"/>
+      <circle class="cls-5" cx="74.39" cy="14.8" r="4.25"/>
+      <circle class="cls-5" cx="96.03" cy="32.8" r="4.25"/>
+      <circle class="cls-2" cx="101.67" cy="75.76" r="4.25"/>
+      <circle class="cls-2" cx="13.59" cy="77.76" r="4.25"/>
+      <circle class="cls-2" cx="58.92" cy="90.09" r="12.58"/>
+      <circle class="cls-1" cx="24.59" cy="58.76" r="12.58"/>
+      <circle class="cls-1" cx="89.59" cy="57.24" r="12.58"/>
+      <circle class="cls-3" cx="37.5" cy="34.16" r="10.66"/>
+      <circle class="cls-3" cx="74.59" cy="33.24" r="10.66"/>
+    </g>
   </g>
 </svg>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #ffd9c7;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #d0bdff;
       }
 
       .cls-2 {
-        stroke: #f05a8c;
+        fill: #232321;
       }
 
       .cls-3 {
-        fill: #13d2e7;
+        fill: #4420a1;
       }
 
       .cls-4 {
-        fill: #f95df8;
+        fill: none;
+        stroke: #232321;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
-    <path class="cls-2" d="M13.5,32.5c2.66-7.57,5.67-14.34,8-14,3.5.51,3.12,16.75,6,17,3.39.29,6.31-22.02,11-22,4.55.02,6.56,21.02,11,21,4.54-.02,6.55-22,11-22,4.45,0,6.57,22.02,11,22,4.23-.02,6.28-20.1,10-20,3.87.11,5.19,21.93,9,22,3.28.06,5.03-16.07,8-16,2.05.05,3.69,7.76,5,18"/>
-    <circle class="cls-4" cx="86.5" cy="49.5" r="8.5"/>
-    <circle class="cls-4" cx="21.5" cy="49.5" r="8.5"/>
-    <circle class="cls-3" cx="57" cy="80" r="19"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-3" cx="80" cy="49.5" rx="4.5" ry="25"/>
+      <ellipse class="cls-3" cx="38" cy="43.5" rx="4.5" ry="25"/>
+      <line class="cls-4" x1="36.5" y1="84.5" x2="79.5" y2="86.5"/>
+      <ellipse class="cls-2" cx="38" cy="41" rx="4.5" ry="7.5"/>
+      <ellipse class="cls-2" cx="80" cy="48" rx="4.5" ry="7.5"/>
+    </g>
   </g>
 </svg>

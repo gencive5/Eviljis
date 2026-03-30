@@ -1,46 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #fd75ea;
+        stroke: #ff5793;
       }
 
       .cls-1, .cls-2, .cls-3 {
         fill: none;
       }
 
-      .cls-1, .cls-3 {
+      .cls-1, .cls-2, .cls-3, .cls-4 {
         stroke-miterlimit: 10;
-        stroke-width: 4px;
       }
 
-      .cls-4 {
-        fill: #6e12cf;
+      .cls-1, .cls-3 {
+        stroke-width: 5px;
       }
 
       .cls-5 {
-        fill: #0088d6;
+        fill: #d0bdff;
       }
 
-      .cls-3 {
-        stroke: #7224c9;
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #ff8e50;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 6px;
+      }
+
+      .cls-6 {
+        fill: #5d72f8;
+      }
+
+      .cls-4 {
+        fill: #e3fffe;
       }
     </style>
   </defs>
   <g id="feutre_emojis">
-    <circle class="cls-1" cx="59.5" cy="59.5" r="57.5"/>
-    <path class="cls-3" d="M23.5,59.5c-8.53-5.41-10.25-16.12-6-22,4.53-6.28,16.34-7.74,24,0"/>
-    <path class="cls-3" d="M93.34,60.52c8.53-5.41,10.25-16.12,6-22-4.53-6.28-16.34-7.74-24,0"/>
-    <circle class="cls-5" cx="37" cy="53" r="8.5"/>
-    <circle class="cls-5" cx="80" cy="51" r="8.5"/>
-    <g>
-      <rect class="cls-2" x="5.32" y="77.08" width="50.92" height="25.9" transform="translate(-64.17 96.29) rotate(-74.9)"/>
-      <polygon class="cls-4" points="44.07 90.48 40.74 77.97 37.41 65.45 28.24 74.59 19.06 83.74 25.43 85.45 22.59 95.99 34.86 99.3 37.7 88.77 44.07 90.48"/>
-    </g>
-    <g>
-      <rect class="cls-2" x="71.66" y="65.04" width="25.9" height="50.92" transform="translate(-20.66 25.17) rotate(-15.1)"/>
-      <polygon class="cls-4" points="71.32 90.95 74.65 78.44 77.97 65.92 87.15 75.06 96.32 84.2 89.95 85.92 92.79 96.45 80.52 99.77 77.68 89.23 71.32 90.95"/>
-    </g>
+    <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+    <polyline class="cls-4" points="40.95 76 40.95 93.27 75 94 75 76"/>
+    <ellipse class="cls-6" cx="74" cy="44" rx="8.5" ry="9.5"/>
+    <ellipse class="cls-6" cx="39" cy="41" rx="8.5" ry="9.5"/>
+    <line class="cls-1" x1="70.5" y1="29.5" x2="70.5" y2="21.5"/>
+    <line class="cls-1" x1="77" y1="31" x2="82" y2="24"/>
+    <line class="cls-1" x1="87" y1="34" x2="99" y2="27"/>
+    <line class="cls-1" x1="86" y1="49" x2="100" y2="57"/>
+    <line class="cls-1" x1="81" y1="53" x2="82" y2="63"/>
+    <line class="cls-1" x1="30" y1="54" x2="22" y2="60"/>
+    <line class="cls-1" x1="26" y1="49" x2="11" y2="49"/>
+    <line class="cls-1" x1="49" y1="27" x2="57" y2="19"/>
+    <path class="cls-1" d="M40,26c-.59-.4-4.35-3.02-5-8-.54-4.2,1.49-7.28,2-8"/>
+    <path class="cls-1" d="M29,31c-3.63.16-6.87-1.91-8-5-1.29-3.52.77-6.67,1-7"/>
+    <line class="cls-2" x1="19" y1="75" x2="96" y2="77"/>
+    <line class="cls-2" x1="57" y1="76" x2="58" y2="94"/>
+    <line class="cls-2" x1="22" y1="69" x2="17" y2="84"/>
+    <line class="cls-3" x1="96" y1="68" x2="98" y2="84"/>
   </g>
 </svg>

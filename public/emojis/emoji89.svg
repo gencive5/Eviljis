@@ -1,57 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #ae003d;
-        stroke-width: 6px;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-5 {
-        fill: none;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #23deed;
-        stroke-width: 20px;
-      }
-
-      .cls-6 {
-        fill: #3b2469;
+        fill: #8d9efc;
       }
 
       .cls-3 {
-        stroke: #c63856;
-      }
-
-      .cls-3, .cls-4, .cls-5 {
-        stroke-width: 3px;
+        fill: #5d72f8;
       }
 
       .cls-4 {
-        fill: #fff;
-        stroke: #4013a1;
+        fill: #61d9d8;
       }
 
       .cls-5 {
-        stroke: #a50234;
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <path class="cls-1" d="M84.11,23.48s15.26,23.24,15.39,41.27"/>
-    <path class="cls-1" d="M37.5,22.5S15.5,39.5,9.5,56.5"/>
-    <path class="cls-2" d="M73.39,28.22s4.83,37.12,18.04,49.66"/>
-    <path class="cls-2" d="M47.69,28.78s-15.94,33.87-32.36,41.77"/>
-    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
-    <ellipse class="cls-4" cx="82.12" cy="46.14" rx="4.92" ry="16.85" transform="translate(-11.84 52.86) rotate(-33.42)"/>
-    <ellipse class="cls-4" cx="33.45" cy="40.32" rx="16.85" ry="4.92" transform="translate(-18.63 46.03) rotate(-56.58)"/>
-    <circle class="cls-6" cx="85" cy="35" r="7"/>
-    <circle class="cls-6" cx="29" cy="32" r="7"/>
-    <polyline class="cls-5" points="45 91 54 83 61 93"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-5" cx="58" cy="59" r="54.5"/>
+      <rect class="cls-4" x="73" y="32" width="26" height="26"/>
+      <rect class="cls-4" x="25" y="30" width="26" height="26"/>
+      <circle class="cls-1" cx="37.5" cy="43.5" r="4.5"/>
+      <circle class="cls-1" cx="86.5" cy="47.5" r="4.5"/>
+      <rect class="cls-2" x="32" y="27" width="12" height="4"/>
+      <rect class="cls-2" x="31" y="53" width="12" height="4"/>
+      <rect class="cls-2" x="80" y="30" width="12" height="4"/>
+      <rect class="cls-2" x="81" y="57" width="12" height="4"/>
+      <rect class="cls-2" x="18" y="40" width="12" height="4" transform="translate(66 18) rotate(90)"/>
+      <rect class="cls-2" x="46" y="41" width="12" height="4" transform="translate(95 -9) rotate(90)"/>
+      <rect class="cls-2" x="66" y="42" width="12" height="4" transform="translate(116 -28) rotate(90)"/>
+      <rect class="cls-2" x="95" y="43" width="12" height="4" transform="translate(146 -56) rotate(90)"/>
+      <path class="cls-3" d="M30,85.5h55s-6-9-18-10-23-1-37,10Z"/>
+    </g>
   </g>
 </svg>

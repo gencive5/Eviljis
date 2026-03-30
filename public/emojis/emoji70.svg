@@ -1,63 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #f46758;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-5 {
-        fill: none;
-      }
-
-      .cls-1, .cls-3, .cls-4, .cls-5 {
-        stroke-width: 3px;
+        fill: #8d9efc;
       }
 
       .cls-2 {
-        stroke: #f45b49;
+        fill: none;
+        stroke: #ff8e50;
+        stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
       .cls-3 {
-        stroke: #0b0b09;
+        fill: #f45b49;
       }
 
       .cls-4 {
-        fill: #f468f7;
-      }
-
-      .cls-4, .cls-5 {
-        stroke: #000;
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <line class="cls-5" x1="3" y1="48.74" x2="18.45" y2="48.74"/>
-    <path class="cls-3" d="M32.5,93.5c-3.52-3.46-5.62-9.04-4-11,1.25-1.51,4.4-.48,10,1,20.25,5.35,30.37,8.02,37,5,1.24-.57,3.63-1.86,6-1,2.82,1.03,4.93,4.86,4,7-1.14,2.62-6.6,2.17-15,2-26.07-.53-32.29,2.6-38-3Z"/>
-    <line class="cls-2" x1="97.5" y1="52.5" x2="97.5" y2="76.79"/>
-    <line class="cls-2" x1="108.6" y1="46" x2="108.6" y2="76.42"/>
-    <line class="cls-2" x1="83.6" y1="52.13" x2="83.6" y2="76.42"/>
-    <line class="cls-2" x1="69.6" y1="52.13" x2="69.6" y2="76.42"/>
-    <line class="cls-2" x1="60.6" y1="51.13" x2="60.6" y2="75.42"/>
-    <line class="cls-2" x1="47.6" y1="52.13" x2="47.6" y2="76.42"/>
-    <line class="cls-2" x1="33.6" y1="52.13" x2="33.6" y2="76.42"/>
-    <line class="cls-2" x1="24.6" y1="52.13" x2="24.6" y2="76.42"/>
-    <line class="cls-2" x1="15.6" y1="52.13" x2="15.6" y2="76.42"/>
-    <line class="cls-2" x1="7.6" y1="51.13" x2="7.6" y2="75.42"/>
-    <rect class="cls-4" x="18.5" y="42.5" width="33" height="19" rx="7" ry="7"/>
-    <rect class="cls-4" x="71.5" y="40.5" width="33" height="19" rx="7" ry="7"/>
-    <line class="cls-5" x1="51.45" y1="48.7" x2="71.5" y2="48.7"/>
-    <line class="cls-5" x1="104.4" y1="46.74" x2="115" y2="46.74"/>
-    <line class="cls-2" x1="74.4" y1="9.04" x2="43.98" y2="9.04"/>
-    <line class="cls-2" x1="51.4" y1="26.04" x2="20.98" y2="26.04"/>
-    <line class="cls-2" x1="101.4" y1="21.04" x2="70.98" y2="21.04"/>
-    <line class="cls-2" x1="97.4" y1="31.04" x2="66.98" y2="31.04"/>
-    <line class="cls-2" x1="43.4" y1="35.04" x2="12.98" y2="35.04"/>
-    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-1" cx="38" cy="51" r="10.5"/>
+      <circle class="cls-1" cx="82" cy="57" r="10.5"/>
+      <circle class="cls-4" cx="49.27" cy="67.65" r="3.15"/>
+      <circle class="cls-4" cx="33.27" cy="70.59" r="3.15"/>
+      <circle class="cls-4" cx="20.18" cy="66.59" r="3.15"/>
+      <circle class="cls-4" cx="20.18" cy="56.59" r="3.15"/>
+      <circle class="cls-4" cx="101.65" cy="58.59" r="3.15"/>
+      <circle class="cls-4" cx="98.65" cy="67.59" r="3.15"/>
+      <circle class="cls-4" cx="83.65" cy="77.59" r="3.15"/>
+      <circle class="cls-4" cx="71.65" cy="72.59" r="3.15"/>
+      <path class="cls-2" d="M74.8,43.54s11.7-29.15,17.7,1.4"/>
+      <path class="cls-2" d="M31.39,30.99s12.61-21.99,19.61,3.01"/>
+    </g>
   </g>
 </svg>

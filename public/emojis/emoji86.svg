@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
-        stroke: #61d9d8;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #9d1239;
-      }
-
-      .cls-2, .cls-3 {
-        fill: none;
-      }
-
-      .cls-4 {
-        fill: #18d4e8;
-      }
-
-      .cls-5 {
-        fill: #9d1239;
-      }
-
-      .cls-6 {
-        fill: #ff85ff;
+        fill: #ffbd6e;
       }
 
       .cls-3 {
-        stroke: #f38d64;
+        fill: #5d72f8;
+      }
+
+      .cls-4 {
+        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <ellipse class="cls-4" cx="32.68" cy="32.81" rx="13.75" ry="17.5" transform="translate(-11.42 46.94) rotate(-62.88)"/>
-    <ellipse class="cls-4" cx="85.5" cy="31.25" rx="17.5" ry="13.75" transform="translate(-5.47 27.76) rotate(-17.88)"/>
-    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
-    <ellipse class="cls-1" cx="88" cy="38.5" rx="8" ry="6.5" transform="translate(-5.3 15.67) rotate(-9.88)"/>
-    <ellipse class="cls-1" cx="30.68" cy="39.81" rx="6.5" ry="8" transform="translate(-11.73 66.77) rotate(-84.83)"/>
-    <line class="cls-1" x1="68.5" y1="19.5" x2="72.35" y2="23.77"/>
-    <line class="cls-1" x1="78.5" y1="12.5" x2="80.67" y2="18.37"/>
-    <line class="cls-1" x1="88.49" y1="12.5" x2="88.49" y2="17.11"/>
-    <line class="cls-1" x1="46.62" y1="18.37" x2="43.61" y2="23.77"/>
-    <line class="cls-1" x1="39.5" y1="11.5" x2="36.51" y2="19.5"/>
-    <line class="cls-1" x1="29.51" y1="12.5" x2="29" y2="18.21"/>
-    <path class="cls-2" d="M84.5,51.5s15,6,23-8"/>
-    <path class="cls-2" d="M14.45,44.18s6.36,14.85,21.92,10.61"/>
-    <path class="cls-2" d="M94.5,59.5s10,0,16-8"/>
-    <path class="cls-2" d="M11.73,53.46s5.91,8.07,15.91,8.18"/>
-    <path class="cls-6" d="M81.18,75.57c0-9.15-4.7-16.57-10.5-16.57-4.79,0-8.83,5.07-10.09,12-1.25-6.92-5.29-12-10.09-12-5.8,0-10.5,7.39-10.5,16.5,0,5.4,1.66,10.18,4.21,13.19.02.02.04.04.06.07.23.27.46.52.7.75.14.14.28.27.43.41.06.05.11.1.17.15,3.36,2.99,8.79,4.94,14.93,4.94,5.09,0,9.69-1.33,13.04-3.49,4.41-1.96,7.65-8.35,7.65-15.94Z"/>
-    <ellipse class="cls-5" cx="60.5" cy="78.5" rx="14.5" ry="5.5"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-2" cx="57.5" cy="58.5" r="55"/>
+      <polygon class="cls-1" points="49.5 38.5 39.5 38.5 39.5 29.5 29.5 29.5 29.5 38.5 20.5 38.5 20.5 48.5 29.5 48.5 29.5 58.5 39.5 58.5 39.5 48.5 49.5 48.5 49.5 38.5"/>
+      <polygon class="cls-1" points="93.5 38.5 83.5 38.5 83.5 29.5 73.5 29.5 73.5 38.5 64.5 38.5 64.5 48.5 73.5 48.5 73.5 58.5 83.5 58.5 83.5 48.5 93.5 48.5 93.5 38.5"/>
+      <rect class="cls-3" x="51.5" y="75.5" width="29" height="10"/>
+    </g>
   </g>
 </svg>

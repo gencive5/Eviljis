@@ -1,52 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #1bb494;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-3 {
-        stroke-width: 3px;
-      }
-
-      .cls-4 {
-        fill: #e54be8;
+        fill: #5d72f8;
       }
 
       .cls-2 {
-        stroke: #ee3175;
-        stroke-width: 4px;
+        fill: #7c7b7f;
       }
 
       .cls-3 {
-        stroke: #4adbca;
+        fill: #e3fffe;
       }
 
-      .cls-5 {
-        fill: #bb003f;
+      .cls-4 {
+        fill: #ff5793;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
-    <rect class="cls-4" x="12" y="50" width="35" height="13" rx="6.5" ry="6.5"/>
-    <circle class="cls-5" cx="40.5" cy="56.5" r="6.5"/>
-    <rect class="cls-4" x="73" y="48" width="35" height="13" rx="6.5" ry="6.5" transform="translate(181 109) rotate(180)"/>
-    <circle class="cls-5" cx="79.5" cy="54.5" r="6.5"/>
-    <path class="cls-2" d="M23,87c5.93,3.57,20.71,11.4,41,11,18.55-.36,32.05-7.41,38-11"/>
-    <line class="cls-3" x1="16" y1="30" x2="16" y2="44"/>
-    <line class="cls-3" x1="23.5" y1="21.5" x2="23.5" y2="45.5"/>
-    <line class="cls-3" x1="33.5" y1="16.5" x2="33.5" y2="43.5"/>
-    <line class="cls-3" x1="43.5" y1="16.5" x2="43.5" y2="43.5"/>
-    <polyline class="cls-3" points="54.5 9.5 55.21 30 73 42.3"/>
-    <polyline class="cls-3" points="68.5 13.5 66.5 26.5 80.5 39.5"/>
-    <polyline class="cls-3" points="76.5 11.5 73 25.45 87.77 39.5"/>
-    <polyline class="cls-3" points="87.5 16.5 85.09 30 98.92 39.5"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-4" d="M63.9,82.12s3.6,7.2-3.6,4.8c-7.2-2.4-10.8-6-10.8-6,0,0,4.8-4.8,12-2.4,0,0,3.06-.14,5.73-.67,2.67-.53,5.07,1.87,1.47,3.07-3.6,1.2-4.8,1.2-4.8,1.2Z"/>
+      <circle class="cls-3" cx="32.57" cy="46.36" r="9.07"/>
+      <circle class="cls-3" cx="80.19" cy="46.36" r="9.07"/>
+      <circle class="cls-1" cx="37.83" cy="47.21" r="9.04"/>
+      <circle class="cls-1" cx="85.23" cy="47.21" r="8.77"/>
+    </g>
   </g>
 </svg>

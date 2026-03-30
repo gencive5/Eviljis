@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #f6e2d5;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-3 {
-        fill: #a00035;
-      }
-
-      .cls-4 {
-        fill: #d10bab;
+        fill: #7c7b7f;
       }
 
       .cls-2 {
-        stroke: #e05878;
+        fill: #38f2a9;
       }
 
-      .cls-5 {
-        fill: #fa745d;
+      .cls-3 {
+        fill: #ff5793;
+      }
+
+      .cls-4 {
+        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
-    <path class="cls-5" d="M20,49.06c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-    <path class="cls-5" d="M69.2,48.47c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-    <path class="cls-3" d="M43.2,85.47c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-    <path class="cls-1" d="M78,85.47c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
-    <path class="cls-1" d="M15.78,88.47c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
-    <path class="cls-1" d="M82.26,12.99c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
-    <path class="cls-1" d="M37.26,13.99c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
-    <path class="cls-1" d="M91.14,59.36c.35,15.45,16.23,16.23,16.23,16.23-.35-15.45-16.23-16.23-16.23-16.23Z"/>
-    <path class="cls-1" d="M27.37,62.36c-15.45.35-16.23,16.23-16.23,16.23,15.45-.35,16.23-16.23,16.23-16.23Z"/>
-    <path class="cls-1" d="M10.89,32.11c.23,9.98,10.47,10.47,10.47,10.47-.23-9.98-10.47-10.47-10.47-10.47Z"/>
-    <path class="cls-1" d="M105.49,31.23c-9.98.23-10.47,10.47-10.47,10.47,9.98-.23,10.47-10.47,10.47-10.47Z"/>
-    <circle class="cls-4" cx="84.5" cy="68.5" r="3.5"/>
-    <circle class="cls-4" cx="32.5" cy="72.5" r="3.5"/>
-    <circle class="cls-4" cx="19.5" cy="24.5" r="3.5"/>
-    <circle class="cls-4" cx="96.5" cy="22.5" r="3.5"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-3" cx="87.71" cy="60.63" rx="24.04" ry="18.98" transform="translate(-18.22 48.44) rotate(-28.09)"/>
+      <circle class="cls-1" cx="28.5" cy="40.5" r="9"/>
+      <ellipse class="cls-1" cx="84.54" cy="43.82" rx="14.04" ry="3.32" transform="translate(-10.67 44.96) rotate(-28.09)"/>
+      <ellipse class="cls-3" cx="19.5" cy="65.5" rx="15" ry="19" transform="translate(-28.54 16.89) rotate(-28.09)"/>
+      <ellipse class="cls-4" cx="15.92" cy="29.7" rx="10.43" ry="3.18" transform="translate(-15.25 16.88) rotate(-39.45)"/>
+    </g>
   </g>
 </svg>

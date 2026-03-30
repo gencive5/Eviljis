@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #ff5793;
+        stroke: #4420a1;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
         stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-4 {
         stroke-width: 3px;
       }
 
-      .cls-3 {
-        fill: #c60248;
+      .cls-2 {
+        stroke: #38f2a9;
       }
 
-      .cls-4 {
-        fill: #e4564b;
+      .cls-2, .cls-3 {
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: #2d25a7;
       }
 
       .cls-5 {
-        fill: #fb87ff;
+        fill: #8d9efc;
       }
 
-      .cls-2 {
-        fill: #f78365;
-        stroke: #e4564b;
+      .cls-6 {
+        fill: #61d9d8;
+      }
+
+      .cls-4 {
+        stroke: #5d72f8;
       }
     </style>
   </defs>
   <g id="stylo_emojis">
-    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
-    <path class="cls-5" d="M85.68,30.8c-11.56,0-21.58,5.27-26.5,12.96-4.92-7.69-14.94-12.96-26.5-12.96-16.43,0-29.75,10.63-29.75,23.75s13.32,23.75,29.75,23.75c11.56,0,21.58-5.27,26.5-12.96,4.92,7.69,14.94,12.96,26.5,12.96,16.43,0,29.75-10.63,29.75-23.75s-13.32-23.75-29.75-23.75Z"/>
-    <ellipse class="cls-2" cx="32.42" cy="55" rx="24.92" ry="8.5"/>
-    <ellipse class="cls-2" cx="89.08" cy="55" rx="24.92" ry="8.5"/>
-    <path class="cls-4" d="M91.75,55c-4.28,0-7.75,3.47-7.75,7.75,0,.11.01.21.02.32,2.51.28,5.19.43,7.98.43,2.6,0,5.11-.13,7.48-.37,0-.13.02-.25.02-.38,0-4.28-3.47-7.75-7.75-7.75Z"/>
-    <path class="cls-4" d="M28.55,54.3c-4.28,0-7.75,3.47-7.75,7.75,0,.11.01.21.02.32,2.51.28,5.19.43,7.98.43,2.6,0,5.11-.13,7.48-.37,0-.13.02-.25.02-.38,0-4.28-3.47-7.75-7.75-7.75Z"/>
-    <rect class="cls-3" x="53.5" y="90.5" width="16.5" height="9.5" rx="4.75" ry="4.75"/>
+    <g>
+      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
+      <polygon class="cls-5" points="16.5 57.5 49.5 52.5 43.5 43.5 3.5 45.5 16.5 57.5 16.5 57.5"/>
+      <polygon class="cls-5" points="68.5 53.5 96.5 50.5 102.5 35.5 71.03 42.45 67.5 52.5 68.5 53.5"/>
+      <polyline class="cls-4" points="17.41 57.5 4 45 43 43 51 52"/>
+      <polyline class="cls-4" points="95.73 50.39 103.27 35.21 70.73 42.51 66.66 53.05"/>
+      <line class="cls-3" x1="5" y1="38" x2="43" y2="34.19"/>
+      <line class="cls-2" x1="11.49" y1="27.03" x2="26.5" y2="26.5"/>
+      <line class="cls-2" x1="77.72" y1="20.96" x2="92.73" y2="20.43"/>
+      <line class="cls-2" x1="11.72" y1="69.96" x2="26.73" y2="69.43"/>
+      <line class="cls-2" x1="87.72" y1="61.96" x2="102.73" y2="61.43"/>
+      <line class="cls-2" x1="46.72" y1="83.96" x2="71.5" y2="83.5"/>
+      <line class="cls-1" x1="15" y1="93" x2="105" y2="86"/>
+      <line class="cls-3" x1="65.72" y1="33.16" x2="103.72" y2="29.35"/>
+    </g>
   </g>
 </svg>

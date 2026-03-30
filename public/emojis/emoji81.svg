@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.12 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #43dff3;
+        fill: none;
+        stroke: #4420a1;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
       }
 
       .cls-2 {
-        fill: #f96bf9;
+        fill: #ff8e50;
       }
 
       .cls-3 {
-        stroke: #351ea2;
-      }
-
-      .cls-3, .cls-4 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #ffbd6e;
       }
 
       .cls-4 {
-        stroke: #3e2079;
+        fill: #18d4e8;
+      }
+
+      .cls-5 {
+        fill: #61d9d8;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-3" cx="60.12" cy="59" r="57.5"/>
-    <path class="cls-1" d="M61.25,84.42c-17.24,2.5-34.46-6.33-48.4-22.65,11.42,27.83,32.05,45.69,52.72,42.69,22.47-3.26,37.89-30.14,38.92-63.89-8.24,24.13-23.65,41.01-43.24,43.86Z"/>
-    <ellipse class="cls-2" cx="45.12" cy="49.5" rx="6" ry="11.5"/>
-    <ellipse class="cls-2" cx="64.12" cy="25.5" rx="6" ry="11.5"/>
-    <line class="cls-4" x1="50.12" y1="6" x2="43.12" y2="28"/>
-    <line class="cls-4" x1="74.2" y1="5.81" x2="84.8" y2="26.32"/>
-    <line class="cls-4" x1="36.96" y1="10.13" x2="26.12" y2="41"/>
-    <line class="cls-4" x1=".71" y1="54.21" x2="27.12" y2="40"/>
-    <line class="cls-4" x1="99.12" y1="34" x2="86.38" y2="7.38"/>
-    <line class="cls-4" x1="98.12" y1="33" x2="115.12" y2="44"/>
-    <line class="cls-4" x1="26.53" y1="12.33" x2="18.39" y2="33.93"/>
-    <line class="cls-4" x1="5.12" y1="43" x2="19.12" y2="33"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-4" cx="51.5" cy="47.5" r="46"/>
+      <polygon class="cls-3" points="100.5 49.5 114.5 65.09 114.5 60.44 99 43.12 100.5 49.5"/>
+      <path class="cls-2" d="M107.5,82.76l-6-10.42s3-10.6,3-14.85l7,13.11-3,13.89-1-1.74h0Z"/>
+      <polygon class="cls-3" points="93.5 81.5 102.5 93.5 100.5 95.5 92.5 84.5 93.5 81.5"/>
+      <path class="cls-2" d="M81.78,107.5l-12.28-13.21s10.24-5.66,12.28-7.55l2.05-1.89,13.03,14.23-14.43,8.41"/>
+      <polygon class="cls-3" points="66.5 103.5 73.5 112.5 77.5 111.5 70.5 102.5 66.5 103.5"/>
+      <path class="cls-2" d="M38.44,108.11l-3.8-9.42h19.3l6.06,12.92-21.02-1.89-.55-1.61Z"/>
+      <path class="cls-1" d="M37.12,13.81s-.19,11.98,12.6,9.34"/>
+      <path class="cls-1" d="M66.93,33.93s-.19,11.8,12.6,9.19"/>
+    </g>
   </g>
 </svg>

@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #e62b6d;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-3 {
-        fill: #e62b6d;
+        fill: #18d4e8;
       }
 
       .cls-2 {
-        stroke: #ff7f75;
+        fill: #2d25a7;
+      }
+
+      .cls-3 {
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-1" cx="59" cy="59" r="57.5"/>
-    <rect class="cls-2" x="15.36" y="46.41" width="31" height="10" transform="translate(-7.07 4.97) rotate(-8.26)"/>
-    <rect class="cls-2" x="69.64" y="36.59" width="31" height="10" transform="translate(-5.09 12.67) rotate(-8.26)"/>
-    <line class="cls-1" x1="19.19" y1="68.5" x2="46.5" y2="82.5"/>
-    <line class="cls-1" x1="12.35" y1="73.89" x2="39.65" y2="87.89"/>
-    <line class="cls-1" x1="18" y1="89.55" x2="32" y2="62.24"/>
-    <line class="cls-1" x1="28" y1="91.55" x2="42" y2="64.24"/>
-    <line class="cls-1" x1="83.77" y1="56.5" x2="111.08" y2="70.5"/>
-    <line class="cls-1" x1="76.92" y1="61.89" x2="104.23" y2="75.89"/>
-    <line class="cls-1" x1="82.58" y1="77.55" x2="96.58" y2="50.24"/>
-    <line class="cls-1" x1="92.58" y1="79.55" x2="106.58" y2="52.24"/>
-    <rect class="cls-3" x="51.8" y="78.59" width="22.2" height="14.5" transform="translate(-11.68 9.93) rotate(-8.26)"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-1" d="M99.5,86.5c-14.91,0-27-12.09-27-27s12.09-27,27-27c3.85,0,7.51.81,10.82,2.26C101.51,14.32,81.18,0,57.5,0S12.69,14.9,4.17,36c4.54-3.45,10.19-5.5,16.33-5.5,14.91,0,27,12.09,27,27s-12.09,27-27,27c-6.14,0-11.79-2.05-16.33-5.5,8.52,21.1,29.18,36,53.33,36,21.73,0,40.64-12.06,50.42-29.85-2.65.87-5.48,1.35-8.42,1.35Z"/>
+      <circle class="cls-2" cx="15.5" cy="63.5" r="8"/>
+      <circle class="cls-2" cx="103.5" cy="63.5" r="8"/>
+      <ellipse class="cls-2" cx="61" cy="97.5" rx="17.5" ry="5" transform="translate(-15.98 12.05) rotate(-9.98)"/>
+    </g>
   </g>
 </svg>

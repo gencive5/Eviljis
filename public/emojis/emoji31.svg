@@ -3,25 +3,52 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #36ce3e;
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #ff8e50;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        fill: #5d72f8;
       }
 
       .cls-2 {
-        fill: #0fbcf5;
+        fill: #ff8e50;
+        stroke-width: 4px;
       }
 
       .cls-3 {
-        fill: none;
-        stroke: #f3e54e;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
+        fill: #c2f4d1;
+        stroke: #38f2a9;
+      }
+
+      .cls-4 {
+        fill: #18d4e8;
       }
     </style>
   </defs>
   <g id="feutre_emojis">
-    <circle class="cls-3" cx="59.5" cy="59.5" r="57.5"/>
-    <path class="cls-2" d="M17.5,48.5h25.7s6.3-7,.3-12-11-2-11-2c0,0,2-9-5-9s-6,8-6,8c0,0-9,1-8,8s4,7,4,7Z"/>
-    <path class="cls-2" d="M63.5,49.5h39s4-7,1-11-11-4-11-4c0,0-2.64-10-10.32-11s-11.68,7-11.68,10c-3,0-10,1-10,7s3,9,3,9Z"/>
-    <polygon class="cls-1" points="24.04 78.58 41.81 104.5 91.22 57.5 43.73 90.58 24.04 78.58"/>
+    <g>
+      <circle class="cls-2" cx="59.5" cy="59.5" r="57.5"/>
+      <path class="cls-4" d="M108.49,87.6c-10.43-8.58-26.7-14.1-44.99-14.1-21.42,0-40.06,7.57-49.8,18.75,10.5,13.82,27.11,22.75,45.8,22.75,20.72,0,38.87-10.96,48.99-27.4Z"/>
+      <line class="cls-1" x1="75.5" y1="73.5" x2="80.5" y2="112.5"/>
+      <line class="cls-1" x1="54.5" y1="74.5" x2="59.5" y2="117.5"/>
+      <line class="cls-1" x1="34.5" y1="78.5" x2="37.5" y2="112.5"/>
+      <path class="cls-3" d="M50.67,53.5s-26.17,13-30.17,13-11-2-10-11,17-9,17-9l-7.98-2c-7.98-2-5.83-10.83-5.83-10.83,0,0,1.8-7.17,13.8-5.17s28,12,28,12c0,0,22-19,32-19s10,1,13,4-1,10-4,12-9.83,3-9.83,3c0,0,9.95,0,14.89,4s5.51,8,2.72,12c-2.79,4-9.89,4-16.34,3s-21.19-6-21.19-6l-8.26-3-7.83,3Z"/>
+      <circle class="cls-5" cx="26.5" cy="38.5" r="5"/>
+      <circle class="cls-5" cx="91.5" cy="30.5" r="5"/>
+      <circle class="cls-5" cx="20.5" cy="56.5" r="5"/>
+      <circle class="cls-5" cx="95.5" cy="51.5" r="5"/>
+    </g>
   </g>
 </svg>

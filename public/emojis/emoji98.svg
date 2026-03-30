@@ -1,47 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.49 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #c10041;
+        fill: none;
+        stroke: #232321;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-2 {
-        fill: #ff8e50;
+        fill: #e3fffe;
       }
 
       .cls-3 {
-        fill: #b41448;
-      }
-
-      .cls-4 {
-        fill: #3ae9b0;
-      }
-
-      .cls-5 {
-        fill: #08c8de;
-      }
-
-      .cls-6 {
-        fill: none;
-        stroke: #cc3c66;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #e92047;
       }
     </style>
   </defs>
   <g id="stylo_emojis">
-    <circle class="cls-6" cx="59" cy="59" r="57.5"/>
-    <circle class="cls-4" cx="36.25" cy="17.25" r="4.25"/>
-    <circle class="cls-4" cx="16.89" cy="37.3" r="4.25"/>
-    <circle class="cls-4" cx="75.89" cy="16.3" r="4.25"/>
-    <circle class="cls-4" cx="97.53" cy="34.3" r="4.25"/>
-    <circle class="cls-3" cx="103.17" cy="77.26" r="4.25"/>
-    <circle class="cls-3" cx="15.09" cy="79.26" r="4.25"/>
-    <circle class="cls-1" cx="60.42" cy="91.59" r="12.58"/>
-    <circle class="cls-2" cx="26.09" cy="60.26" r="12.58"/>
-    <circle class="cls-2" cx="91.09" cy="58.74" r="12.58"/>
-    <circle class="cls-5" cx="39" cy="35.66" r="10.66"/>
-    <circle class="cls-5" cx="76.09" cy="34.74" r="10.66"/>
+    <g>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <path d="M34.23,5.15c-9.99,14.09-10.53,31.79-1.89,43.46,5.12,6.92,14.66,13.33,24.56,13.23,6.84-.07,8.72-3.19,19.84-3.78,5.5-.29,10.42-.49,16.06,1.89,1.74.74,10.12,4.28,13.23,12.28,2.92,7.52-.35,15.02,0,15.12.95.25,9.6-13.5,9.45-31.18-.18-21.35-13.1-35.63-15.12-37.79C84.29,1.14,63.05.37,56.91.42c-9.9.09-17.79,2.68-22.67,4.72Z"/>
+      <circle class="cls-2" cx="61.24" cy="26" r="7"/>
+      <circle class="cls-3" cx="74.24" cy="100" r="8"/>
+      <circle class="cls-3" cx="40.24" cy="26" r="8"/>
+      <path class="cls-1" d="M19.24,62c.72,2.73,2.85,9.31,9,15,6.75,6.23,14.26,7.63,17,8"/>
+      <circle cx="83.24" cy="84" r="7"/>
+    </g>
   </g>
 </svg>

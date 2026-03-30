@@ -1,51 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4 {
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-1, .cls-4 {
-        stroke: #2e1f65;
-      }
-
-      .cls-5 {
-        fill: #2e1f65;
+      .cls-1 {
+        fill: #ff8e50;
       }
 
       .cls-2 {
-        stroke: #e96a8e;
+        fill: none;
+        stroke: #18d4e8;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-3 {
-        stroke: #e92047;
-      }
-
-      .cls-4 {
-        fill: #a60642;
+        fill: #7c7b7f;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
-    <ellipse class="cls-1" cx="86" cy="47" rx="16.5" ry="7.5"/>
-    <ellipse class="cls-1" cx="26" cy="61" rx="16.5" ry="7.5"/>
-    <circle class="cls-5" cx="84.75" cy="46.75" r="6.75"/>
-    <circle class="cls-5" cx="23.17" cy="61.81" r="6.75"/>
-    <ellipse class="cls-4" cx="68.5" cy="89.75" rx="12" ry="4.75"/>
-    <line class="cls-2" x1="88" y1="62" x2="96.75" y2="72.23"/>
-    <line class="cls-2" x1="67" y1="21" x2="93" y2="21"/>
-    <line class="cls-2" x1="18.5" y1="28.5" x2="31.5" y2="28.5"/>
-    <line class="cls-2" x1="12.5" y1="42.5" x2="36.5" y2="42.5"/>
-    <line class="cls-2" x1="76.73" y1="64.71" x2="85.48" y2="74.95"/>
-    <line class="cls-2" x1="99.73" y1="59.71" x2="108.48" y2="69.95"/>
-    <line class="cls-2" x1="35.46" y1="72.71" x2="26.71" y2="82.95"/>
-    <line class="cls-2" x1="23.46" y1="73.71" x2="14.71" y2="83.95"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-1" cx="42.5" cy="30.5" r="3.5"/>
+      <circle class="cls-1" cx="76.5" cy="29.5" r="3.5"/>
+      <path class="cls-2" d="M29,70s5,28,31,23,25-5,33,10"/>
+    </g>
   </g>
 </svg>

@@ -3,50 +3,33 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d1e06d;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        fill: #9ce755;
+        fill: #2d25a7;
       }
 
       .cls-3 {
-        fill: #292fa3;
+        fill: none;
+        stroke: #e92047;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
       }
 
       .cls-4 {
-        fill: #684694;
-      }
-
-      .cls-5 {
-        fill: #7597db;
-      }
-
-      .cls-6 {
-        fill: #4c249a;
-      }
-
-      .cls-7 {
-        fill: #8fa93e;
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
-    <circle class="cls-7" cx="57.5" cy="57.5" r="57.5"/>
-    <circle class="cls-1" cx="58" cy="58" r="55.5"/>
-    <rect class="cls-2" x="73" y="32" width="26" height="26"/>
-    <rect class="cls-2" x="25" y="30" width="26" height="26"/>
-    <circle class="cls-4" cx="37.5" cy="43.5" r="4.5"/>
-    <circle class="cls-4" cx="86.5" cy="47.5" r="4.5"/>
-    <rect class="cls-5" x="32" y="27" width="12" height="4"/>
-    <rect class="cls-5" x="31" y="53" width="12" height="4"/>
-    <rect class="cls-5" x="80" y="30" width="12" height="4"/>
-    <rect class="cls-5" x="81" y="57" width="12" height="4"/>
-    <rect class="cls-5" x="18" y="40" width="12" height="4" transform="translate(66 18) rotate(90)"/>
-    <rect class="cls-5" x="46" y="41" width="12" height="4" transform="translate(95 -9) rotate(90)"/>
-    <rect class="cls-5" x="66" y="42" width="12" height="4" transform="translate(116 -28) rotate(90)"/>
-    <rect class="cls-5" x="95" y="43" width="12" height="4" transform="translate(146 -56) rotate(90)"/>
-    <path class="cls-6" d="M30,81h55s-6-9-18-10-23-1-37,10Z"/>
-    <path class="cls-3" d="M31,82.56c3,2.56,14,8.44,26.5,10.6s27.5-9.45,27.5-9.45l-54-1.15Z"/>
+  <g id="stylo_emojis">
+    <g>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M9,57c3.88-16.78,10.36-28.46,15-28,4.72.47,8.88,13.66,9,32"/>
+      <path class="cls-3" d="M106.48,56.59c-3.88-16.78-10.36-28.46-15-28-4.72.47-8.88,13.66-9,32"/>
+      <ellipse class="cls-2" cx="95" cy="67" rx="13.5" ry="5.5"/>
+      <ellipse class="cls-2" cx="21" cy="73" rx="13.5" ry="5.5"/>
+      <circle class="cls-4" cx="60.5" cy="100.5" r="4"/>
+    </g>
   </g>
 </svg>

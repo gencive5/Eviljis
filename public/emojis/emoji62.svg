@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #c8084c;
+        fill: none;
+        stroke: #4420a1;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
       }
 
       .cls-2 {
-        fill: #f374f4;
+        fill: #232321;
       }
 
       .cls-3 {
-        stroke: #2acbbe;
-      }
-
-      .cls-3, .cls-4 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #e3fffe;
       }
 
       .cls-4 {
-        stroke: #3cf1a8;
+        fill: #4420a1;
       }
 
       .cls-5 {
-        fill: #0f0f0f;
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <path class="cls-2" d="M31.01,58.05c4.31-.85,8.45-2.48,12.69-3.64,5.16-1.42,10.53-2.49,15.9-1.84,3.38.41,6.6,1.56,9.93,2.27,4.07.86,8.23,1.45,12.4,1.36,6.72-.15,16.29-2.24,19.08-9.21,2.03-5.08.67-10.51-3.04-14.41-4.05-4.26-9.19-5.38-14.87-4.21-1.52.31-3.02.75-4.49,1.25-5.66,1.93-11.25,4.06-17.28,4.42s-11.69-2.09-17.47-3.49c-4.28-1.04-8.75-1.49-13.09-.78-2.83.47-5.61,1.44-7.97,3.09-4.59,3.2-6.39,8.62-6.76,14-.2,3.01.08,6.28,2.01,8.6,1.19,1.42,2.91,2.33,4.72,2.77s3.69.43,5.53.23c.91-.1,1.82-.24,2.71-.42Z"/>
-    <circle class="cls-3" cx="59" cy="59" r="57.5"/>
-    <circle class="cls-5" cx="37.75" cy="40.75" r="4.75"/>
-    <circle class="cls-5" cx="86.26" cy="39.62" r="4.75"/>
-    <ellipse class="cls-1" cx="54" cy="86" rx="9" ry="7"/>
-    <line class="cls-4" x1="109" y1="56" x2="81.51" y2="79.98"/>
-    <line class="cls-4" x1="84.45" y1="67.99" x2="92.5" y2="82.5"/>
-    <line class="cls-4" x1="91.23" y1="61.36" x2="99.28" y2="75.87"/>
-    <line class="cls-4" x1="98.23" y1="56.36" x2="106.28" y2="70.87"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-4" d="M28.5,52l-9-18,13,7,9-16v16.9l13.5-13.62-7.3,23.71s-11.2-8-19.2,0Z"/>
+      <path class="cls-4" d="M69.5,50.7l-9-18,13,7,9-16v16.9l13.5-13.62-7.3,23.71s-11.2-8-19.2,0Z"/>
+      <line class="cls-1" x1="31.5" y1="59.5" x2="20.5" y2="65.5"/>
+      <line class="cls-1" x1="37.57" y1="62.55" x2="34.03" y2="74.57"/>
+      <line class="cls-1" x1="49.8" y1="70.06" x2="43.8" y2="59.06"/>
+      <line class="cls-1" x1="75.3" y1="56.56" x2="64.3" y2="62.56"/>
+      <line class="cls-1" x1="80.57" y1="59.55" x2="77.03" y2="71.57"/>
+      <line class="cls-1" x1="93.8" y1="67.06" x2="87.8" y2="56.06"/>
+      <circle class="cls-2" cx="37.75" cy="53.75" r="10.75"/>
+      <circle class="cls-2" cx="44.02" cy="101.45" r="3.52"/>
+      <circle class="cls-2" cx="79.5" cy="53.56" r="10.75"/>
+      <circle class="cls-3" cx="85.54" cy="49.93" r="2.43"/>
+      <circle class="cls-3" cx="31.9" cy="50.07" r="2.43"/>
+      <circle class="cls-3" cx="32.24" cy="55.92" r="1.58"/>
+      <circle class="cls-3" cx="86.1" cy="54.78" r="1.58"/>
+    </g>
   </g>
 </svg>

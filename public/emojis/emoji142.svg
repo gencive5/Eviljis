@@ -3,43 +3,68 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #2448ac;
+        stroke: #ff5793;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
       }
 
       .cls-2 {
-        fill: #5aae97;
+        stroke: #4420a1;
       }
 
       .cls-3 {
-        fill: #adf46f;
+        fill: #ff7dd7;
       }
 
       .cls-4 {
-        fill: #ffcb48;
+        fill: #d0bdff;
       }
 
       .cls-5 {
-        fill: #b9e34c;
+        fill: #232321;
       }
 
       .cls-6 {
-        fill: #69c6c5;
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
-    <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-    <circle class="cls-6" cx="59.25" cy="57.75" r="52.75"/>
-    <ellipse class="cls-5" cx="40.5" cy="50.5" rx="15" ry="3"/>
-    <ellipse class="cls-5" cx="88.5" cy="52.5" rx="15" ry="3"/>
-    <ellipse class="cls-2" cx="41.5" cy="46.5" rx="15" ry="3"/>
-    <ellipse class="cls-2" cx="88.5" cy="49.5" rx="15" ry="3"/>
-    <ellipse class="cls-1" cx="28" cy="30" rx="2.5" ry="5.5" transform="translate(-8.32 10.91) rotate(-19.25)"/>
-    <ellipse class="cls-1" cx="39.26" cy="31.45" rx="2.5" ry="6.86" transform="translate(-8.17 14.7) rotate(-19.25)"/>
-    <ellipse class="cls-1" cx="97.21" cy="65.33" rx="2.5" ry="8.49" transform="translate(-19.64 57.36) rotate(-30)"/>
-    <ellipse class="cls-1" cx="20.71" cy="57.73" rx="8.49" ry="2.5" transform="translate(-29.95 23.15) rotate(-35.95)"/>
-    <ellipse class="cls-1" cx="88.71" cy="33.73" rx="8.49" ry="2.5" transform="translate(-2.91 58.5) rotate(-35.95)"/>
-    <ellipse class="cls-1" cx="95.71" cy="37.73" rx="8.49" ry="2.5" transform="translate(-3.92 63.37) rotate(-35.95)"/>
-    <ellipse class="cls-4" cx="55" cy="82" rx="24.5" ry="9.5"/>
+  <g id="stylo_emojis">
+    <g>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-5" cx="31.5" cy="19.5" r="7"/>
+      <circle class="cls-5" cx="82.5" cy="16.5" r="7"/>
+      <path class="cls-2" d="M41.5,103.5s16,11,30-3"/>
+      <path class="cls-3" d="M107.18,58.87c0,14.68-3.83,27.97-10.01,37.63,9.95-6.15,16.99-21.2,16.99-38.8,0-19.14-8.31-35.25-19.65-40.2,7.74,9.8,12.68,24.69,12.68,41.37Z"/>
+      <path class="cls-3" d="M7.45,57.07c0-14.68,3.83-27.97,10.01-37.63C7.52,25.6.48,40.65.48,58.25c0,19.14,8.31,35.25,19.65,40.2-7.74-9.8-12.68-24.69-12.68-41.37Z"/>
+      <line class="cls-1" x1="19.29" y1="22.5" x2="12.5" y2="38.5"/>
+      <line class="cls-1" x1="22.7" y1="23.95" x2="15.91" y2="39.95"/>
+      <line class="cls-1" x1="25.7" y1="26.95" x2="18.91" y2="42.95"/>
+      <line class="cls-1" x1="29.7" y1="28.95" x2="22.91" y2="44.95"/>
+      <line class="cls-1" x1="33.7" y1="30.95" x2="26.91" y2="46.95"/>
+      <line class="cls-1" x1="10.75" y1="58.06" x2="28.5" y2="95.5"/>
+      <line class="cls-1" x1="15.22" y1="56.78" x2="30.88" y2="89.84"/>
+      <line class="cls-1" x1="22.31" y1="59.31" x2="33.84" y2="83.64"/>
+      <line class="cls-1" x1="25.15" y1="55.85" x2="35.78" y2="78.28"/>
+      <line class="cls-1" x1="29.69" y1="51.9" x2="40.33" y2="74.33"/>
+      <line class="cls-1" x1="35.72" y1="52.28" x2="43.33" y2="68.33"/>
+      <ellipse class="cls-6" cx="24.5" cy="48.5" rx="19" ry="15"/>
+      <line class="cls-1" x1="91.71" y1="21.5" x2="98.5" y2="37.5"/>
+      <line class="cls-1" x1="88.3" y1="22.95" x2="95.09" y2="38.95"/>
+      <line class="cls-1" x1="85.3" y1="25.95" x2="92.09" y2="41.95"/>
+      <line class="cls-1" x1="81.3" y1="27.95" x2="88.09" y2="43.95"/>
+      <line class="cls-1" x1="77.3" y1="29.95" x2="84.09" y2="45.95"/>
+      <line class="cls-1" x1="100.25" y1="57.06" x2="82.5" y2="94.5"/>
+      <line class="cls-1" x1="95.78" y1="55.78" x2="80.12" y2="88.84"/>
+      <line class="cls-1" x1="88.69" y1="58.31" x2="77.16" y2="82.64"/>
+      <line class="cls-1" x1="85.85" y1="54.85" x2="75.22" y2="77.28"/>
+      <line class="cls-1" x1="81.31" y1="50.9" x2="70.67" y2="73.33"/>
+      <line class="cls-1" x1="75.28" y1="51.28" x2="67.67" y2="67.33"/>
+      <ellipse class="cls-6" cx="86.5" cy="47.5" rx="19" ry="15"/>
+    </g>
   </g>
 </svg>

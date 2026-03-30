@@ -1,50 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #2d25a7;
       }
 
       .cls-2 {
-        stroke: #8cdad5;
-        stroke-width: 3px;
-      }
-
-      .cls-2, .cls-3, .cls-4 {
-        fill: none;
-        stroke-miterlimit: 10;
+        fill: #5d72f8;
       }
 
       .cls-3 {
-        stroke: #bb003f;
-      }
-
-      .cls-3, .cls-4 {
-        stroke-width: 4px;
-      }
-
-      .cls-5 {
-        fill: #232321;
-      }
-
-      .cls-6 {
-        fill: #0dcbe4;
+        fill: #38f2a9;
       }
 
       .cls-4 {
-        stroke: #232321;
+        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-6" cx="59.5" cy="58.5" r="57.5"/>
-    <path class="cls-1" d="M112.44,59.03c-18.84,9.25-40.25,4.23-47.83-11.2-6.95-14.15.15-32.13,15.89-42.16-6.65-2.68-13.9-4.17-21.51-4.17-11.17,0-21.6,3.2-30.42,8.71,17.85,9.54,26.32,28.91,18.94,43.94-7.27,14.81-27.28,20.02-45.53,12.25,3.63,28.26,27.76,50.1,57.01,50.1,31.76,0,57.5-25.74,57.5-57.5,0-.73-.03-1.46-.06-2.19-1.28.79-2.61,1.54-4,2.22Z"/>
-    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
-    <ellipse class="cls-5" cx="77.04" cy="43.29" rx="4.96" ry="6.79"/>
-    <ellipse class="cls-5" cx="36.96" cy="44.27" rx="4.96" ry="6.79"/>
-    <line class="cls-4" x1="33" y1="86" x2="91" y2="86"/>
-    <polyline class="cls-3" points="61 86 72.08 98.69 70.89 106"/>
-    <line class="cls-3" x1="80" y1="101" x2="72.08" y2="98.69"/>
+  <g id="aquarelle_emojis">
+    <g>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-3" cx="73" cy="43" rx="25.5" ry="17.5"/>
+      <ellipse class="cls-1" cx="86.5" cy="45" rx="4.5" ry="6"/>
+      <ellipse class="cls-1" cx="63" cy="42.5" rx="5.5" ry="7"/>
+      <ellipse class="cls-4" cx="45.5" cy="86.5" rx="16" ry="9"/>
+    </g>
   </g>
 </svg>

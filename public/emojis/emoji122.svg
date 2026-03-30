@@ -3,36 +3,39 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #5c81e7;
+        stroke: #ffbd6e;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
       }
 
       .cls-2 {
-        fill: #9fd0f8;
+        stroke: #ff8e50;
       }
 
       .cls-3 {
-        fill: none;
-        stroke: #421f94;
-        stroke-miterlimit: 10;
-        stroke-width: 5px;
+        fill: #232321;
       }
 
       .cls-4 {
-        fill: #e6a1a2;
-      }
-
-      .cls-5 {
-        fill: #ed5d6f;
+        fill: #8d9efc;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
-    <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-    <circle class="cls-2" cx="55" cy="56.75" r="53.25"/>
-    <circle class="cls-5" cx="45" cy="30" r="5.5"/>
-    <circle class="cls-5" cx="84" cy="35" r="5.5"/>
-    <ellipse class="cls-4" cx="34.76" cy="54.72" rx="21.14" ry="10.57" transform="translate(-14.06 12.06) rotate(-16.43)"/>
-    <ellipse class="cls-4" cx="84.31" cy="58.88" rx="21.14" ry="10.57" transform="translate(-13.21 26.25) rotate(-16.43)"/>
-    <line class="cls-3" x1="53" y1="75" x2="62" y2="72"/>
+  <g id="stylo_emojis">
+    <g>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-3" cx="49.75" cy="48.75" r="6.25"/>
+      <circle class="cls-3" cx="67.93" cy="51.1" r="6.25"/>
+      <path class="cls-2" d="M39.5,80.5c2.53,6.67,8.95,11.07,16,11,7.31-.07,13.81-4.94,16-12"/>
+      <path class="cls-2" d="M45.25,18.79c-6.5-2.93-14.16-1.5-19.09,3.54-5.11,5.22-6.28,13.26-2.83,19.8"/>
+      <path class="cls-2" d="M100.73,48.21c2.93-6.5,1.5-14.16-3.54-19.09-5.22-5.11-13.26-6.28-19.8-2.83"/>
+      <path class="cls-1" d="M21,87c1.7,2.2,13.47,16.96,34,18,17.48.89,29.38-8.77,32-11"/>
+      <path class="cls-1" d="M57.24,8.85c-2.76-.36-21.52-2.47-36.77,11.31-12.98,11.73-14.58,26.98-14.85,30.41"/>
+      <path class="cls-1" d="M110.11,61.08c.36-2.76,2.47-21.52-11.31-36.77-11.73-12.98-26.98-14.58-30.41-14.85"/>
+    </g>
   </g>
 </svg>

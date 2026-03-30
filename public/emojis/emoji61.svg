@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 116.45">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #18d4e8;
       }
 
       .cls-2 {
-        stroke: #07a99b;
+        fill: #ff7dd7;
       }
 
-      .cls-2, .cls-3 {
+      .cls-3, .cls-4 {
         fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #4420a1;
       }
 
       .cls-4 {
-        fill: #f05af4;
-      }
-
-      .cls-3 {
-        stroke: #31bfb1;
+        stroke: #4420a1;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
-    <circle class="cls-2" cx="59" cy="59" r="57.5"/>
+  <g id="feutre_emojis">
     <g>
-      <circle class="cls-1" cx="38.5" cy="49.5" r="4.5"/>
-      <path d="M38.5,47c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5M38.5,43c-3.59,0-6.5,2.91-6.5,6.5s2.91,6.5,6.5,6.5,6.5-2.91,6.5-6.5-2.91-6.5-6.5-6.5h0Z"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-4" d="M21.5,57.5c-8.53-5.41-10.25-16.12-6-22,4.53-6.28,16.34-7.74,24,0"/>
+      <path class="cls-4" d="M91.34,58.52c8.53-5.41,10.25-16.12,6-22-4.53-6.28-16.34-7.74-24,0"/>
+      <circle class="cls-1" cx="35" cy="51" r="8.5"/>
+      <circle class="cls-1" cx="78" cy="49" r="8.5"/>
+      <g>
+        <rect class="cls-3" x="3.32" y="75.08" width="50.92" height="25.9" transform="translate(-63.71 92.88) rotate(-74.9)"/>
+        <polygon class="cls-5" points="42.07 88.48 38.74 75.97 35.41 63.45 26.24 72.59 17.06 81.74 23.43 83.45 20.59 93.99 32.86 97.3 35.7 86.77 42.07 88.48"/>
+      </g>
+      <g>
+        <rect class="cls-3" x="69.66" y="63.04" width="25.9" height="50.92" transform="translate(-20.2 24.58) rotate(-15.1)"/>
+        <polygon class="cls-5" points="69.32 88.95 72.65 76.44 75.97 63.92 85.15 73.06 94.32 82.2 87.95 83.92 90.79 94.45 78.52 97.77 75.68 87.23 69.32 88.95"/>
+      </g>
     </g>
-    <g>
-      <circle class="cls-1" cx="80.5" cy="49.5" r="4.5"/>
-      <path d="M80.5,47c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5M80.5,43c-3.59,0-6.5,2.91-6.5,6.5s2.91,6.5,6.5,6.5,6.5-2.91,6.5-6.5-2.91-6.5-6.5-6.5h0Z"/>
-    </g>
-    <circle cx="24" cy="31" r="4"/>
-    <circle cx="94" cy="31" r="4"/>
-    <ellipse class="cls-4" cx="19.5" cy="62.5" rx="8.5" ry="16.5" transform="translate(-9.64 3.87) rotate(-9.1)"/>
-    <ellipse class="cls-4" cx="99.28" cy="65.11" rx="16.5" ry="8.5" transform="translate(19.28 152.83) rotate(-80.9)"/>
-    <rect class="cls-3" x="37.5" y="74.5" width="46" height="21" rx="10.5" ry="10.5"/>
-    <line class="cls-3" x1="37.5" y1="85" x2="83.5" y2="85"/>
-    <line class="cls-3" x1="49.81" y1="74.5" x2="49.81" y2="95.5"/>
-    <line class="cls-3" x1="60.5" y1="74.5" x2="60.5" y2="95.5"/>
-    <line class="cls-3" x1="73" y1="74.5" x2="73" y2="95.5"/>
   </g>
 </svg>

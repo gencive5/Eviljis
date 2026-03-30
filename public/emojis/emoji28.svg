@@ -1,46 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        stroke: #80e95c;
-        stroke-width: 6px;
+        stroke: #e92047;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1, .cls-2, .cls-3, .cls-4 {
         fill: none;
         stroke-miterlimit: 10;
       }
 
-      .cls-3 {
-        fill: #fd3da4;
+      .cls-1, .cls-3 {
+        stroke-width: 6px;
       }
 
-      .cls-4 {
-        fill: #80e95c;
+      .cls-5 {
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #fd3da4;
+        stroke: #38f2a9;
         stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #d0bdff;
+      }
+
+      .cls-4 {
+        stroke: #5d72f8;
+        stroke-width: 5px;
       }
     </style>
   </defs>
   <g id="feutre_emojis">
-    <circle class="cls-2" cx="59.5" cy="59.5" r="57.5"/>
-    <path class="cls-1" d="M28.12,22.5c-12.75,14.46-16.15,34.93-8.77,52,8.69,20.1,30.77,31.86,51.64,27,21-4.89,38.49-26.07,35.08-47-2.6-15.94-16.22-24.96-19.49-27"/>
-    <circle class="cls-4" cx="46" cy="50" r="6.5"/>
-    <circle class="cls-4" cx="70" cy="49" r="6.5"/>
-    <circle class="cls-3" cx="38.14" cy="71.37" r="2.87"/>
-    <circle class="cls-3" cx="30.27" cy="62.01" r="2.87"/>
-    <circle class="cls-3" cx="47.27" cy="67.01" r="2.87"/>
-    <circle class="cls-3" cx="29.27" cy="48.01" r="2.87"/>
-    <circle class="cls-3" cx="77.27" cy="60.01" r="2.87"/>
-    <circle class="cls-3" cx="86.27" cy="50.01" r="2.87"/>
-    <circle class="cls-3" cx="84.27" cy="67.01" r="2.87"/>
-    <circle class="cls-3" cx="92.27" cy="63.01" r="2.87"/>
-    <circle class="cls-3" cx="96.27" cy="74.01" r="2.87"/>
-    <circle class="cls-3" cx="7.63" cy="55.01" r="2.87"/>
-    <circle class="cls-3" cx="10.63" cy="42.01" r="2.87"/>
+    <g>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <line class="cls-2" x1="36.34" y1="4.56" x2="33.41" y2="26.57"/>
+      <line class="cls-2" x1="51.33" y1="1.52" x2="48.42" y2="29.53"/>
+      <line class="cls-2" x1="66.33" y1="1.47" x2="63.43" y2="32.48"/>
+      <line class="cls-2" x1="81.35" y1="6.43" x2="80.44" y2="36.43"/>
+      <line class="cls-2" x1="99.39" y1="19.38" x2="99.43" y2="34.38"/>
+      <line class="cls-2" x1="106.42" y1="30.35" x2="98.62" y2="97.38"/>
+      <line class="cls-2" x1="16.38" y1="17.62" x2="7.54" y2="70.65"/>
+      <line class="cls-3" x1="21.46" y1="43.61" x2="18.54" y2="70.62"/>
+      <line class="cls-3" x1="32.48" y1="49.57" x2="30.54" y2="70.58"/>
+      <line class="cls-3" x1="45.48" y1="50.54" x2="43.54" y2="72.54"/>
+      <line class="cls-3" x1="67.49" y1="54.47" x2="65.57" y2="81.48"/>
+      <line class="cls-3" x1="78.49" y1="55.44" x2="77.57" y2="79.44"/>
+      <line class="cls-3" x1="88.49" y1="55.41" x2="88.56" y2="77.41"/>
+      <path class="cls-1" d="M22.42,30.6c2.96,2.15,7.67,5.04,14.02,6.96,6.58,1.99,12.29,2.14,16.01,1.95"/>
+      <path class="cls-1" d="M69.46,42.46c3.99.9,8.7,1.66,14.01,1.96,3.63.2,6.98.16,10-.03"/>
+      <path class="cls-4" d="M18.57,79.62c8.68,3.58,19.44,7.24,32.03,9.9,12.05,2.55,22.92,3.6,32.01,3.9"/>
+    </g>
   </g>
 </svg>
