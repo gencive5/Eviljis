@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import './CircleGrid.css';
 
 const CircleGrid = ({
-  minCircleSize = 60,
-  maxCircleSize = 60,
+  minCircleSize = 65,
+  maxCircleSize = 65,
   mobileMinCircleSize = 30,
   mobileMaxCircleSize = 30,
   gapRatio = 0.2,
@@ -97,7 +97,7 @@ const CircleGrid = ({
     const circleNumber = parseInt(id.substring(1));
     
     // Cycle through SVGs (adjust 50 to the number of unique SVGs you have)
-    const svgIndex = ((circleNumber - 1) % 155) + 1;
+    const svgIndex = ((circleNumber - 1) % 153) + 1;
     return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
   };
 
