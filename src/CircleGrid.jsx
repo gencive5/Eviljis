@@ -2,15 +2,15 @@ import React, { useEffect, useState, useRef } from 'react';
 import './CircleGrid.css';
 
 const CircleGrid = ({
-  minCircleSize = 45,
-  maxCircleSize = 45,
-  mobileMinCircleSize = 20,
-  mobileMaxCircleSize = 25,
+  minCircleSize = 60,
+  maxCircleSize = 60,
+  mobileMinCircleSize = 30,
+  mobileMaxCircleSize = 30,
   gapRatio = 0.2,
   circleStyle = {},
   customCircles = {},
   lingerMs = 30000,
-  modalContent = "Inspired from Betelgeuse from the portfolio Cinétique III, 1959 - Victor Vasarely",
+  modalContent = "We are the jijis!!:! touch us and see what happens",
   svgFolder = '/emojis/', // Path to your SVG folder
   svgNamePattern = 'emoji', // Pattern for SVG names (emoji1.svg, emoji2.svg, etc.)
 }) => {
