@@ -3,47 +3,27 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ff8e50;
+        fill: #d0bdff;
       }
 
       .cls-2 {
-        stroke: #ffbd6e;
+        fill: none;
+        stroke: #ff7dd7;
+        stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
-      .cls-2, .cls-3 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
       .cls-3 {
-        stroke: #2d25a7;
-        stroke-width: 5px;
-      }
-
-      .cls-4 {
-        fill: #2d25a7;
+        fill: #4420a1;
       }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="all">
     <g>
       <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <line class="cls-2" x1="46" y1="30" x2="47" y2="13"/>
-      <line class="cls-2" x1="65" y1="31" x2="70" y2="15"/>
-      <line class="cls-2" x1="83" y1="36" x2="94" y2="29"/>
-      <line class="cls-2" x1="92" y1="53" x2="106" y2="51"/>
-      <line class="cls-2" x1="87" y1="70" x2="103" y2="77"/>
-      <line class="cls-2" x1="82" y1="83" x2="90" y2="96"/>
-      <line class="cls-2" x1="66" y1="91" x2="68" y2="103"/>
-      <line class="cls-2" x1="49" y1="93" x2="42" y2="106"/>
-      <line class="cls-2" x1="38" y1="86" x2="25" y2="92"/>
-      <line class="cls-2" x1="27" y1="71" x2="14" y2="73"/>
-      <line class="cls-2" x1="24" y1="53" x2="11" y2="52"/>
-      <line class="cls-2" x1="35" y1="38" x2="24" y2="26"/>
-      <line class="cls-3" x1="51" y1="77" x2="70" y2="77"/>
-      <circle class="cls-4" cx="48.75" cy="50.75" r="3.75"/>
-      <circle class="cls-4" cx="68.16" cy="51.18" r="3.75"/>
+      <path class="cls-2" d="M20.37,79.35c0,9.5,8-23.66,18.67.62,10.67,27.38,24,11.41,34.67,1.16,10.67,17.52,18.67-40.59,18.67.62"/>
+      <circle class="cls-3" cx="28.28" cy="26.23" r="6.5"/>
+      <circle class="cls-3" cx="73.28" cy="13.23" r="6.5"/>
     </g>
   </g>
 </svg>

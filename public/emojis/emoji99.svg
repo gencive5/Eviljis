@@ -3,58 +3,37 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #4420a1;
+        fill: #ffbd6e;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4 {
+      .cls-2 {
+        stroke: #2d25a7;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
         fill: none;
         stroke-miterlimit: 10;
       }
 
-      .cls-1, .cls-4 {
-        stroke-width: 3px;
-      }
-
-      .cls-2 {
-        stroke: #38f2a9;
-      }
-
-      .cls-2, .cls-3 {
-        stroke-width: 5px;
-      }
-
       .cls-3 {
-        stroke: #2d25a7;
-      }
-
-      .cls-5 {
-        fill: #8d9efc;
-      }
-
-      .cls-6 {
-        fill: #61d9d8;
+        stroke: #ff7dd7;
+        stroke-width: 7px;
       }
 
       .cls-4 {
-        stroke: #5d72f8;
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
-      <polygon class="cls-5" points="16.5 57.5 49.5 52.5 43.5 43.5 3.5 45.5 16.5 57.5 16.5 57.5"/>
-      <polygon class="cls-5" points="68.5 53.5 96.5 50.5 102.5 35.5 71.03 42.45 67.5 52.5 68.5 53.5"/>
-      <polyline class="cls-4" points="17.41 57.5 4 45 43 43 51 52"/>
-      <polyline class="cls-4" points="95.73 50.39 103.27 35.21 70.73 42.51 66.66 53.05"/>
-      <line class="cls-3" x1="5" y1="38" x2="43" y2="34.19"/>
-      <line class="cls-2" x1="11.49" y1="27.03" x2="26.5" y2="26.5"/>
-      <line class="cls-2" x1="77.72" y1="20.96" x2="92.73" y2="20.43"/>
-      <line class="cls-2" x1="11.72" y1="69.96" x2="26.73" y2="69.43"/>
-      <line class="cls-2" x1="87.72" y1="61.96" x2="102.73" y2="61.43"/>
-      <line class="cls-2" x1="46.72" y1="83.96" x2="71.5" y2="83.5"/>
-      <line class="cls-1" x1="15" y1="93" x2="105" y2="86"/>
-      <line class="cls-3" x1="65.72" y1="33.16" x2="103.72" y2="29.35"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M22.5,19.5c15.34-8.38,20.89-8.09,23-6,4.35,4.3-5.57,16.49,0,25,4.61,7.04,14.57,3.52,18,10,4.42,8.35-9.14,19.87-5,26,4.02,5.94,18.98-1.6,25,5,4.31,4.72,1.69,14.12-1,21"/>
+      <path class="cls-3" d="M57,6c5.04-.02,10.33.74,12,4,2.92,5.72-7.38,15.09-5,18,2.83,3.46,18.95-7.89,24-3,2.56,2.48.04,6.94,3,10,2.95,3.05,8.83,2.11,13,1"/>
+      <path class="cls-2" d="M27.5,87.5s5,6,18,5"/>
+      <circle class="cls-1" cx="79.68" cy="47.83" r="6.5"/>
+      <circle class="cls-1" cx="30.68" cy="46.83" r="6.5"/>
     </g>
   </g>
 </svg>

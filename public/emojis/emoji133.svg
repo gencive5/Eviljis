@@ -3,44 +3,24 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #18d4e8;
+        fill: #ffbd6e;
       }
 
       .cls-2 {
-        stroke: #ff7dd7;
-        stroke-width: 9px;
-      }
-
-      .cls-2, .cls-3, .cls-4 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        stroke: #232321;
-      }
-
-      .cls-3, .cls-4 {
-        stroke-width: 4px;
-      }
-
-      .cls-5 {
         fill: #4420a1;
       }
 
-      .cls-4 {
-        stroke: #4420a1;
+      .cls-3 {
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M12,61s29,5,29,34"/>
-      <line class="cls-3" x1="59" y1="77" x2="113.87" y2="68.89"/>
-      <line class="cls-4" x1="12.07" y1="28.63" x2="41.26" y2="26.2"/>
-      <circle class="cls-5" cx="79.5" cy="29.5" r="11"/>
-      <circle class="cls-5" cx="28.67" cy="38.88" r="5.17"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <polygon class="cls-1" points="57.5 50.5 64.66 70.07 89.96 65.12 71.82 79.74 89.96 94.36 64.66 89.42 57.5 108.99 50.34 89.42 25.04 94.36 43.18 79.74 25.04 65.12 50.34 70.07 57.5 50.5"/>
+      <circle class="cls-3" cx="88.15" cy="35.03" r="6.5"/>
+      <circle class="cls-3" cx="26.15" cy="35.03" r="6.5"/>
     </g>
   </g>
 </svg>

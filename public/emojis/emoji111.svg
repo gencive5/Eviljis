@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.69 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #079e8b;
+        fill: #ff8e50;
       }
 
       .cls-2 {
-        stroke: #2d25a7;
-      }
-
-      .cls-2, .cls-3 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
-      }
-
-      .cls-4 {
         fill: #8d9efc;
       }
 
-      .cls-5 {
-        fill: #38f2a9;
+      .cls-3 {
+        fill: #61d9d8;
       }
 
-      .cls-3 {
-        stroke: #5d72f8;
+      .cls-4 {
+        fill: #4420a1;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
-      <line class="cls-2" x1="37" y1="19" x2="38" y2="65"/>
-      <line class="cls-2" x1="77.98" y1="19.86" x2="78.98" y2="65.86"/>
-      <polygon class="cls-1" points="27.16 42.31 20.11 38.63 14.44 44.2 15.76 36.36 8.71 32.68 16.57 31.52 17.89 23.68 21.43 30.8 29.29 29.63 23.62 35.19 27.16 42.31"/>
-      <polygon class="cls-1" points="100.63 40.23 93.59 36.56 87.92 42.12 89.23 34.28 82.19 30.61 90.05 29.44 91.37 21.6 94.91 28.72 102.77 27.55 97.1 33.12 100.63 40.23"/>
-      <polygon class="cls-4" points="29.49 76.51 18.65 70.35 9.45 78.76 11.96 66.55 1.12 60.39 13.51 59 16.01 46.8 21.16 58.15 33.55 56.76 24.34 65.16 29.49 76.51"/>
-      <polygon class="cls-4" points="111.63 73.6 100.8 67.44 91.59 75.84 94.1 63.63 83.27 57.48 95.65 56.09 98.16 43.88 103.31 55.23 115.69 53.84 106.49 62.25 111.63 73.6"/>
-      <line class="cls-3" x1="37.5" y1="90.5" x2="80.5" y2="88.5"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-3" cx="82.5" cy="55" rx="16" ry="6.5"/>
+      <ellipse class="cls-3" cx="38.5" cy="49" rx="16" ry="6.5"/>
+      <rect class="cls-2" x="41.5" y="81.5" width="36" height="6"/>
+      <circle class="cls-1" cx="82.28" cy="55.23" r="6.5"/>
+      <circle class="cls-1" cx="36.28" cy="49.23" r="6.5"/>
     </g>
   </g>
 </svg>

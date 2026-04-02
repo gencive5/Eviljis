@@ -3,39 +3,48 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #2d25a7;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #8d9efc;
-        stroke-width: 8px;
+        stroke: #38f2a9;
       }
 
       .cls-2, .cls-3 {
         fill: none;
         stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        stroke: #f45b49;
-        stroke-width: 3px;
+        stroke-width: 4px;
       }
 
       .cls-4 {
-        fill: #e92047;
+        fill: #232321;
+      }
+
+      .cls-5 {
+        fill: #61d9d8;
+      }
+
+      .cls-3 {
+        stroke: #8d9efc;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M16.5,37.5c2.17,8.09,9.18,13.76,17,14,6.41.19,12.53-3.29,16-9"/>
-      <path class="cls-2" d="M72.9,40.69c2.17,8.09,9.18,13.76,17,14,6.41.19,12.53-3.29,16-9"/>
-      <path class="cls-3" d="M96.88,27.67c-2.32-4.94-7.47-7.77-12.52-7.02-4.13.62-7.66,3.56-9.22,7.62"/>
-      <path class="cls-3" d="M43.54,26.65c-1.53-5.24-6.19-8.83-11.29-8.86-4.18-.03-8.11,2.33-10.29,6.11"/>
-      <path class="cls-3" d="M46.29,93.75c2.32,4.94,7.47,7.77,12.52,7.02,4.13-.62,7.66-3.56,9.22-7.62"/>
-      <path class="cls-4" d="M83,81l9-15s6-10,11-6.8c5,3.2,0,9.8,0,9.8,0,0,6-2,9,2,0,0,3,6-4,8s-25,2-25,2Z"/>
-      <path class="cls-4" d="M36.32,76.25l-17.44-1.38s-11.63-.92-10.99-6.82c.64-5.9,8.77-4.36,8.77-4.36,0,0-4.46-4.48-2.22-8.95,0,0,4.04-5.36,8.94.02s12.93,21.49,12.93,21.49Z"/>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <rect class="cls-1" x="46.5" y="80.5" width="24" height="17" rx="8.5" ry="8.5" transform="translate(-14.82 11.75) rotate(-10.19)"/>
+      <line class="cls-3" x1="51.5" y1="4.5" x2="52.5" y2="47.5"/>
+      <line class="cls-3" x1="63" y1="4" x2="63" y2="30"/>
+      <line class="cls-3" x1="40" y1="5" x2="40" y2="41"/>
+      <line class="cls-3" x1="26" y1="12" x2="26" y2="37"/>
+      <line class="cls-3" x1="16" y1="23" x2="17" y2="44"/>
+      <line class="cls-3" x1="7" y1="37" x2="7" y2="62"/>
+      <line class="cls-2" x1="107" y1="36" x2="78" y2="78"/>
+      <line class="cls-2" x1="111" y1="44" x2="70.18" y2="110.33"/>
+      <line class="cls-2" x1="113" y1="55" x2="81.18" y2="107.33"/>
+      <line class="cls-2" x1="111" y1="73" x2="94.18" y2="98.33"/>
+      <circle class="cls-4" cx="77.68" cy="20.83" r="6.5"/>
+      <circle class="cls-4" cx="26.68" cy="51.83" r="6.5"/>
     </g>
   </g>
 </svg>

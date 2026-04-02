@@ -3,29 +3,19 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #38f2a9;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-1, .cls-3 {
-        stroke: #ff8e50;
-      }
-
-      .cls-4 {
-        fill: #ff7dd7;
+        fill: #ffbd6e;
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #e92047;
+        fill: #ff7dd7;
       }
 
       .cls-3 {
-        fill: #18d4e8;
+        fill: #f45b49;
+      }
+
+      .cls-4 {
+        fill: #ff5793;
       }
 
       .cls-5 {
@@ -33,20 +23,26 @@
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
       <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <rect class="cls-1" x="13.86" y="44.91" width="31" height="10" transform="translate(-6.87 4.74) rotate(-8.26)"/>
-      <rect class="cls-3" x="68.14" y="35.09" width="31" height="10" transform="translate(-4.89 12.44) rotate(-8.26)"/>
-      <line class="cls-2" x1="17.69" y1="67" x2="45" y2="81"/>
-      <line class="cls-2" x1="10.85" y1="72.39" x2="38.15" y2="86.39"/>
-      <line class="cls-2" x1="16.5" y1="88.05" x2="30.5" y2="60.74"/>
-      <line class="cls-2" x1="26.5" y1="90.05" x2="40.5" y2="62.74"/>
-      <line class="cls-2" x1="82.27" y1="55" x2="109.58" y2="69"/>
-      <line class="cls-2" x1="75.42" y1="60.39" x2="102.73" y2="74.39"/>
-      <line class="cls-2" x1="81.08" y1="76.05" x2="95.08" y2="48.74"/>
-      <line class="cls-2" x1="91.08" y1="78.05" x2="105.08" y2="50.74"/>
-      <rect class="cls-5" x="50.3" y="77.09" width="22.2" height="14.5" transform="translate(-11.48 9.7) rotate(-8.26)"/>
+      <path class="cls-5" d="M41.7,83.97c14,13.38,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
+      <path class="cls-2" d="M76.5,83.97c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
+      <path class="cls-2" d="M14.28,86.97c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
+      <path class="cls-2" d="M80.76,11.49c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
+      <path class="cls-2" d="M35.76,12.49c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
+      <path class="cls-2" d="M89.64,57.86c.35,15.45,16.23,16.23,16.23,16.23-.35-15.45-16.23-16.23-16.23-16.23Z"/>
+      <path class="cls-2" d="M25.87,60.86c-15.45.35-16.23,16.23-16.23,16.23,15.45-.35,16.23-16.23,16.23-16.23Z"/>
+      <path class="cls-2" d="M9.39,30.61c.23,9.98,10.47,10.47,10.47,10.47-.23-9.98-10.47-10.47-10.47-10.47Z"/>
+      <path class="cls-2" d="M103.99,29.73c-9.98.23-10.47,10.47-10.47,10.47,9.98-.23,10.47-10.47,10.47-10.47Z"/>
+      <circle class="cls-3" cx="83" cy="67" r="3.5"/>
+      <circle class="cls-3" cx="31" cy="71" r="3.5"/>
+      <circle class="cls-3" cx="18" cy="23" r="3.5"/>
+      <circle class="cls-3" cx="95" cy="21" r="3.5"/>
+      <circle class="cls-1" cx="77.68" cy="48.83" r="6.5"/>
+      <circle class="cls-1" cx="34.68" cy="48.83" r="6.5"/>
+      <circle class="cls-1" cx="77.68" cy="48.83" r="6.5"/>
+      <circle class="cls-1" cx="34.68" cy="48.83" r="6.5"/>
     </g>
   </g>
 </svg>

@@ -3,40 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #ff7dd7;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        fill: #e3fffe;
-        stroke-miterlimit: 10;
-        stroke-width: 5px;
-      }
-
-      .cls-4 {
-        fill: #079e8b;
+        fill: #8d9efc;
       }
 
       .cls-2 {
-        stroke: #e92047;
+        fill: none;
+        stroke: #ff8e50;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-3 {
-        stroke: #ff5793;
+        fill: #f45b49;
       }
 
-      .cls-5 {
-        fill: #2d25a7;
+      .cls-4 {
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-1" cx="61.5" cy="74" rx="34.5" ry="27"/>
-      <ellipse class="cls-3" cx="61" cy="74" rx="24" ry="16"/>
-      <circle class="cls-5" cx="18.5" cy="35.5" r="4"/>
-      <circle class="cls-5" cx="100.5" cy="39.5" r="4"/>
-      <ellipse class="cls-2" cx="61.5" cy="75" rx="11" ry="6.5"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-4" cx="49.27" cy="67.65" r="3.15"/>
+      <circle class="cls-4" cx="33.27" cy="70.59" r="3.15"/>
+      <circle class="cls-4" cx="20.18" cy="66.59" r="3.15"/>
+      <circle class="cls-4" cx="20.18" cy="56.59" r="3.15"/>
+      <circle class="cls-4" cx="101.65" cy="58.59" r="3.15"/>
+      <circle class="cls-4" cx="98.65" cy="67.59" r="3.15"/>
+      <circle class="cls-4" cx="83.65" cy="77.59" r="3.15"/>
+      <circle class="cls-4" cx="71.65" cy="72.59" r="3.15"/>
+      <path class="cls-2" d="M74.8,43.54s11.7-29.15,17.7,1.4"/>
+      <path class="cls-2" d="M31.39,30.99s12.61-21.99,19.61,3.01"/>
+      <circle class="cls-1" cx="36.28" cy="51.23" r="6.5"/>
+      <circle class="cls-1" cx="81.28" cy="58.23" r="6.5"/>
     </g>
   </g>
 </svg>

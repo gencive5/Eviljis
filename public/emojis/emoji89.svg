@@ -7,39 +7,43 @@
       }
 
       .cls-2 {
-        fill: #8d9efc;
+        stroke: #e92047;
       }
 
-      .cls-3 {
-        fill: #5d72f8;
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-4 {
-        fill: #61d9d8;
+        fill: #ff8e50;
+      }
+
+      .cls-3 {
+        stroke: #f45b49;
       }
 
       .cls-5 {
         fill: #38f2a9;
       }
+
+      .cls-6 {
+        fill: #ff5793;
+      }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-5" cx="58" cy="59" r="54.5"/>
-      <rect class="cls-4" x="73" y="32" width="26" height="26"/>
-      <rect class="cls-4" x="25" y="30" width="26" height="26"/>
-      <circle class="cls-1" cx="37.5" cy="43.5" r="4.5"/>
-      <circle class="cls-1" cx="86.5" cy="47.5" r="4.5"/>
-      <rect class="cls-2" x="32" y="27" width="12" height="4"/>
-      <rect class="cls-2" x="31" y="53" width="12" height="4"/>
-      <rect class="cls-2" x="80" y="30" width="12" height="4"/>
-      <rect class="cls-2" x="81" y="57" width="12" height="4"/>
-      <rect class="cls-2" x="18" y="40" width="12" height="4" transform="translate(66 18) rotate(90)"/>
-      <rect class="cls-2" x="46" y="41" width="12" height="4" transform="translate(95 -9) rotate(90)"/>
-      <rect class="cls-2" x="66" y="42" width="12" height="4" transform="translate(116 -28) rotate(90)"/>
-      <rect class="cls-2" x="95" y="43" width="12" height="4" transform="translate(146 -56) rotate(90)"/>
-      <path class="cls-3" d="M30,85.5h55s-6-9-18-10-23-1-37,10Z"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-5" cx="25" cy="52.5" rx="8.5" ry="19" transform="translate(-32.34 62.19) rotate(-74.13)"/>
+      <ellipse class="cls-5" cx="93.12" cy="45.93" rx="19" ry="8.5" transform="translate(-10.58 51.13) rotate(-29.13)"/>
+      <line class="cls-3" x1="14.5" y1="36.5" x2="95.5" y2="29.5"/>
+      <line class="cls-2" x1="21.85" y1="98.43" x2="102.85" y2="91.43"/>
+      <ellipse class="cls-6" cx="101.11" cy="67.07" rx="10.06" ry="4.5" transform="translate(-19.86 57.7) rotate(-29.13)"/>
+      <ellipse class="cls-6" cx="16.35" cy="71.93" rx="4.5" ry="10.06" transform="translate(-57.3 67.98) rotate(-74.13)"/>
+      <circle class="cls-1" cx="81.68" cy="51.83" r="6.5"/>
+      <circle class="cls-1" cx="37.68" cy="55.83" r="6.5"/>
     </g>
   </g>
 </svg>

@@ -3,30 +3,27 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #5d72f8;
+        fill: #18d4e8;
       }
 
       .cls-2 {
-        fill: #7c7b7f;
+        fill: #2d25a7;
       }
 
       .cls-3 {
-        fill: #e3fffe;
-      }
-
-      .cls-4 {
-        fill: #ff5793;
+        fill: none;
+        stroke: #38f2a9;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M63.9,82.12s3.6,7.2-3.6,4.8c-7.2-2.4-10.8-6-10.8-6,0,0,4.8-4.8,12-2.4,0,0,3.06-.14,5.73-.67,2.67-.53,5.07,1.87,1.47,3.07-3.6,1.2-4.8,1.2-4.8,1.2Z"/>
-      <circle class="cls-3" cx="32.57" cy="46.36" r="9.07"/>
-      <circle class="cls-3" cx="80.19" cy="46.36" r="9.07"/>
-      <circle class="cls-1" cx="37.83" cy="47.21" r="9.04"/>
-      <circle class="cls-1" cx="85.23" cy="47.21" r="8.77"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M26.5,26.5s-8,59,42,60"/>
+      <circle class="cls-2" cx="58.28" cy="27.23" r="6.5"/>
+      <circle class="cls-2" cx="81.28" cy="40.23" r="6.5"/>
     </g>
   </g>
 </svg>

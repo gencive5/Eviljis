@@ -2,53 +2,56 @@
 <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
-      .cls-1 {
-        stroke: #ff7dd7;
-        stroke-width: 6px;
-      }
-
       .cls-1, .cls-2 {
         fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
         stroke-miterlimit: 10;
+        stroke-width: 3px;
       }
 
-      .cls-3 {
-        fill: #8d9efc;
-      }
-
-      .cls-2 {
-        stroke: #ff8e50;
-        stroke-width: 7px;
+      .cls-1, .cls-3 {
+        stroke: #2d25a7;
       }
 
       .cls-4 {
-        fill: #ff5793;
+        fill: #ff8e50;
       }
 
       .cls-5 {
-        fill: #4420a1;
+        fill: #ff7dd7;
+      }
+
+      .cls-2 {
+        stroke: #3d2194;
+      }
+
+      .cls-3 {
+        fill: #e3fffe;
+      }
+
+      .cls-6 {
+        fill: #38f2a9;
       }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-3" cx="98" cy="59.5" rx="14.5" ry="12"/>
-      <circle class="cls-5" cx="103.5" cy="59.5" r="9"/>
-      <ellipse class="cls-3" cx="16" cy="55.5" rx="14.5" ry="12"/>
-      <circle class="cls-5" cx="10.5" cy="55.5" r="9"/>
-      <line class="cls-2" x1="23" y1="39" x2="20" y2="17"/>
-      <line class="cls-2" x1="37" y1="38" x2="37" y2="14"/>
-      <line class="cls-2" x1="51" y1="44" x2="50" y2="21"/>
-      <line class="cls-2" x1="68" y1="44" x2="77" y2="23"/>
-      <line class="cls-2" x1="84" y1="40" x2="93" y2="23"/>
-      <line class="cls-2" x1="99" y1="44" x2="105" y2="31"/>
-      <line class="cls-1" x1="20" y1="72" x2="27" y2="97"/>
-      <line class="cls-1" x1="36.5" y1="75.5" x2="40.5" y2="93.5"/>
-      <line class="cls-1" x1="47.5" y1="72.5" x2="56.5" y2="94.5"/>
-      <line class="cls-1" x1="68.5" y1="76.5" x2="64.5" y2="93.5"/>
-      <line class="cls-1" x1="82.5" y1="80.5" x2="71.5" y2="97.5"/>
-      <line class="cls-1" x1="99.5" y1="78.5" x2="86.5" y2="100.5"/>
+      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-4" cx="30.77" cy="43.22" rx="9.82" ry="17.5" transform="translate(-22.25 45.07) rotate(-56.56)"/>
+      <ellipse class="cls-4" cx="84.52" cy="43.27" rx="17.5" ry="9.82" transform="translate(-9.85 53.74) rotate(-33.44)"/>
+      <circle class="cls-5" cx="101.18" cy="62.33" r="6"/>
+      <circle class="cls-5" cx="13.18" cy="60.33" r="6"/>
+      <path class="cls-3" d="M55,103c13.25,0,24-10.75,24-24H31c0,13.25,10.75,24,24,24Z"/>
+      <line class="cls-2" x1="34" y1="91" x2="35" y2="91"/>
+      <line class="cls-2" x1="76" y1="91" x2="77" y2="91"/>
+      <line class="cls-1" x1="34" y1="89" x2="76" y2="89"/>
+      <line class="cls-1" x1="63" y1="79" x2="63" y2="102"/>
+      <line class="cls-1" x1="52" y1="79" x2="52" y2="102"/>
+      <line class="cls-1" x1="44" y1="79" x2="44" y2="100"/>
+      <circle class="cls-5" cx="85.68" cy="40.83" r="6.5"/>
+      <circle class="cls-5" cx="29.68" cy="41.83" r="6.5"/>
     </g>
   </g>
 </svg>

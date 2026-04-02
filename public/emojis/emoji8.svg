@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.05 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #e3fffe;
-        stroke: #ff7dd7;
-        stroke-width: 4px;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-miterlimit: 10;
+        fill: #ff7dd7;
       }
 
       .cls-2 {
-        stroke: #5d72f8;
-        stroke-width: 7px;
+        fill: #8d9efc;
       }
 
-      .cls-2, .cls-3 {
-        fill: none;
+      .cls-3 {
+        fill: #ff5793;
       }
 
       .cls-4 {
         fill: #4420a1;
       }
-
-      .cls-3 {
-        stroke: #e92047;
-        stroke-width: 5px;
-      }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="extras">
     <g>
-      <circle class="cls-4" cx="57.55" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M2.55,49.5c1.52,1.62,9.41,9.7,22,10,15.78.38,25.12-11.81,26-13"/>
-      <path class="cls-2" d="M63.78,45.73c1.52,1.62,9.41,9.7,22,10,15.78.38,25.12-11.81,26-13"/>
-      <line class="cls-2" x1="10.05" y1="74" x2="17.05" y2="60"/>
-      <line class="cls-2" x1="26.05" y1="77" x2="25.05" y2="61"/>
-      <line class="cls-2" x1="45.05" y1="75" x2="36.05" y2="57"/>
-      <line class="cls-2" x1="62.05" y1="66" x2="76.05" y2="56"/>
-      <line class="cls-2" x1="81.05" y1="77" x2="88.05" y2="57"/>
-      <line class="cls-2" x1="103.05" y1="74" x2="97.05" y2="54"/>
-      <ellipse class="cls-1" cx="57.89" cy="98.75" rx="8.17" ry="5.25"/>
-      <path class="cls-3" d="M4.55,46.15c1.39,1.19,8.63,7.12,20.17,7.34,14.47.28,23.02-8.67,23.83-9.55"/>
-      <path class="cls-3" d="M65.87,42.34c1.39,1.19,8.63,7.12,20.17,7.34,14.47.28,23.02-8.67,23.83-9.55"/>
+      <ellipse class="cls-2" cx="56.1" cy="57.6" rx="51" ry="49.5"/>
+      <circle class="cls-1" cx="87.1" cy="54.1" r="18"/>
+      <circle class="cls-1" cx="28.1" cy="62.1" r="18"/>
+      <path class="cls-3" d="M57.5,0C25.74,0,0,25.74,0,57.5s25.74,57.5,57.5,57.5,57.5-25.74,57.5-57.5S89.26,0,57.5,0ZM58.1,100.6c-20.71,0-37.5-20.15-37.5-45S37.39,10.6,58.1,10.6s37.5,20.15,37.5,45-16.79,45-37.5,45Z"/>
+      <circle class="cls-4" cx="40.6" cy="35.6" r="6.5"/>
+      <circle class="cls-4" cx="67.6" cy="31.6" r="6.5"/>
     </g>
   </g>
 </svg>

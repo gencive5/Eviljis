@@ -3,35 +3,48 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #2d25a7;
+        stroke: #e92047;
       }
 
-      .cls-2 {
-        fill: #38f2a9;
-      }
-
-      .cls-3 {
-        fill: #e3fffe;
-        stroke: #2d25a7;
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
+      .cls-2 {
+        stroke: #18d4e8;
+      }
+
+      .cls-3 {
+        stroke: #ff7dd7;
+      }
+
+      .cls-5 {
+        fill: #ff5793;
+      }
+
+      .cls-6 {
+        fill: #4420a1;
+      }
+
       .cls-4 {
-        fill: #c2f4d1;
+        stroke: #4420a1;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <polygon class="cls-2" points="75 105.5 58 88.5 41 105.5 75 105.5"/>
-      <polygon class="cls-2" points="40.65 7.5 57.65 24.5 74.65 7.5 40.65 7.5"/>
-      <polygon class="cls-2" points="8.5 74.61 25.5 57.61 8.5 40.61 8.5 74.61"/>
-      <polygon class="cls-2" points="106.5 40.61 89.5 57.61 106.5 74.61 106.5 40.61"/>
-      <rect class="cls-3" x="47.5" y="66.5" width="22" height="15"/>
-      <circle class="cls-1" cx="44.5" cy="45.5" r="4"/>
-      <circle class="cls-1" cx="68.5" cy="45.5" r="4"/>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-4" d="M11.5,38.5c.85,1.4,6.13,9.75,17,12,10.61,2.2,18.62-3.06,20-4"/>
+      <path class="cls-4" d="M102.5,38.5c-.85,1.4-6.13,9.75-17,12-10.61,2.2-18.62-3.06-20-4"/>
+      <path class="cls-2" d="M28.5,22.5c-.22.79-1.76,6.65,2,12,4.24,6.04,11.42,6.01,12,6"/>
+      <path class="cls-2" d="M88.84,20.35c.22.79,1.76,6.65-2,12-4.24,6.04-11.42,6.01-12,6"/>
+      <polyline class="cls-3" points="8.99 57.5 16 74 24 68 34 81"/>
+      <polyline class="cls-3" points="103.53 58.75 96.52 75.25 88.52 69.25 78.52 82.25"/>
+      <polyline class="cls-1" points="41 91 55 103 69.76 91"/>
+      <circle class="cls-6" cx="29.53" cy="55.73" r="6.5"/>
+      <circle class="cls-6" cx="86.53" cy="55.73" r="6.5"/>
     </g>
   </g>
 </svg>

@@ -3,45 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #079e8b;
+        fill: none;
+        stroke: #e92047;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-2 {
-        fill: #ffbd6e;
+        fill: #ff7dd7;
       }
 
       .cls-3 {
-        fill: #5d72f8;
-      }
-
-      .cls-4 {
         fill: #61d9d8;
       }
 
-      .cls-5 {
+      .cls-4 {
         fill: #38f2a9;
-      }
-
-      .cls-6 {
-        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-4" cx="59.25" cy="57.75" r="52.75"/>
-      <ellipse class="cls-6" cx="40.5" cy="50.5" rx="15" ry="3"/>
-      <ellipse class="cls-6" cx="88.5" cy="52.5" rx="15" ry="3"/>
-      <ellipse class="cls-1" cx="41.5" cy="46.5" rx="15" ry="3"/>
-      <ellipse class="cls-1" cx="88.5" cy="49.5" rx="15" ry="3"/>
-      <ellipse class="cls-3" cx="28" cy="30" rx="2.5" ry="5.5" transform="translate(-8.32 10.91) rotate(-19.25)"/>
-      <ellipse class="cls-3" cx="39.26" cy="31.45" rx="2.5" ry="6.86" transform="translate(-8.17 14.7) rotate(-19.25)"/>
-      <ellipse class="cls-3" cx="97.21" cy="65.33" rx="2.5" ry="8.49" transform="translate(-19.64 57.36) rotate(-30)"/>
-      <ellipse class="cls-3" cx="20.71" cy="57.73" rx="8.49" ry="2.5" transform="translate(-29.95 23.15) rotate(-35.95)"/>
-      <ellipse class="cls-3" cx="88.71" cy="33.73" rx="8.49" ry="2.5" transform="translate(-2.91 58.5) rotate(-35.95)"/>
-      <ellipse class="cls-3" cx="95.71" cy="37.73" rx="8.49" ry="2.5" transform="translate(-3.92 63.37) rotate(-35.95)"/>
-      <ellipse class="cls-2" cx="55" cy="82" rx="24.5" ry="9.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <line class="cls-1" x1="10.5" y1="28.5" x2="9.5" y2="50.5"/>
+      <line class="cls-1" x1="20.5" y1="18.5" x2="20.5" y2="50.5"/>
+      <line class="cls-1" x1="31.5" y1="11.5" x2="31.5" y2="68.5"/>
+      <line class="cls-1" x1="45.5" y1="7.5" x2="45.5" y2="63.5"/>
+      <line class="cls-1" x1="68.5" y1="7.5" x2="55.5" y2="23.5"/>
+      <line class="cls-1" x1="77.5" y1="13.5" x2="54.5" y2="41.5"/>
+      <line class="cls-1" x1="86.5" y1="18.5" x2="53.5" y2="57.5"/>
+      <line class="cls-1" x1="96.5" y1="27.5" x2="62.5" y2="65.5"/>
+      <line class="cls-1" x1="105.5" y1="36.5" x2="79.5" y2="61.5"/>
+      <polygon class="cls-3" points="81.5 99.5 35.5 99.5 27.81 82.19 70.92 81.96 81.5 99.5"/>
+      <circle class="cls-4" cx="17.68" cy="61.83" r="6.5"/>
+      <circle class="cls-4" cx="98.68" cy="61.83" r="6.5"/>
     </g>
   </g>
 </svg>

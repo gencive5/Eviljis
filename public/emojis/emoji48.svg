@@ -3,45 +3,45 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #18d4e8;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #ff7dd7;
-      }
-
-      .cls-2, .cls-3 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
-      }
-
-      .cls-4 {
-        fill: #2d25a7;
-      }
-
-      .cls-5 {
-        fill: #e3fffe;
+        fill: #ffbd6e;
       }
 
       .cls-3 {
-        stroke: #f45b49;
+        fill: none;
+        stroke: #079e8b;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        fill: #ff5793;
+      }
+
+      .cls-5 {
+        fill: #c2f4d1;
+      }
+
+      .cls-6 {
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-5" cx="41.65" cy="33.03" rx="21" ry="8.23" transform="translate(-2.52 62.6) rotate(-72.22)"/>
-      <ellipse class="cls-4" cx="42.5" cy="24" rx="12.5" ry="6" transform="translate(1.86 51.02) rotate(-63.07)"/>
-      <ellipse class="cls-5" cx="79.69" cy="39.06" rx="17.26" ry="6.77" transform="translate(18.16 103.02) rotate(-72.22)"/>
-      <ellipse class="cls-4" cx="78.44" cy="44.05" rx="12.5" ry="6" transform="translate(12.53 105.29) rotate(-72.22)"/>
-      <ellipse class="cls-2" cx="15.28" cy="55.84" rx="7.39" ry="11.97" transform="translate(-13.87 5.82) rotate(-14.93)"/>
-      <ellipse class="cls-2" cx="95.65" cy="70.16" rx="11.97" ry="7.39" transform="translate(-12.99 117.78) rotate(-59.93)"/>
-      <g>
-        <path class="cls-5" d="M64.69,79.47c4.79,4.25-2.21,17.71-18.19,17.89-15.98-.18-22.98-13.64-18.19-17.89,4.54-4.47,12.31-4.72,18.19-5.11,5.88.4,13.65.64,18.19,5.11Z"/>
-        <path class="cls-3" d="M64.69,79.47c4.79,4.25-2.21,17.71-18.19,17.89-15.98-.18-22.98-13.64-18.19-17.89,4.54-4.47,12.31-4.72,18.19-5.11,5.88.4,13.65.64,18.19,5.11Z"/>
-      </g>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M76.5,81.5c-3.45,1.85-10.14,4.83-19,5-12.01.23-20.7-4.83-24-7l16-6"/>
+      <line class="cls-3" x1="36.5" y1="95.5" x2="32.5" y2="79.5"/>
+      <circle class="cls-6" cx="55" cy="37" r="28.5"/>
+      <circle class="cls-2" cx="55" cy="38" r="22.5"/>
+      <circle class="cls-4" cx="55" cy="37.25" r="16.5"/>
+      <circle class="cls-2" cx="55" cy="37.5" r="11"/>
+      <circle class="cls-6" cx="55" cy="37.75" r="5.32"/>
+      <circle class="cls-1" cx="16.53" cy="46.73" r="6.5"/>
+      <circle class="cls-1" cx="95.53" cy="44.73" r="6.5"/>
     </g>
   </g>
 </svg>

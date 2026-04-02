@@ -3,33 +3,30 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #e92047;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        fill: #5d72f8;
       }
 
       .cls-2 {
-        fill: #ff7dd7;
+        fill: none;
+        stroke: #079e8b;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-3 {
-        fill: #61d9d8;
-      }
-
-      .cls-4 {
-        fill: #7c7b7f;
+        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-3" cx="34.5" cy="50.5" r="17"/>
-      <circle class="cls-3" cx="86.5" cy="48.5" r="17"/>
-      <rect class="cls-4" x="26.5" y="42.5" width="15" height="15"/>
-      <rect class="cls-4" x="78.5" y="42.5" width="15" height="15"/>
-      <polyline class="cls-1" points="44.5 90.5 44.5 80.16 80.5 80.16 80.5 93.69"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <polyline class="cls-2" points="36.78 4.85 30.5 31.5 36 36.5 45.5 34.5 43.5 46.5 47.5 55.5"/>
+      <polyline class="cls-2" points="55.59 1 53.5 9.5 58 13.56 49.5 20.5 56.5 23.78 43.5 26.5 45.5 34.5"/>
+      <path class="cls-2" d="M76.5,25.5l9,6,9.57-10.5s11.83,12.5,14.13,26.5"/>
+      <polyline class="cls-2" points="25.5 42.5 28.33 53.5 19.5 54.5 22.5 68.5 13.86 68.5 8.37 84.68"/>
+      <circle class="cls-1" cx="39.28" cy="68.23" r="6.5"/>
+      <circle class="cls-1" cx="60.28" cy="69.23" r="6.5"/>
     </g>
   </g>
 </svg>

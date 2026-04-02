@@ -3,44 +3,46 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ffbd6e;
+        fill: #ff8e50;
       }
 
       .cls-2 {
-        fill: #ff7dd7;
+        fill: #ffbd6e;
       }
 
       .cls-3 {
-        fill: #f45b49;
+        fill: none;
+        stroke: #61d9d8;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
       }
 
       .cls-4 {
-        fill: #ff5793;
-      }
-
-      .cls-5 {
-        fill: #e92047;
+        fill: #e3fffe;
+        stroke: #f45b49;
+        stroke-width: 4px;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-1" d="M18.5,47.56c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-      <path class="cls-1" d="M67.7,46.97c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-      <path class="cls-5" d="M41.7,83.97c14,13.37,28.74,0,28.74,0-14-13.37-28.74,0-28.74,0Z"/>
-      <path class="cls-2" d="M76.5,83.97c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
-      <path class="cls-2" d="M14.28,86.97c11.18,10.68,22.95,0,22.95,0-11.18-10.68-22.95,0-22.95,0Z"/>
-      <path class="cls-2" d="M80.76,11.49c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
-      <path class="cls-2" d="M35.76,12.49c-10.68,11.18,0,22.95,0,22.95,10.68-11.18,0-22.95,0-22.95Z"/>
-      <path class="cls-2" d="M89.64,57.86c.35,15.45,16.23,16.23,16.23,16.23-.35-15.45-16.23-16.23-16.23-16.23Z"/>
-      <path class="cls-2" d="M25.87,60.86c-15.45.35-16.23,16.23-16.23,16.23,15.45-.35,16.23-16.23,16.23-16.23Z"/>
-      <path class="cls-2" d="M9.39,30.61c.23,9.98,10.47,10.47,10.47,10.47-.23-9.98-10.47-10.47-10.47-10.47Z"/>
-      <path class="cls-2" d="M103.99,29.73c-9.98.23-10.47,10.47-10.47,10.47,9.98-.23,10.47-10.47,10.47-10.47Z"/>
-      <circle class="cls-3" cx="83" cy="67" r="3.5"/>
-      <circle class="cls-3" cx="31" cy="71" r="3.5"/>
-      <circle class="cls-3" cx="18" cy="23" r="3.5"/>
-      <circle class="cls-3" cx="95" cy="21" r="3.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-4" cx="47" cy="32" rx="10.5" ry="6.5"/>
+      <ellipse class="cls-4" cx="26.5" cy="30" rx="9" ry="6.5"/>
+      <ellipse class="cls-4" cx="32.5" cy="21" rx="6.5" ry="9" transform="translate(-4.51 9.7) rotate(-15.89)"/>
+      <ellipse class="cls-4" cx="38.38" cy="41.44" rx="6.5" ry="10.8" transform="translate(-9.88 12.09) rotate(-15.89)"/>
+      <ellipse class="cls-4" cx="42.88" cy="19.71" rx="10.8" ry="6.5" transform="translate(5.35 48.32) rotate(-62)"/>
+      <ellipse class="cls-4" cx="81.5" cy="40.5" rx="6.5" ry="7.5" transform="translate(-4.77 69.49) rotate(-45)"/>
+      <ellipse class="cls-4" cx="69.79" cy="22.94" rx="5.87" ry="7.85" transform="translate(-3.61 19.98) rotate(-15.89)"/>
+      <ellipse class="cls-4" cx="79.32" cy="26.57" rx="8.56" ry="6.76" transform="translate(.2 53.73) rotate(-37.47)"/>
+      <ellipse class="cls-4" cx="66.25" cy="34.06" rx="6.99" ry="4.62" transform="translate(-7.05 47.32) rotate(-37.47)"/>
+      <ellipse class="cls-4" cx="67.91" cy="44.1" rx="10.65" ry="4.62" transform="translate(1.25 90.06) rotate(-67.58)"/>
+      <path class="cls-3" d="M22,43s-5,45.47,35.5,50.73,44.68-49.64,44.68-49.64"/>
+      <circle class="cls-1" cx="36.28" cy="31.23" r="6.5"/>
+      <circle class="cls-1" cx="73.28" cy="33.23" r="6.5"/>
     </g>
   </g>
 </svg>

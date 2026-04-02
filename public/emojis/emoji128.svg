@@ -3,52 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        stroke-width: 3px;
-      }
-
-      .cls-1, .cls-2 {
         stroke: #ff7dd7;
       }
 
       .cls-1, .cls-2, .cls-3 {
-        fill: none;
+        fill: #e3fffe;
         stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        stroke-width: 6px;
+        stroke-width: 5px;
       }
 
       .cls-4 {
-        fill: #2d25a7;
+        fill: #079e8b;
       }
 
-      .cls-5 {
-        fill: #5d72f8;
-      }
-
-      .cls-6 {
-        fill: #c2f4d1;
+      .cls-2 {
+        stroke: #e92047;
       }
 
       .cls-3 {
-        stroke: #18d4e8;
-        stroke-width: 20px;
+        stroke: #ff5793;
+      }
+
+      .cls-5 {
+        fill: #2d25a7;
       }
     </style>
   </defs>
-  <g id="stylo_emojis">
+  <g id="all">
     <g>
       <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M82.61,21.98s15.26,23.24,15.39,41.27"/>
-      <path class="cls-2" d="M36,21S14,38,8,55"/>
-      <path class="cls-3" d="M71.89,26.72s4.83,37.12,18.04,49.66"/>
-      <path class="cls-3" d="M46.19,27.28s-15.94,33.87-32.36,41.77"/>
-      <ellipse class="cls-6" cx="83.62" cy="40.64" rx="4.92" ry="16.85" transform="translate(-8.97 32.15) rotate(-20.68)"/>
-      <ellipse class="cls-6" cx="29.95" cy="37.82" rx="16.85" ry="4.92" transform="translate(-18.28 36.85) rotate(-50.47)"/>
-      <circle class="cls-5" cx="83.5" cy="33.5" r="7"/>
-      <circle class="cls-5" cx="27.5" cy="30.5" r="7"/>
-      <polyline class="cls-1" points="43.5 89.5 52.5 81.5 59.5 91.5"/>
+      <ellipse class="cls-1" cx="61.5" cy="74" rx="34.5" ry="27"/>
+      <ellipse class="cls-3" cx="61" cy="74" rx="24" ry="16"/>
+      <ellipse class="cls-2" cx="61.5" cy="75" rx="11" ry="6.5"/>
+      <circle class="cls-5" cx="90.15" cy="33.03" r="6.5"/>
+      <circle class="cls-5" cx="26.15" cy="32.03" r="6.5"/>
     </g>
   </g>
 </svg>

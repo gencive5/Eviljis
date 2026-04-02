@@ -3,30 +3,42 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #079e8b;
-      }
-
-      .cls-2 {
         fill: #e3fffe;
       }
 
+      .cls-1, .cls-2 {
+        stroke: #4420a1;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
       .cls-3 {
-        fill: #c2f4d1;
+        fill: #079e8b;
       }
 
       .cls-4 {
-        fill: #e92047;
+        fill: #38f2a9;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #c2f4d1;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
       <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-2" cx="19" cy="45.69" r="9.5"/>
-      <circle class="cls-4" cx="17.5" cy="43.5" r="8"/>
-      <ellipse class="cls-1" cx="62.47" cy="93.75" rx="12.15" ry="4.97" transform="translate(-20.44 17.48) rotate(-13.71)"/>
-      <circle class="cls-2" cx="101.85" cy="46.85" r="9.65"/>
-      <circle class="cls-4" cx="103" cy="44" r="8"/>
+      <path class="cls-5" d="M35.9,48.66c-.02-.27-.06-.54-.12-.81-.76-3.53-4.24-5.78-7.77-5.02s-5.78,4.24-5.02,7.77c.7,3.26,3.72,5.42,6.96,5.14v.06s16-3.44,16-3.44l-1.2-5.6-8.85,1.9Z"/>
+      <rect class="cls-4" x="19.44" y="18.72" width="61.9" height="15" transform="translate(-3.5 8.25) rotate(-9.05)"/>
+      <polygon class="cls-1" points="43.5 70.5 81.5 64.5 89.5 90.5 31.5 95.5 43.5 70.5"/>
+      <line class="cls-2" x1="54" y1="69" x2="50" y2="94"/>
+      <line class="cls-2" x1="70" y1="66" x2="68" y2="93"/>
+      <line class="cls-2" x1="38" y1="83" x2="86" y2="78"/>
+      <path class="cls-5" d="M73.33,40.53c-.09-.26-.17-.52-.22-.79-.74-3.54,1.53-7,5.06-7.74,3.54-.74,7,1.53,7.74,5.06.68,3.26-1.2,6.46-4.27,7.52v.06s-15.99,3.35-15.99,3.35l-1.17-5.6,8.86-1.86Z"/>
     </g>
   </g>
 </svg>

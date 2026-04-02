@@ -3,44 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #2d25a7;
-        stroke-width: 6px;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        fill: #18d4e8;
-      }
-
-      .cls-4 {
-        fill: #ff7dd7;
-      }
-
-      .cls-5 {
-        fill: #2d25a7;
+        fill: #079e8b;
       }
 
       .cls-2 {
-        stroke: #5d72f8;
-        stroke-width: 4px;
+        fill: #232321;
+      }
+
+      .cls-3 {
+        fill: #38f2a9;
+      }
+
+      .cls-4 {
+        fill: #e92047;
       }
     </style>
   </defs>
-  <g id="feutre_emojis">
+  <g id="all">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <line class="cls-2" x1="16.5" y1="36.5" x2="46.5" y2="37.5"/>
-      <line class="cls-2" x1="67.5" y1="41.5" x2="100.5" y2="41.5"/>
-      <circle class="cls-5" cx="28.5" cy="41.5" r="6"/>
-      <circle class="cls-5" cx="82.5" cy="45.5" r="6"/>
-      <path class="cls-2" d="M11.5,50.5c3.78-1.64,10.03-3.8,18-4,6.28-.16,11.46.94,15,2"/>
-      <path class="cls-2" d="M68.09,54.42c3.78-1.64,10.03-3.8,18-4,6.28-.16,11.46.94,15,2"/>
-      <line class="cls-1" x1="3.5" y1="76.5" x2="111.5" y2="77.5"/>
-      <path class="cls-3" d="M57.5,0C40.22,0,24.72,7.64,14.18,19.71l-.34,1.23,10.6,12.34,14-18.66,17.7,18.66,16.3-17.19,12,23.32,11.36-15.67,3.57-5.62C88.9,6.97,74.02,0,57.5,0Z"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-4" cx="38.5" cy="50" rx="15" ry="22.5"/>
+      <ellipse class="cls-4" cx="84.5" cy="52" rx="15" ry="22.5"/>
+      <polygon class="cls-1" points="38.5 23.55 52 15.5 47.43 26.72 65.5 29.9 47.43 33.08 52 44.3 38.5 36.25 25 44.3 29.57 33.08 11.5 29.9 29.57 26.72 25 15.5 38.5 23.55"/>
+      <polygon class="cls-1" points="83.54 29.72 97.04 21.67 92.47 32.9 110.54 36.07 92.47 39.25 97.04 50.48 83.54 42.43 70.04 50.48 74.61 39.25 56.54 36.07 74.61 32.9 70.04 21.67 83.54 29.72"/>
+      <ellipse class="cls-2" cx="41.5" cy="44" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="33.5" cy="48" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="31.5" cy="59" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="46.5" cy="54" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="41.5" cy="63" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="73.5" cy="55" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="81.5" cy="49" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="79.5" cy="64" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="90.5" cy="53" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="90.5" cy="64" rx="2" ry="3.5"/>
+      <ellipse class="cls-2" cx="56.53" cy="94.23" rx="10.5" ry="5"/>
     </g>
   </g>
 </svg>

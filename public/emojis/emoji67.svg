@@ -3,30 +3,33 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #7c7b7f;
+        fill: #18d4e8;
       }
 
       .cls-2 {
-        fill: #38f2a9;
+        fill: #d0bdff;
       }
 
       .cls-3 {
-        fill: #ff5793;
+        fill: #2d25a7;
       }
 
       .cls-4 {
-        fill: #c2f4d1;
+        fill: none;
+        stroke: #4420a1;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
       }
     </style>
   </defs>
-  <g id="aquarelle_emojis">
+  <g id="all">
     <g>
       <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-3" cx="87.71" cy="60.63" rx="24.04" ry="18.98" transform="translate(-18.22 48.44) rotate(-28.09)"/>
-      <circle class="cls-1" cx="28.5" cy="40.5" r="9"/>
-      <ellipse class="cls-1" cx="84.54" cy="43.82" rx="14.04" ry="3.32" transform="translate(-10.67 44.96) rotate(-28.09)"/>
-      <ellipse class="cls-3" cx="19.5" cy="65.5" rx="15" ry="19" transform="translate(-28.54 16.89) rotate(-28.09)"/>
-      <ellipse class="cls-4" cx="15.92" cy="29.7" rx="10.43" ry="3.18" transform="translate(-15.25 16.88) rotate(-39.45)"/>
+      <path class="cls-1" d="M96.08,63.6c17.19-5.33-11.02-32.18-11.02-32.18,0,0-6.17,37.51,11.02,32.18"/>
+      <path class="cls-1" d="M13.72,81.82c-17.19-5.33,11.02-32.18,11.02-32.18,0,0,6.17,37.51-11.02,32.18"/>
+      <path class="cls-4" d="M38.5,55.5c.19,9.62,1.19,19.38,3.87,28.65,1.46,5.06,4.72,16.15,11.41,16.32,6.07.15,10.56-9,12.8-13.56,3.63-7.4,6.09-15.39,7.92-23.4"/>
+      <circle class="cls-3" cx="32.53" cy="26.73" r="6.5"/>
+      <circle class="cls-3" cx="82.53" cy="25.73" r="6.5"/>
     </g>
   </g>
 </svg>
