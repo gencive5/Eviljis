@@ -19,18 +19,11 @@ const CircleGrid = ({
   const [cols, setCols] = useState(0);
   const [rows, setRows] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  // Active ids stored as a Set so multiple circles can linger at once.
-  const [activeIds, setActiveIds] = useState(() => new Set());
-  const activeIdsRef = useRef(activeIds);
-  useEffect(() => { activeIdsRef.current = activeIds; }, [activeIds]);
-
-  // track the currently touched circle id (the one under the finger right now)
+  const [activeIds, setActiveIds] = useState(new Set());
   const currentRef = useRef(null);
+  const timeoutsRef = useRef({});
 
-  // scheduled removal timeouts, map id -> timeoutId
-  const scheduledRef = useRef({});
-
+  // Layout calculation (unchanged)
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
@@ -40,26 +33,19 @@ const CircleGrid = ({
   useEffect(() => {
     const calculateLayout = () => {
       if (!gridRef.current) return;
-
       const containerWidth = gridRef.current.clientWidth;
       const containerHeight = gridRef.current.clientHeight;
-
       const effectiveMin = isMobile ? mobileMinCircleSize : minCircleSize;
       const effectiveMax = isMobile ? mobileMaxCircleSize : maxCircleSize;
-
       const widthSlots = Math.max(1, Math.floor(containerWidth / (effectiveMax * (1 + gapRatio))));
       const heightSlots = Math.max(1, Math.floor(containerHeight / (effectiveMax * (1 + gapRatio))));
-
       const widthBasedSize = containerWidth / widthSlots;
       const heightBasedSize = containerHeight / heightSlots;
-
       const newCircleSize = Math.max(effectiveMin, Math.min(effectiveMax, widthBasedSize, heightBasedSize));
       setCircleSize(newCircleSize);
-
       const gapSize = newCircleSize * gapRatio;
       const calculatedCols = Math.max(0, Math.floor(containerWidth / (newCircleSize + gapSize)));
       const calculatedRows = Math.max(0, Math.floor(containerHeight / (newCircleSize + gapSize)));
-
       setCols(calculatedCols);
       setRows(calculatedRows);
     };
@@ -67,119 +53,79 @@ const CircleGrid = ({
     calculateLayout();
     const ro = new ResizeObserver(calculateLayout);
     if (gridRef.current) ro.observe(gridRef.current);
-
-    return () => {
-      ro.disconnect();
-    };
+    return () => ro.disconnect();
   }, [minCircleSize, maxCircleSize, mobileMinCircleSize, mobileMaxCircleSize, gapRatio, isMobile]);
 
-  // Function to get SVG path for a circle
   const getSvgPath = (id) => {
     const circleNumber = parseInt(id.substring(1));
     const svgIndex = ((circleNumber - 1) % 164) + 1;
     return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
   };
 
-  // --- helpers for active state & scheduling ---
-  const addActive = (id) => {
-    setActiveIds(prev => {
-      const s = new Set(prev);
-      s.add(id);
-      return s;
-    });
+  const getLinger = (id) => customCircles?.[id]?.linger ?? lingerMs;
+
+  const activate = (id) => {
+    if (timeoutsRef.current[id]) {
+      clearTimeout(timeoutsRef.current[id]);
+      delete timeoutsRef.current[id];
+    }
+    setActiveIds(prev => new Set(prev).add(id));
   };
 
-  const removeActiveImmediate = (id) => {
-    setActiveIds(prev => {
-      const s = new Set(prev);
-      s.delete(id);
-      return s;
-    });
-  };
-
-  const clearScheduled = (id) => {
-    const t = scheduledRef.current[id];
-    if (t) {
-      clearTimeout(t);
-      delete scheduledRef.current[id];
+  const deactivate = (id, delay = null) => {
+    if (delay === null) {
+      setActiveIds(prev => {
+        const next = new Set(prev);
+        next.delete(id);
+        return next;
+      });
+      delete timeoutsRef.current[id];
+    } else {
+      timeoutsRef.current[id] = setTimeout(() => deactivate(id, null), delay);
     }
   };
 
-  const scheduleRemove = (id, delay) => {
-    clearScheduled(id);
-    scheduledRef.current[id] = setTimeout(() => {
-      removeActiveImmediate(id);
-      delete scheduledRef.current[id];
-    }, delay);
-  };
+  // Desktop handlers
+  const handleMouseEnter = (id) => activate(id);
+  const handleMouseLeave = (id) => deactivate(id, getLinger(id));
 
-  const getLinger = (id) => {
-    const cfg = customCircles?.[id];
-    if (cfg && typeof cfg.linger === 'number') return cfg.linger;
-    return lingerMs;
-  };
-
-  // --- Desktop hover handlers ---
-  const handleMouseEnter = (id) => {
-    clearScheduled(id);
-    addActive(id);
-  };
-
-  const handleMouseLeave = (id) => {
-    scheduleRemove(id, getLinger(id));
-  };
-
-  // --- touch handlers ---
+  // Touch handlers
   const handleTouchStart = (e) => {
-    const touch = e.touches && e.touches[0];
+    const touch = e.touches?.[0];
     if (!touch) return;
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
-    if (el && el.classList.contains('circle')) {
-      const id = el.id;
-      clearScheduled(id);
-      addActive(id);
-      currentRef.current = id;
+    if (el?.classList.contains('circle')) {
+      activate(el.id);
+      currentRef.current = el.id;
     }
   };
 
   const handleTouchMove = (e) => {
-    const touch = e.touches && e.touches[0];
+    const touch = e.touches?.[0];
     if (!touch) return;
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
-
-    if (el && el.classList.contains('circle')) {
-      const id = el.id;
-      
-      const prev = currentRef.current;
-      if (prev && prev !== id) {
-        scheduleRemove(prev, getLinger(prev));
-      }
-      clearScheduled(id);
-      addActive(id);
-      currentRef.current = id;
-    } else {
-      const prev = currentRef.current;
-      if (prev) {
-        scheduleRemove(prev, getLinger(prev));
-        currentRef.current = null;
-      }
-    }
-  };
-
-  const handleTouchEnd = () => {
-    const current = currentRef.current;
-    if (current) {
-      scheduleRemove(current, getLinger(current));
+    const newId = el?.classList.contains('circle') ? el.id : null;
+    
+    if (newId && newId !== currentRef.current) {
+      if (currentRef.current) deactivate(currentRef.current, getLinger(currentRef.current));
+      activate(newId);
+      currentRef.current = newId;
+    } else if (!newId && currentRef.current) {
+      deactivate(currentRef.current, getLinger(currentRef.current));
       currentRef.current = null;
     }
   };
 
-  // cleanup scheduled timers on unmount
+  const handleTouchEnd = () => {
+    if (currentRef.current) {
+      deactivate(currentRef.current, getLinger(currentRef.current));
+      currentRef.current = null;
+    }
+  };
+
+  // Cleanup
   useEffect(() => {
-    return () => {
-      Object.values(scheduledRef.current).forEach(clearTimeout);
-      scheduledRef.current = {};
-    };
+    return () => Object.values(timeoutsRef.current).forEach(clearTimeout);
   }, []);
 
   const gapSize = circleSize * gapRatio;
@@ -203,8 +149,6 @@ const CircleGrid = ({
         {Array.from({ length: rows * cols }).map((_, index) => {
           const id = `c${index + 1}`;
           const custom = customCircles[id] || {};
-          const svgPath = getSvgPath(id);
-          
           return (
             <Circle
               key={id}
@@ -213,7 +157,7 @@ const CircleGrid = ({
               circleSize={circleSize}
               circleStyle={circleStyle}
               customStyle={custom.style || {}}
-              svgPath={svgPath}
+              svgPath={getSvgPath(id)}
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={() => handleMouseLeave(id)}
             />
