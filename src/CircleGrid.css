@@ -264,24 +264,3 @@
   }
 }
 
-
-/* Style for the last circle - closed state */
-.last-circle {
-  background: #ddee47 !important; 
-  transition: all 0.3s ease;
-}
-
-/* Style for the last circle - open state */
-.last-circle.modal-open {
-  background: #fb741a !important; 
-}
-
-/* Last circle hover effect
-.last-circle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
-}
-
-.last-circle.modal-open:hover {
-  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
-} */
