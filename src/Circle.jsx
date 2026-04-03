@@ -16,7 +16,7 @@ const Circle = ({
   
   // Choose which filter to apply when active
   // Option 1: Single filter for all
-  const activeFilter = 'url(#soft-glow)';
+  const activeFilter = 'url(#liquid-morph)';
   
   // Option 2: Random filters for variety (uncomment to use)
   // const filters = ['#neon-glow', '#chromatic-split', '#glitch', '#hologram', '#electric', '#water-ripple'];
