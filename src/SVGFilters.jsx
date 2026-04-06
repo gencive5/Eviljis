@@ -102,8 +102,8 @@ const SVGFilters = () => {
 
         {/* Drop Shadow with Color - FIXED: camelCase attributes */}
         <filter id="color-shadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="3" dy="3" stdDeviation="4" floodColor="#ff00ff" floodOpacity="0.8" result="shadow1"/>
-          <feDropShadow dx="-3" dy="-3" stdDeviation="4" floodColor="#00ffff" floodOpacity="0.8" result="shadow2"/>
+          <feDropShadow dx="3" dy="3" stdDeviation="4" floodColor="#ff00ff" floodOpacity="1" result="shadow1"/>
+          <feDropShadow dx="-3" dy="-3" stdDeviation="4" floodColor="#00ffff" floodOpacity="1" result="shadow2"/>
           <feMerge>
             <feMergeNode in="shadow1"/>
             <feMergeNode in="shadow2"/>

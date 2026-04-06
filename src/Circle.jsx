@@ -15,21 +15,8 @@ const Circle = ({
   const showSvg = svgPath && !svgFailed;
   
   // Choose which filter to apply when active
-  // Option 1: Single filter for all
-  const activeFilter = 'url(#liquid-morph)';
+  const activeFilter = 'url(#water-ripple)';
   
-  // Option 2: Random filters for variety (uncomment to use)
-  // const filters = ['#neon-glow', '#chromatic-split', '#glitch', '#hologram', '#electric', '#water-ripple'];
-  // const [filter] = useState(() => filters[Math.floor(Math.random() * filters.length)]);
-  // const activeFilter = `url(${filter})`;
-  
-  // Option 3: Different filter based on circle ID (uncomment to use)
-  // const getFilterByIndex = (circleId) => {
-  //   const num = parseInt(circleId.substring(1));
-  //   const filters = ['#neon-glow', '#chromatic-split', '#glitch', '#hologram', '#electric'];
-  //   return filters[num % filters.length];
-  // };
-  // const activeFilter = `url(${getFilterByIndex(id)})`;
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';
