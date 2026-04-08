@@ -15,6 +15,8 @@ const CircleGrid = ({
   lingerMs = 30000,
   svgFolder = '/emojis/',
   svgNamePattern = 'emoji',
+  onScoreUpdate,     // NEW: callback for when score changes
+  isComplete = false // NEW: whether the game is complete
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -74,7 +76,12 @@ const CircleGrid = ({
     return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
   };
   
-  const getLinger = (id) => customCircles?.[id]?.linger ?? lingerMs;
+  const getLinger = (id) => {
+    // If game is complete, return 0 (no delay)
+    if (isComplete) return 0;
+    // Otherwise use the normal delay
+    return customCircles?.[id]?.linger ?? lingerMs;
+  };
   
   const activate = (id) => {
     if (timeoutsRef.current[id]) {
@@ -140,6 +147,12 @@ const CircleGrid = ({
   }, []);
   
   const gapSize = circleSize * gapRatio;
+
+  useEffect(() => {
+    if (onScoreUpdate) {
+      onScoreUpdate(activeIds); // Send the Set of active IDs to parent
+    }
+  }, [activeIds, onScoreUpdate]);
   
   // THEN return the JSX
   return (
