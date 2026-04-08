@@ -47,14 +47,10 @@ html, body, #root {
   top: 20px;
   left: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 15px 20px;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .score-display {
@@ -72,42 +68,13 @@ html, body, #root {
 }
 
 .score-value {
-  color: #ffd700;
-  font-size: 1.8rem;
+  color: #fdee1a;
+  font-size: 2.2rem;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-/* .progress-bar-container {
-  width: 100%;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
 
-.progress-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #4caf50, #8bc34a);
-  border-radius: 10px;
-  transition: width 0.3s ease;
-  box-shadow: 0 0 5px #4caf50;
-} */
-
-.remaining-count {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.completion-message {
-  color: #ffd700;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-align: center;
-  animation: pulse 0.5s ease infinite;
-}
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
