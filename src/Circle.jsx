@@ -9,7 +9,8 @@ const Circle = ({
   customStyle, 
   svgPath,
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
+  forceActive = false 
 }) => {
   const [svgFailed, setSvgFailed] = useState(false);
   const showSvg = svgPath && !svgFailed;
@@ -57,7 +58,7 @@ const Circle = ({
             // Add filter transition
             transition: 'filter 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             // Apply filter when active
-            filter: isActive ? activeFilter : 'none'
+             filter: (isActive || forceActive) ? activeFilter : 'none'
           }}
           onError={() => setSvgFailed(true)}
         />

@@ -6,7 +6,7 @@ const Score = ({
     activeIds,
     totalEmojis = 152,
     onComplete,
-    lingerMs = 30000
+    lingerMs = 60000
 }) => {
 
     const currentScore = activeIds.size;

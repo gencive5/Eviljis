@@ -7,20 +7,26 @@ import Score from './Score'; // Add this import
 function App() {
   // State to track touched emojis
   const [touchedEmojis, setTouchedEmojis] = useState(new Set());
+
   
   // State to track if game is complete
   const [gameComplete, setGameComplete] = useState(false);
-  
-  // This function receives the activeIds from CircleGrid
-  const handleScoreUpdate = (activeIds) => {
-    setTouchedEmojis(activeIds);
-  };
-  
-  // This function is called when all emojis are touched
+
+    // This function is called when all emojis are touched
   const handleGameComplete = () => {
     setGameComplete(true);
     console.log('🎉 GAME COMPLETE! All 152 emojis touched! 🎉');
   };
+  
+  // This function receives the activeIds from CircleGrid
+const handleScoreUpdate = (activeIds) => {
+  // Only update score if game is not complete
+  if (!gameComplete) {
+    setTouchedEmojis(activeIds);
+  }
+};
+  
+ 
   
   // Optional: Reset function (if you want a "Play Again" button)
   const handleReset = () => {
@@ -40,7 +46,7 @@ function App() {
       
       {/* Pass game state to CircleGrid */}
       <CircleGrid 
-        lingerMs={30000}      // 30 second delay normally
+        lingerMs={90000}      // 30 second delay normally
         isComplete={gameComplete}  // When true, no more delay
         onScoreUpdate={handleScoreUpdate}  // Gets updates when emojis are touched
       />

@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './CircleGrid.css';
 import Circle from './Circle';
-import SVGFilters from './SVGFilters'; // Import the filters
+import SVGFilters from './SVGFilters'; 
 
 const CircleGrid = ({
   minCircleSize = 65,
@@ -12,11 +12,11 @@ const CircleGrid = ({
   gapRatio = 0.2,
   circleStyle = {},
   customCircles = {},
-  lingerMs = 30000,
+  lingerMs = 90000,
   svgFolder = '/emojis/',
   svgNamePattern = 'emoji',
-  onScoreUpdate,     // NEW: callback for when score changes
-  isComplete = false // NEW: whether the game is complete
+  onScoreUpdate,     
+  isComplete = false 
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -84,12 +84,15 @@ const CircleGrid = ({
   };
   
   const activate = (id) => {
-    if (timeoutsRef.current[id]) {
-      clearTimeout(timeoutsRef.current[id]);
-      delete timeoutsRef.current[id];
-    }
-    setActiveIds(prev => new Set(prev).add(id));
-  };
+  // Don't allow new activations when game is complete
+  if (isComplete) return;
+  
+  if (timeoutsRef.current[id]) {
+    clearTimeout(timeoutsRef.current[id]);
+    delete timeoutsRef.current[id];
+  }
+  setActiveIds(prev => new Set(prev).add(id));
+};
   
   const deactivate = (id, delay = null) => {
     if (delay === null) {
@@ -106,7 +109,11 @@ const CircleGrid = ({
   
   // THEN event handlers
   const handleMouseEnter = (id) => activate(id);
-  const handleMouseLeave = (id) => deactivate(id, getLinger(id));
+  const handleMouseLeave = (id) => {
+  if (!isComplete) {  // ADDED this check
+    deactivate(id, getLinger(id));
+  }
+};
   
   const handleTouchStart = (e) => {
     const touch = e.touches?.[0];
@@ -125,21 +132,22 @@ const CircleGrid = ({
     const newId = el?.classList.contains('circle') ? el.id : null;
     
     if (newId && newId !== currentRef.current) {
-      if (currentRef.current) deactivate(currentRef.current, getLinger(currentRef.current));
+      if (currentRef.current && !isComplete) 
+      deactivate(currentRef.current, getLinger(currentRef.current));
       activate(newId);
       currentRef.current = newId;
-    } else if (!newId && currentRef.current) {
+    } else if (!newId && currentRef.current && !isComplete) {
       deactivate(currentRef.current, getLinger(currentRef.current));
       currentRef.current = null;
     }
   };
   
   const handleTouchEnd = () => {
-    if (currentRef.current) {
-      deactivate(currentRef.current, getLinger(currentRef.current));
-      currentRef.current = null;
-    }
-  };
+  if (currentRef.current && !isComplete) {  
+    deactivate(currentRef.current, getLinger(currentRef.current));
+    currentRef.current = null;
+  }
+};
   
   // Cleanup useEffect
   useEffect(() => {
@@ -149,10 +157,11 @@ const CircleGrid = ({
   const gapSize = circleSize * gapRatio;
 
   useEffect(() => {
-    if (onScoreUpdate) {
-      onScoreUpdate(activeIds); // Send the Set of active IDs to parent
-    }
-  }, [activeIds, onScoreUpdate]);
+  // Only send score updates if game is NOT complete
+  if (onScoreUpdate && !isComplete) {
+    onScoreUpdate(activeIds);
+  }
+}, [activeIds, onScoreUpdate, isComplete]);
   
   // THEN return the JSX
   return (
@@ -181,6 +190,7 @@ const CircleGrid = ({
               key={id}
               id={id}
               isActive={activeIds.has(id)}
+              forceActive={isComplete} 
               circleSize={circleSize}
               circleStyle={circleStyle}
               customStyle={custom.style || {}}
