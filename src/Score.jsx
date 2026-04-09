@@ -4,7 +4,7 @@ import './App.css';
 
 const Score = ({ 
     activeIds,
-    totalEmojis = 164,
+    totalEmojis = 152,
     onComplete,
     lingerMs = 30000
 }) => {

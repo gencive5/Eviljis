@@ -1,9 +1,11 @@
 .circle-grid-container {
-  width: 100vw;
-  height: 100vh;
+  flex: 1; 
+  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   overflow: hidden;
+  bottom: 0;
+  position: relative;
 }
 
 .circle-grid {
@@ -13,6 +15,7 @@
   gap: var(--gap-size);
   justify-content: center;
   align-content: center;
+  bottom: 0;
   width: 100%;
   height: 100%;
   
@@ -67,191 +70,11 @@
 
 
 
-/* Hover effects */
-
-/* dark green */
-#c57:hover, #c61:hover, #c63:hover, #c67:hover, #c123:hover, #c173:hover { 
-  transform: scale(0.9, 1.2);
-}
-
-/* green */
-#c58:hover, #c60:hover, #c64:hover, #c66:hover, #c98:hover, #c198:hover, #c57:hover, #c204:hover, #c228:hover, #c57:hover{  
-  transform: scale(0.7, 1.2);
-}
-
-/* yellow */
-#c59:hover, #c65:hover, #c73:hover, #c223:hover{ 
-  transform: scale(0.5, 1.2);
-}
-
-/* bleu roi */
-#c68:hover, #c69:hover, #c70:hover, #c71:hover, #c72:hover, #c148:hover{  
-  transform: scale(1.2, 1.2);
-}
-
-/* magenta */
-#c81:hover, #c181:hover, #c340:hover, #c344:hover {  
-  transform: scale(1.2, 0.9);
-}
-
-/* bleu foncé  */
-#c84:hover, #c118:hover, #c119:hover, #c120:hover, #c143:hover, #c145:hover, #c168:hover, #c169:hover, #c170:hover  {  
-  transform: scale(0.5, 0.5);
-}
-
-/* bleu */
-#c92:hover, #c93:hover, #c94:hover, #c95:hover, #c96:hover, #c117:hover, #c121:hover, #c142:hover, #c146:hover, #c167:hover, #c171:hover, #c192:hover, #c193:hover, #c194:hover, #c195:hover, #c196:hover {   
-  transform: scale(0.7, 0.7);
-}
-
-/* orange */
-#c106:hover, #c156:hover, #c203:hover, #c229:hover, #c341:hover, #c343:hover {  
-  transform: scale(1.2, 0.7);
-}
-
-/* rouge  */
-#c131:hover, #c342:hover, #c394:hover {  
-  transform: scale(1.2, 0.4);
-}
-
-/* indigo */
-#c134:hover, #c186:hover, #c236:hover, #c244:hover, #c286:hover {   
-  transform: skew(-30deg, -20deg);
-}
-
-#c144:hover {  
-  border-radius: 0; 
-  transform: scale(0.4); 
-}
-
-/* violet */
-#c160:hover, #c212:hover, #c260:hover, #c267:hover, #c271:hover, #c312:hover { 
-  transform: skew(30deg, 20deg);
-}
-
-
-/* marron clair */
-#c242:hover, #c246:hover { 
-  transform: skew(-30deg, -1deg);
-}
-
- /* marron foncé */
-#c243:hover { 
-  transform: skew(-30deg, -10deg);
-}
-
-/* bleu canard */
-#c265:hover, #c269:hover, #c273:hover, #c310:hover, #c314:hover {  
-  transform: skew(30deg, 10deg);
-}
-
-/* vert d'eau */
-#c266:hover, #c268:hover, #c270:hover, #c272:hover, #c311:hover, #c313:hover { 
-  transform: skew(30deg, 1deg);
-}
-
-#c306:hover {
-  border-radius: 0; 
-  transform: scale(1.1); 
-}
-
-
-/* Touch fx */
-
-/* dark green */
-#c57.active, #c61.active, #c63.active, #c67.active, #c123.active, #c173.active { 
-  transform: scale(0.9, 1.2);
-}
-
-/* green */
-#c58.active, #c60.active, #c64.active, #c66.active, #c98.active, #c198.active, #c57.active, #c204.active, #c228.active, #c57.active {  
-  transform: scale(0.7, 1.2);
-}
-
-/* yellow */
-#c59.active, #c65.active, #c73.active, #c223.active { 
-  transform: scale(0.5, 1.2);
-}
-
-/* bleu roi */
-#c68.active, #c69.active, #c70.active, #c71.active, #c72.active, #c148.active{  
-  transform: scale(1.2, 1.2);
-}
-
-/* magenta */
-#c81.active, #c181.active, #c340.active, #c344.active {  
-  transform: scale(1.2, 0.9);
-}
-
-/* bleu foncé  */
-#c84.active, #c118.active, #c119.active, #c120.active, #c143.active, #c145.active, #c168.active, #c169.active, #c170.active  {  
-  transform: scale(0.5, 0.5);
-}
-
-/* bleu */
-#c92.active, #c93.active, #c94.active, #c95.active, #c96.active, #c117.active, #c121.active, #c142.active, #c146.active, #c167.active, #c171.active, #c192.active, #c193.active, #c194.active, #c195.active, #c196.active {   
-  transform: scale(0.7, 0.7);
-}
-
-/* orange */
-#c106.active, #c156.active, #c203.active, #c229.active, #c341.active, #c343.active {  
-  transform: scale(1.2, 0.7);
-}
-
-/* rouge  */
-#c131.active, #c342.active, #c394.active {  
-  transform: scale(1.2, 0.4);
-}
-
-/* indigo */
-#c134.active, #c186.active, #c236.active, #c244.active, #c286.active {   
-  transform: skew(-30deg, -20deg);
-}
-
-#c144.active {  
-  border-radius: 0; 
-  transform: scale(0.4); 
-}
-
-/* violet */
-#c160.active, #c212.active, #c260.active, #c267.active, #c271.active, #c312.active { 
-  transform: skew(30deg, 20deg);
-}
-
-
-/* marron clair */
-#c242.active, #c246.active { 
-  transform: skew(-30deg, -1deg);
-}
-
- /* marron foncé */
-#c243.active { 
-  transform: skew(-30deg, -10deg);
-}
-
-/* bleu canard */
-#c265.active, #c269.active, #c273.active, #c310.active, #c314.active {  
-  transform: skew(30deg, 10deg);
-}
-
-/* vert d'eau */
-#c266.active, #c268.active, #c270.active, #c272.active, #c311.active, #c313.active { 
-  transform: skew(30deg, 1deg);
-}
-
-#c306.active {
-  border-radius: 0; 
-  transform: scale(1.1); 
-}
-
-
-
-
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .circle-grid-container {
     width: 100vw;
-    height: 100svh;
+    height: 90svh;
     padding: 0.5rem;
   }
   
@@ -264,3 +87,152 @@
   }
 }
 
+
+
+
+
+
+  /* Hover effects */
+
+    #c57:hover, #c61:hover, #c63:hover, #c67:hover, #c123:hover, #c173:hover { 
+      transform: scale(0.9, 1.2);
+    }
+
+    #c58:hover, #c60:hover, #c64:hover, #c66:hover, #c98:hover, #c198:hover, #c57:hover, #c204:hover, #c228:hover, #c57:hover{  
+      transform: scale(0.7, 1.2);
+    }
+
+    #c59:hover, #c65:hover, #c73:hover, #c223:hover{ 
+      transform: scale(0.5, 1.2);
+    }
+
+    #c68:hover, #c69:hover, #c70:hover, #c71:hover, #c72:hover, #c148:hover{  
+      transform: scale(1.2, 1.2);
+    }
+
+    #c81:hover, #c181:hover, #c340:hover, #c344:hover {  
+      transform: scale(1.2, 0.9);
+    }
+
+    #c84:hover, #c118:hover, #c119:hover, #c120:hover, #c143:hover, #c145:hover, #c168:hover, #c169:hover, #c170:hover  {  
+      transform: scale(0.5, 0.5);
+    }
+
+    #c92:hover, #c93:hover, #c94:hover, #c95:hover, #c96:hover, #c117:hover, #c121:hover, #c142:hover, #c146:hover, #c167:hover, #c171:hover, #c192:hover, #c193:hover, #c194:hover, #c195:hover, #c196:hover {   
+      transform: scale(0.7, 0.7);
+    }
+
+    #c106:hover, #c156:hover, #c203:hover, #c229:hover, #c341:hover, #c343:hover {  
+      transform: scale(1.2, 0.7);
+    }
+
+    #c131:hover, #c342:hover, #c394:hover {  
+      transform: scale(1.2, 0.4);
+    }
+
+    #c134:hover, #c186:hover, #c236:hover, #c244:hover, #c286:hover {   
+      transform: skew(-30deg, -20deg);
+    }
+
+    #c144:hover {  
+      border-radius: 0; 
+      transform: scale(0.4); 
+    }
+
+    #c160:hover, #c212:hover, #c260:hover, #c267:hover, #c271:hover, #c312:hover { 
+      transform: skew(30deg, 20deg);
+    }
+
+    #c242:hover, #c246:hover { 
+      transform: skew(-30deg, -1deg);
+    }
+
+    #c243:hover { 
+      transform: skew(-30deg, -10deg);
+    }
+
+    #c265:hover, #c269:hover, #c273:hover, #c310:hover, #c314:hover {  
+      transform: skew(30deg, 10deg);
+    }
+
+    #c266:hover, #c268:hover, #c270:hover, #c272:hover, #c311:hover, #c313:hover { 
+      transform: skew(30deg, 1deg);
+    }
+
+    #c306:hover {
+      border-radius: 0; 
+      transform: scale(1.1); 
+    }
+
+
+  /* Touch fx */
+
+    #c57.active, #c61.active, #c63.active, #c67.active, #c123.active, #c173.active { 
+      transform: scale(0.9, 1.2);
+    }
+
+    #c58.active, #c60.active, #c64.active, #c66.active, #c98.active, #c198.active, #c57.active, #c204.active, #c228.active, #c57.active {  
+      transform: scale(0.7, 1.2);
+    }
+
+    #c59.active, #c65.active, #c73.active, #c223.active { 
+      transform: scale(0.5, 1.2);
+    }
+
+    #c68.active, #c69.active, #c70.active, #c71.active, #c72.active, #c148.active{  
+      transform: scale(1.2, 1.2);
+    }
+
+    #c81.active, #c181.active, #c340.active, #c344.active {  
+      transform: scale(1.2, 0.9);
+    }
+
+    #c84.active, #c118.active, #c119.active, #c120.active, #c143.active, #c145.active, #c168.active, #c169.active, #c170.active  {  
+      transform: scale(0.5, 0.5);
+    }
+
+    #c92.active, #c93.active, #c94.active, #c95.active, #c96.active, #c117.active, #c121.active, #c142.active, #c146.active, #c167.active, #c171.active, #c192.active, #c193.active, #c194.active, #c195.active, #c196.active {   
+      transform: scale(0.7, 0.7);
+    }
+
+    #c106.active, #c156.active, #c203.active, #c229.active, #c341.active, #c343.active {  
+      transform: scale(1.2, 0.7);
+    }
+
+    #c131.active, #c342.active, #c394.active {  
+      transform: scale(1.2, 0.4);
+    }
+
+    #c134.active, #c186.active, #c236.active, #c244.active, #c286.active {   
+      transform: skew(-30deg, -20deg);
+    }
+
+    #c144.active {  
+      border-radius: 0; 
+      transform: scale(0.4); 
+    }
+
+    #c160.active, #c212.active, #c260.active, #c267.active, #c271.active, #c312.active { 
+      transform: skew(30deg, 20deg);
+    }
+
+    #c242.active, #c246.active { 
+      transform: skew(-30deg, -1deg);
+    }
+
+    #c243.active { 
+      transform: skew(-30deg, -10deg);
+    }
+
+    #c265.active, #c269.active, #c273.active, #c310.active, #c314.active {  
+      transform: skew(30deg, 10deg);
+    }
+
+    #c266.active, #c268.active, #c270.active, #c272.active, #c311.active, #c313.active { 
+      transform: skew(30deg, 1deg);
+    }
+
+    #c306.active {
+      border-radius: 0; 
+      transform: scale(1.1); 
+    }

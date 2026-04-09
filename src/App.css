@@ -39,16 +39,19 @@ html, body, #root {
   overflow: hidden;
 }
 
+.main-container {
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
 
 /* Score Component Styles */
 .score-container {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  right: 20px;
   border-radius: 20px;
-  padding: 15px 20px;
+  padding: 0px 20px;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
 }
@@ -57,29 +60,14 @@ html, body, #root {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 10px;
-}
-
-.score-label {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .score-value {
   color: #fdee1a;
   font-size: 2.2rem;
   font-weight: bold;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
 
 /* Mobile adjustments */
 @media (max-width: 768px) {

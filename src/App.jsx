@@ -19,7 +19,7 @@ function App() {
   // This function is called when all emojis are touched
   const handleGameComplete = () => {
     setGameComplete(true);
-    console.log('🎉 GAME COMPLETE! All 164 emojis touched! 🎉');
+    console.log('🎉 GAME COMPLETE! All 152 emojis touched! 🎉');
   };
   
   // Optional: Reset function (if you want a "Play Again" button)
@@ -29,11 +29,11 @@ function App() {
   };
   
   return (
-    <div>
+    <div className="main-container">
       {/* Add Score component at the top so it's always visible */}
       <Score 
         activeIds={touchedEmojis}
-        totalEmojis={164}
+        totalEmojis={152}
         onComplete={handleGameComplete}
         onReset={handleReset} // Optional: pass this if you add reset button
       />
@@ -45,7 +45,6 @@ function App() {
         onScoreUpdate={handleScoreUpdate}  // Gets updates when emojis are touched
       />
       
-      <br />
       <Contact />
     </div>
   );
