@@ -1,54 +1,47 @@
 import './App.css';
-import { useState } from 'react'; // IMPORTANT: Add this import
+import { useState } from 'react';
 import CircleGrid from './CircleGrid';
 import Contact from './Contact';
-import Score from './Score'; // Add this import
+import Score from './Score';
 
 function App() {
-  // State to track touched emojis
   const [touchedEmojis, setTouchedEmojis] = useState(new Set());
-
-  
-  // State to track if game is complete
+  const [totalCircles, setTotalCircles] = useState(0);
   const [gameComplete, setGameComplete] = useState(false);
-
-    // This function is called when all emojis are touched
+  
   const handleGameComplete = () => {
     setGameComplete(true);
-    console.log('🎉 GAME COMPLETE! All 152 emojis touched! 🎉');
+    console.log(`🎉 GAME COMPLETE! All ${totalCircles} emojis touched! 🎉`);
   };
   
-  // This function receives the activeIds from CircleGrid
-const handleScoreUpdate = (activeIds) => {
-  // Only update score if game is not complete
-  if (!gameComplete) {
-    setTouchedEmojis(activeIds);
-  }
-};
+  const handleScoreUpdate = (scoreData) => {
+    if (!gameComplete && scoreData.totalCircles > 0) {
+      setTouchedEmojis(scoreData.activeIds);
+      setTotalCircles(scoreData.totalCircles);
+    }
+  };
   
- 
-  
-  // Optional: Reset function (if you want a "Play Again" button)
   const handleReset = () => {
     setTouchedEmojis(new Set());
     setGameComplete(false);
+    setTotalCircles(0);
   };
   
   return (
     <div className="main-container">
-      {/* Add Score component at the top so it's always visible */}
-      <Score 
-        activeIds={touchedEmojis}
-        totalEmojis={152}
-        onComplete={handleGameComplete}
-        onReset={handleReset} // Optional: pass this if you add reset button
-      />
+      {totalCircles > 0 && (  // Only show score when we have a valid total
+        <Score 
+          activeIds={touchedEmojis}
+          totalEmojis={totalCircles}
+          onComplete={handleGameComplete}
+          onReset={handleReset}
+        />
+      )}
       
-      {/* Pass game state to CircleGrid */}
       <CircleGrid 
-        lingerMs={90000}      // 30 second delay normally
-        isComplete={gameComplete}  // When true, no more delay
-        onScoreUpdate={handleScoreUpdate}  // Gets updates when emojis are touched
+        lingerMs={90000}
+        isComplete={gameComplete}
+        onScoreUpdate={handleScoreUpdate}
       />
       
       <Contact />

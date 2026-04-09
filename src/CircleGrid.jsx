@@ -157,11 +157,15 @@ const CircleGrid = ({
   const gapSize = circleSize * gapRatio;
 
   useEffect(() => {
-  // Only send score updates if game is NOT complete
-  if (onScoreUpdate && !isComplete) {
-    onScoreUpdate(activeIds);
+  // Only send score updates if game is NOT complete AND we have actual rows/cols
+  if (onScoreUpdate && !isComplete && rows > 0 && cols > 0) {
+    onScoreUpdate({
+      activeIds: activeIds,
+      totalCircles: rows * cols
+    });
   }
-}, [activeIds, onScoreUpdate, isComplete]);
+}, [activeIds, onScoreUpdate, isComplete, rows, cols]);
+
   
   // THEN return the JSX
   return (

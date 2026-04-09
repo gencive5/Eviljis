@@ -4,9 +4,9 @@ import './App.css';
 
 const Score = ({ 
     activeIds,
-    totalEmojis = 152,
+    totalEmojis,
     onComplete,
-    lingerMs = 60000
+    lingerMs = 90000
 }) => {
 
     const currentScore = activeIds.size;
