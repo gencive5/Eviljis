@@ -86,3 +86,103 @@ html, body, #root {
     font-size: 1.4rem;
   }
 }
+
+/* Add to your existing App.css */
+
+/* Download Prompt Styles */
+.download-prompt {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(41, 24, 136, 0.9);
+  border-radius: 15px;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+.download-message {
+  color: #fdee1a;
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  font-family: 'Universalis', sans-serif;
+}
+
+.download-button {
+  background: #fdee1a;
+  color: #291888;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Universalis', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(253, 238, 26, 0.4);
+}
+
+.download-complete {
+  margin-top: 15px;
+  padding: 10px;
+  color: #30db9c;
+  font-size: 1.1rem;
+  font-family: 'Universalis', sans-serif;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Circle selection styles */
+.circle.selectable {
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.circle.selectable:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.circle.selected {
+  animation: pulse 1s infinite;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(253, 238, 26, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(253, 238, 26, 1);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .download-prompt {
+    padding: 12px;
+  }
+  
+  .download-message {
+    font-size: 1rem;
+  }
+  
+  .download-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}

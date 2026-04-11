@@ -16,7 +16,10 @@ const CircleGrid = ({
   svgFolder = '/emojis/',
   svgNamePattern = 'emoji',
   onScoreUpdate,     
-  isComplete = false 
+  isComplete = false,
+  onJijiSelect,      
+  downloadedJiji,
+  selectedJiji={selectedJiji} 
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -106,6 +109,13 @@ const CircleGrid = ({
       timeoutsRef.current[id] = setTimeout(() => deactivate(id, null), delay);
     }
   };
+
+  const handleCircleClick = (id) => {
+    if (isComplete && !downloadedJiji) {
+      const svgPath = getSvgPath(id);
+      onJijiSelect?.(id, svgPath);
+    }
+  };
   
   // THEN event handlers
   const handleMouseEnter = (id) => activate(id);
@@ -169,7 +179,7 @@ const CircleGrid = ({
   
   // THEN return the JSX
   return (
-    <div
+     <div
       ref={gridRef}
       className="circle-grid-container"
       style={{
@@ -189,18 +199,23 @@ const CircleGrid = ({
         {Array.from({ length: rows * cols }).map((_, index) => {
           const id = `c${index + 1}`;
           const custom = customCircles[id] || {};
+          const isSelected = selectedJiji?.id === id; // You'll need to pass selectedJiji from App
+          
           return (
             <Circle
               key={id}
               id={id}
               isActive={activeIds.has(id)}
-              forceActive={isComplete} 
+              forceActive={isComplete}
+              isSelectable={isComplete && !downloadedJiji}
+              isSelected={isSelected}
               circleSize={circleSize}
               circleStyle={circleStyle}
               customStyle={custom.style || {}}
               svgPath={getSvgPath(id)}
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={() => handleMouseLeave(id)}
+              onClick={() => handleCircleClick(id)}
             />
           );
         })}

@@ -1,22 +1,24 @@
 // components/Score.jsx
-import React, { useEffect } from 'react'; // FIXED: Added useEffect import
+import React, { useEffect } from 'react';
 import './App.css';
 
 const Score = ({ 
     activeIds,
     totalEmojis,
     onComplete,
-    lingerMs = 90000
+    isComplete,
+    selectedJiji,
+    downloadedJiji,
+    onDownload
 }) => {
-
     const currentScore = activeIds.size;
-    const isComplete = currentScore === totalEmojis;
+    const gameIsComplete = currentScore === totalEmojis;
 
     useEffect(() => { 
-        if (isComplete && onComplete) {
+        if (gameIsComplete && onComplete) {
             onComplete();
         }
-    }, [isComplete, onComplete]);
+    }, [gameIsComplete, onComplete]);
 
     return (
         <div className="score-container">
@@ -27,7 +29,30 @@ const Score = ({
                 </span>
             </div>
 
-        
+            {/* Download prompt */}
+            {isComplete && !downloadedJiji && (
+                <div className="download-prompt">
+                    <p className="download-message">
+                        {selectedJiji 
+                            ? `✨ Jiji ${selectedJiji.id} selected! ✨` 
+                            : 'Choose a jiji to download'}
+                    </p>
+                    {selectedJiji && (
+                        <button 
+                            className="download-button"
+                            onClick={onDownload}
+                        >
+                            Download Jiji
+                        </button>
+                    )}
+                </div>
+            )}
+
+            {downloadedJiji && (
+                <div className="download-complete">
+                    <p>✓ Jiji downloaded! ✓</p>
+                </div>
+            )}
         </div>
     );
 };

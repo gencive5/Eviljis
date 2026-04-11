@@ -10,14 +10,15 @@ const Circle = ({
   svgPath,
   onMouseEnter,
   onMouseLeave,
-  forceActive = false 
+  onClick,
+  forceActive = false,
+  isSelectable = false,
+  isSelected = false
 }) => {
   const [svgFailed, setSvgFailed] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
-  // Choose which filter to apply when active
   const activeFilter = 'url(#water-ripple)';
-  
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';
@@ -30,18 +31,19 @@ const Circle = ({
   return (
     <div
       id={id}
-      className={`circle ${isActive ? 'active' : ''}`}
+      className={`circle ${isActive ? 'active' : ''} ${isSelectable ? 'selectable' : ''} ${isSelected ? 'selected' : ''}`}
       style={{
         width: `${circleSize}px`,
         height: `${circleSize}px`,
         ...circleStyle,
         ...customStyle,
-        cursor: 'pointer',
+        cursor: isSelectable ? 'pointer' : 'pointer',
         ...(backgroundColor && { backgroundColor }),
         ...(!svgPath && !backgroundColor && { backgroundColor: 'rgb(48, 219, 156)' }),
       }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
       {showSvg ? (
         <img 
@@ -55,10 +57,10 @@ const Circle = ({
             objectFit: 'contain',
             pointerEvents: 'none',
             borderRadius: '50%',
-            // Add filter transition
-            transition: 'filter 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-            // Apply filter when active
-             filter: (isActive || forceActive) ? activeFilter : 'none'
+            transition: 'filter 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease',
+            filter: (isActive || forceActive) ? activeFilter : 'none',
+            transform: isSelected ? 'scale(1.1)' : 'scale(1)',
+            boxShadow: isSelected ? '0 0 20px rgba(253, 238, 26, 0.8)' : 'none'
           }}
           onError={() => setSvgFailed(true)}
         />
