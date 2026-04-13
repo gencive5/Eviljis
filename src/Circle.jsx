@@ -18,7 +18,7 @@ const Circle = ({
   const [svgFailed, setSvgFailed] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
-  const activeFilter = 'url(#water-ripple)';
+  const activeFilter = 'url(#hologram)';
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';

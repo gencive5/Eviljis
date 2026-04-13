@@ -5,36 +5,7 @@ const SVGFilters = () => {
   return (
     <svg style={{ position: 'absolute', height: 0, width: 0 }} aria-hidden="true">
       <defs>
-        {/* Multi-layered Neon Glow */}
-        <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur1"/>
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2"/>
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur3"/>
-          <feComponentTransfer in="blur3" result="neon">
-            <feFuncA type="linear" slope="0.5"/>
-          </feComponentTransfer>
-          <feMerge>
-            <feMergeNode in="neon"/>
-            <feMergeNode in="blur2"/>
-            <feMergeNode in="blur1"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
-
-        {/* RGB Split/Chromatic Aberration */}
-        <filter id="chromatic-split" x="-20%" y="-20%" width="140%" height="140%">
-          <feOffset in="SourceGraphic" dx="3" dy="0" result="red-shift">
-            <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
-          </feOffset>
-          <feOffset in="SourceGraphic" dx="-3" dy="0" result="blue-shift">
-            <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  1 0 0 0 0  0 0 0 1 0"/>
-          </feOffset>
-          <feBlend mode="screen" in="red-shift" in2="blue-shift" result="chromatic"/>
-          <feMerge>
-            <feMergeNode in="chromatic"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
+  
 
         {/* Liquid/Morph Effect */}
         <filter id="liquid-morph" x="-30%" y="-30%" width="160%" height="160%">
@@ -46,7 +17,7 @@ const SVGFilters = () => {
           </feComponentTransfer>
         </filter>
 
-        {/* Fire/Electric Effect */}
+        {/* Fire/Electric Effect
         <filter id="electric" x="-50%" y="-50%" width="200%" height="200%">
           <feTurbulence type="turbulence" baseFrequency="0.1" numOctaves="2" seed="3" result="turbulence"/>
           <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="8" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
@@ -60,7 +31,7 @@ const SVGFilters = () => {
             <feMergeNode in="contrasted"/>
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
-        </filter>
+        </filter> */}
 
         {/* Glitch Effect */}
         <filter id="glitch" x="-20%" y="-20%" width="140%" height="140%">
@@ -75,9 +46,11 @@ const SVGFilters = () => {
           </feComponentTransfer>
         </filter>
 
-        {/* Holographic/Rainbow Prism */}
+        {/* NEW Holographic/Rainbow Prism */}
         <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="2" result="blur"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
           <feComponentTransfer in="blur" result="rainbow">
             <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
             <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
@@ -111,18 +84,6 @@ const SVGFilters = () => {
           </feMerge>
         </filter>
 
-        {/* Soft Glow */}
-        <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="4" result="blur"/>
-          <feComponentTransfer in="blur">
-            <feFuncA type="linear" slope="0.6"/>
-          </feComponentTransfer>
-          <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
-
         {/* Bright Glow */}
         <filter id="bright-glow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1"/>
@@ -146,8 +107,21 @@ const SVGFilters = () => {
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
+
+        {/* Holographic/Rainbow Prism */}
+        <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="2" result="blur"/>
+          <feComponentTransfer in="blur" result="rainbow">
+            <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
+            <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
+            <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
+          </feComponentTransfer>
+          <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
+        </filter>
       </defs>
     </svg>
+
+       
   );
 };
 

@@ -19,7 +19,7 @@ const CircleGrid = ({
   isComplete = false,
   onJijiSelect,      
   downloadedJiji,
-  selectedJiji={selectedJiji} 
+  selectedJiji
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
