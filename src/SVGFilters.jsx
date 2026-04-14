@@ -17,63 +17,26 @@ const SVGFilters = () => {
           </feComponentTransfer>
         </filter>
 
-        {/* Fire/Electric Effect
-        <filter id="electric" x="-50%" y="-50%" width="200%" height="200%">
-          <feTurbulence type="turbulence" baseFrequency="0.1" numOctaves="2" seed="3" result="turbulence"/>
-          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="8" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
-          <feGaussianBlur in="displaced" stdDeviation="1.5" result="blurred"/>
-          <feComponentTransfer in="blurred" result="contrasted">
-            <feFuncR type="linear" slope="2" intercept="-0.5"/>
-            <feFuncG type="linear" slope="1.5" intercept="-0.3"/>
-            <feFuncB type="linear" slope="0.5"/>
-          </feComponentTransfer>
-          <feMerge>
-            <feMergeNode in="contrasted"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter> */}
 
-        {/* Glitch Effect */}
-        <filter id="glitch" x="-20%" y="-20%" width="140%" height="140%">
-          <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 1 0 0  0 1 0 0 0  0 0 0 1 0" result="color-shift"/>
-          <feOffset in="color-shift" dx="4" dy="0" result="shifted1"/>
-          <feOffset in="SourceGraphic" dx="-4" dy="0" result="shifted2"/>
-          <feBlend mode="screen" in="shifted1" in2="shifted2" result="glitched"/>
-          <feComponentTransfer in="glitched">
-            <feFuncR type="linear" slope="1.5"/>
-            <feFuncG type="linear" slope="1.2"/>
-            <feFuncB type="linear" slope="1.8"/>
-          </feComponentTransfer>
-        </filter>
+
 
         {/* NEW Holographic/Rainbow Prism */}
         <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
           <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
           <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
           <feComponentTransfer in="blur" result="rainbow">
             <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
-            <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
-            <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
+            <feFuncG type="discrete" tableValues="5 0 1 0 1 0"/>
+            <feFuncB type="discrete" tableValues="1 3 0 1 0 0"/>
           </feComponentTransfer>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
+         
         </filter>
 
-        {/* Heat Distortion */}
-        <filter id="heat-distort" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="1" result="noise"/>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
-          <feGaussianBlur in="displaced" stdDeviation="1"/>
-        </filter>
 
-        {/* Water Ripple */}
-        <filter id="water-ripple" x="-20%" y="-20%" width="140%" height="140%">
-          <feTurbulence type="turbulence" baseFrequency="0.02 0.06" numOctaves="2" result="waves"/>
-          <feDisplacementMap in="SourceGraphic" in2="waves" scale="12" xChannelSelector="R" yChannelSelector="G" result="rippled"/>
-          <feGaussianBlur in="rippled" stdDeviation="0.5"/>
-        </filter>
 
-        {/* Drop Shadow with Color - FIXED: camelCase attributes */}
+        {/* Drop Shadow with Color */}
         <filter id="color-shadow" x="-50%" y="-50%" width="200%" height="200%">
           <feDropShadow dx="3" dy="3" stdDeviation="4" floodColor="#ff00ff" floodOpacity="1" result="shadow1"/>
           <feDropShadow dx="-3" dy="-3" stdDeviation="4" floodColor="#00ffff" floodOpacity="1" result="shadow2"/>
@@ -97,19 +60,10 @@ const SVGFilters = () => {
           </feMerge>
         </filter>
 
-        {/* Pulsing Glow (for animation) */}
-        <filter id="pulse-glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
-            <animate attributeName="stdDeviation" values="3;10;3" dur="1s" repeatCount="indefinite"/>
-          </feGaussianBlur>
-          <feMerge>
-            <feMergeNode in="blur"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
+       *
 
-        {/* Holographic/Rainbow Prism */}
-        <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
+        {/* previous Holographic/Rainbow Prism */}
+        {/* <filter id="h0l0gram" x="-30%" y="-30%" width="160%" height="160%">
           <feGaussianBlur stdDeviation="2" result="blur"/>
           <feComponentTransfer in="blur" result="rainbow">
             <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
@@ -117,7 +71,8 @@ const SVGFilters = () => {
             <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
           </feComponentTransfer>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
-        </filter>
+        </filter> */}
+        
       </defs>
     </svg>
 
