@@ -42,7 +42,7 @@ const Score = ({
                             className="download-button"
                             onClick={onDownload}
                         >
-                            Download Jiji
+                            Download jiji
                         </button>
                     )}
                 </div>

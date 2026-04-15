@@ -89,23 +89,33 @@ html, body, #root {
 
 /* Download Prompt Styles */
 .download-prompt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-top: 15px;
   padding: 15px;
   text-align: center;
 }
 
 .download-message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   color: #fdee1a;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.6rem;
   margin: 0 0 10px 0;
   font-family: 'Microsoft', sans-serif;
+  padding: 0rem 2rem;
 }
 
 .download-button {
   color: #291888;
   border: none;
-  padding: 10px 20px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.6rem;
   font-weight: bold;
   text-decoration: underline;
   font-family: 'Microsoft', sans-serif;
@@ -115,7 +125,6 @@ html, body, #root {
 }
 
 .download-button:hover {
-  transform: scale(1.05);
   background: #fff;
 }
 
