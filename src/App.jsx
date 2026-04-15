@@ -14,7 +14,6 @@ function App() {
   
   const handleGameComplete = () => {
     setGameComplete(true);
-    console.log(`🎉 GAME COMPLETE! All ${totalCircles} emojis touched! 🎉`);
   };
   
   const handleScoreUpdate = (scoreData) => {
@@ -93,7 +92,7 @@ function App() {
       )}
       
       <CircleGrid 
-        lingerMs={90000}
+        lingerMs={120000}
         isComplete={gameComplete}
         onScoreUpdate={handleScoreUpdate}
         onJijiSelect={handleJijiSelect}
