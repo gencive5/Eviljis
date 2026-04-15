@@ -7,8 +7,8 @@ import SVGFilters from './SVGFilters';
 const CircleGrid = ({
   minCircleSize = 65,
   maxCircleSize = 65,
-  mobileMinCircleSize = 40,
-  mobileMaxCircleSize = 40,
+  mobileMinCircleSize = 35,
+  mobileMaxCircleSize = 35,
   gapRatio = 0.2,
   circleStyle = {},
   customCircles = {},
