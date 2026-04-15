@@ -40,7 +40,6 @@ html, body, #root {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-radius: 20px;
   padding: 0px 20px;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
@@ -51,9 +50,14 @@ html, body, #root {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
 }
 
 .score-value {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   color: #fdee1a;
   font-size: 2.2rem;
   font-weight: bold;
@@ -82,15 +86,12 @@ html, body, #root {
   }
 }
 
-/* Add to your existing App.css */
 
 /* Download Prompt Styles */
 .download-prompt {
   margin-top: 15px;
   padding: 15px;
-  width: 100%;
   text-align: center;
-  animation: slideDown 0.3s ease;
 }
 
 .download-message {
@@ -116,7 +117,6 @@ html, body, #root {
 .download-button:hover {
   transform: scale(1.05);
   background: #fff;
-  box-shadow: 0 6px 15px rgba(253, 238, 26, 0.4);
 }
 
 .download-complete {
