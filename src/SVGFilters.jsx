@@ -1,4 +1,3 @@
-// components/SVGFilters.jsx
 import React from 'react';
 
 const SVGFilters = () => {

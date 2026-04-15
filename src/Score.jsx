@@ -34,7 +34,7 @@ const Score = ({
                 <div className="download-prompt">
                     <p className="download-message">
                         {selectedJiji 
-                            ? `✨ Jiji ${selectedJiji.id} selected! ✨` 
+                            ? `Jiji ${selectedJiji.id} selected` 
                             : 'Choose a jiji to download'}
                     </p>
                     {selectedJiji && (
