@@ -31,7 +31,6 @@
   width: var(--circle-size);
   height: var(--circle-size);
   border-radius: 50%;
-  /* background: rgb(48, 219, 156); */
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -46,16 +45,6 @@
   user-select: none;
 }
 
-/* Letter inside circle */
-.circle-letter {
-  font-size: calc(var(--circle-size) * 0.4);
-  font-weight: bold;
-  color: #291888;
-  opacity: 0;
-  animation: fadeIn 0.3s ease forwards;
-  z-index: 2;
-  font-family: 'Universalis', sans-serif;
-}
 
 /* Toggle icon specific styling */
 .toggle-icon {
@@ -77,10 +66,7 @@
     height: 90svh;
     padding: 0.5rem;
   }
-  
-  .circle-letter {
-    font-size: calc(var(--circle-size) * 0.35);
-  }
+
   
   .toggle-icon {
     font-size: calc(var(--circle-size) * 0.5);
