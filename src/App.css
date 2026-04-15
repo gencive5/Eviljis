@@ -8,7 +8,6 @@
 }
 
 
-
 /* Ensure the container doesn't create extra scrollbars */
 .container {
   width: 100%;
@@ -35,14 +34,16 @@ html, body, #root {
   width: 100%;
 }
 
+
 /* Score Component Styles */
 .score-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
   padding-left: 2rem;
+  height: 5rem;
 }
 
 .score-display {
@@ -55,7 +56,7 @@ html, body, #root {
 .score-value {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   color: #fdee1a;
   font-size: 2.2rem;
@@ -88,28 +89,30 @@ html, body, #root {
 .download-prompt {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   text-align: center;
   padding-left: 1rem;
+  height: 5rem;
 }
 
 .download-message {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   color: #fdee1a;
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
   font-family: 'Microsoft', sans-serif;
   padding-left: 1rem;
+  height: 5rem;
 }
 
 .download-button {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   color: #291888;
   font-size: 1.4rem;
@@ -119,6 +122,7 @@ html, body, #root {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  height: 8rem;
 }
 
 .download-button:hover {
@@ -136,6 +140,7 @@ html, body, #root {
   letter-spacing: 0.6rem;
   font-family: 'Microsoft', sans-serif;
   padding-left: 1rem;
+  height: 5rem;
 }
 
 /* Circle selection styles */
@@ -166,10 +171,10 @@ html, body, #root {
 
 @keyframes pulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(253, 238, 26, 0.8);
+    box-shadow: 0 0 10px rgba(253, 238, 26, 0.8);
   }
   50% {
-    box-shadow: 0 0 30px rgba(253, 238, 26, 1);
+    box-shadow: 0 0 10px rgba(253, 238, 26, 1);
   }
 }
 

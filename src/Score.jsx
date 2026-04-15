@@ -34,7 +34,7 @@ const Score = ({
                 <div className="download-prompt">
                     <p className="download-message">
                         {selectedJiji 
-                            ? `Jiji ${selectedJiji.id} selected,` 
+                            ? `jiji ${selectedJiji.id} selected,` 
                             : 'Choose a jiji to download'}
                     
                     {selectedJiji && (
@@ -42,7 +42,7 @@ const Score = ({
                             className="download-button"
                             onClick={onDownload}
                         >
-                            Download jiji
+                            Download ⟨evil⟩jiji
                         </button>
                     )}
                     </p>
