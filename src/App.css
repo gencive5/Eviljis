@@ -40,9 +40,9 @@ html, body, #root {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px 20px;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
+  padding-left: 2rem;
 }
 
 .score-display {
@@ -50,7 +50,6 @@ html, body, #root {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-
 }
 
 .score-value {
@@ -78,10 +77,6 @@ html, body, #root {
     width: 100%;
   }
   
-  .score-label {
-    font-size: 0.9rem;
-  }
-  
   .score-value {
     font-size: 1.4rem;
   }
@@ -94,8 +89,8 @@ html, body, #root {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 15px;
   text-align: center;
+  padding-left: 1rem;
 }
 
 .download-message {
@@ -106,37 +101,40 @@ html, body, #root {
   color: #fdee1a;
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
-  margin: 0 0 10px 0;
   font-family: 'Microsoft', sans-serif;
-  padding: 0rem 2rem;
+  padding-left: 1rem;
 }
 
 .download-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   color: #291888;
-  border: none;
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
-  font-weight: bold;
   text-decoration: underline;
   font-family: 'Microsoft', sans-serif;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: none;
 }
 
 .download-button:hover {
-  background: #fff;
+  color: #fff;
 }
 
 .download-complete {
-  margin-top: 15px;
-  padding: 10px;
   color: #30db9c;
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
   font-family: 'Microsoft', sans-serif;
-  text-align: center;
-  animation: fadeIn 0.5s ease;
+  padding-left: 1rem;
 }
 
 /* Circle selection styles */
@@ -185,17 +183,21 @@ html, body, #root {
   
   .download-message {
     font-size: 1rem;
+    letter-spacing: 0.2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    align-content: center;
   }
   
   .download-button {
-    padding: 8px 16px;
+    padding: 0px 0px;
     font-size: 1rem;
+    letter-spacing: 0.2rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer {
@@ -212,5 +214,5 @@ html, body, #root {
   letter-spacing: 0.4rem;
   font-family: 'Microsoft', sans-serif;
   text-align: center;
-  padding: 0px 20px;
+  padding-left: 2rem;
 }

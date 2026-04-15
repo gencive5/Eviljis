@@ -12,7 +12,7 @@ const CircleGrid = ({
   gapRatio = 0.2,
   circleStyle = {},
   customCircles = {},
-  lingerMs = 120000,
+  lingerMs = 150000,
   svgFolder = '/emojis/',
   svgNamePattern = 'emoji',
   onScoreUpdate,     

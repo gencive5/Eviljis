@@ -92,7 +92,7 @@ function App() {
       )}
       
       <CircleGrid 
-        lingerMs={120000}
+        lingerMs={150000}
         isComplete={gameComplete}
         onScoreUpdate={handleScoreUpdate}
         onJijiSelect={handleJijiSelect}
