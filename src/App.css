@@ -154,29 +154,7 @@ html, body, #root {
   filter: brightness(1.2);
 }
 
-.circle.selected {
-  animation: pulse 1s infinite;
-}
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(253, 238, 26, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(253, 238, 26, 1);
-  }
-}
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -231,19 +209,17 @@ html, body, #root {
 }
 
 /* Indicator badge styles */
-/* .circle-indicator {
+.circle-indicator {
   position: absolute;
   top: -5px;
   right: -5px;
   width: 24px;
   height: 24px;
-  background-color: transparent;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-} */
+}
 
 .indicator-text {
   color: #fdee1a;
@@ -254,10 +230,10 @@ html, body, #root {
 }
 
 /* Selected indicator style */
-/* .circle-indicator.selected-indicator {
+.circle-indicator.selected-indicator {
   background-color: transparent;
   border-color: #291888;
-} */
+}
 
 .circle-indicator.selected-indicator .indicator-text {
   color: #291888;
