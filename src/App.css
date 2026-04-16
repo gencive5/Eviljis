@@ -222,3 +222,66 @@ html, body, #root {
   text-align: center;
   padding-left: 2rem;
 }
+
+
+/* indicator styles */
+
+.circle {
+  position: relative;
+}
+
+/* Indicator badge styles */
+/* .circle-indicator {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+} */
+
+.indicator-text {
+  color: #fdee1a;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Microsoft', sans-serif;
+  line-height: 1;
+}
+
+/* Selected indicator style */
+/* .circle-indicator.selected-indicator {
+  background-color: transparent;
+  border-color: #291888;
+} */
+
+.circle-indicator.selected-indicator .indicator-text {
+  color: #291888;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .circle-indicator {
+    width: 18px;
+    height: 18px;
+    top: -3px;
+    right: -3px;
+  }
+  
+  .indicator-text {
+    font-size: 12px;
+  }
+  
+  .circle-indicator.selected-indicator .indicator-text {
+    font-size: 14px;
+  }
+}

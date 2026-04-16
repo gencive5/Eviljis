@@ -1,5 +1,6 @@
 // components/Circle.jsx
 import React, { useState } from 'react';
+import './App.css'; // We'll create this for the indicator styles
 
 const Circle = ({ 
   id, 
@@ -45,6 +46,15 @@ const Circle = ({
       onMouseLeave={onMouseLeave}
       onClick={onClick}
     >
+      {/* Indicator badge */}
+      {isSelectable && (
+        <div className={`circle-indicator ${isSelected ? 'selected-indicator' : ''}`}>
+          <span className="indicator-text">
+            {isSelected ? '!' : '?'}
+          </span>
+        </div>
+      )}
+      
       {showSvg ? (
         <img 
           src={svgPath} 
