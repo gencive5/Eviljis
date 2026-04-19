@@ -19,7 +19,8 @@ const CircleGrid = ({
   isComplete = false,
   onJijiSelect,      
   downloadedJiji,
-  selectedJiji
+  selectedJiji,
+  onTimerStart      // NEW: Callback when first emoji is touched
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -32,6 +33,7 @@ const CircleGrid = ({
   const [rows, setRows] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [activeIds, setActiveIds] = useState(new Set());
+  const [hasStarted, setHasStarted] = useState(false); // NEW
   
   // THEN useEffect hooks
   useEffect(() => {
@@ -87,15 +89,21 @@ const CircleGrid = ({
   };
   
   const activate = (id) => {
-  // Don't allow new activations when game is complete
-  if (isComplete) return;
-  
-  if (timeoutsRef.current[id]) {
-    clearTimeout(timeoutsRef.current[id]);
-    delete timeoutsRef.current[id];
-  }
-  setActiveIds(prev => new Set(prev).add(id));
-};
+    // Don't allow new activations when game is complete
+    if (isComplete) return;
+    
+    // Start timer on first activation
+    if (!hasStarted) {
+      setHasStarted(true);
+      onTimerStart?.(); // Notify parent that timer should start
+    }
+    
+    if (timeoutsRef.current[id]) {
+      clearTimeout(timeoutsRef.current[id]);
+      delete timeoutsRef.current[id];
+    }
+    setActiveIds(prev => new Set(prev).add(id));
+  };
   
   const deactivate = (id, delay = null) => {
     if (delay === null) {
@@ -119,11 +127,12 @@ const CircleGrid = ({
   
   // THEN event handlers
   const handleMouseEnter = (id) => activate(id);
+  
   const handleMouseLeave = (id) => {
-  if (!isComplete) {  // ADDED this check
-    deactivate(id, getLinger(id));
-  }
-};
+    if (!isComplete) {
+      deactivate(id, getLinger(id));
+    }
+  };
   
   const handleTouchStart = (e) => {
     const touch = e.touches?.[0];
@@ -143,7 +152,7 @@ const CircleGrid = ({
     
     if (newId && newId !== currentRef.current) {
       if (currentRef.current && !isComplete) 
-      deactivate(currentRef.current, getLinger(currentRef.current));
+        deactivate(currentRef.current, getLinger(currentRef.current));
       activate(newId);
       currentRef.current = newId;
     } else if (!newId && currentRef.current && !isComplete) {
@@ -153,11 +162,11 @@ const CircleGrid = ({
   };
   
   const handleTouchEnd = () => {
-  if (currentRef.current && !isComplete) {  
-    deactivate(currentRef.current, getLinger(currentRef.current));
-    currentRef.current = null;
-  }
-};
+    if (currentRef.current && !isComplete) {  
+      deactivate(currentRef.current, getLinger(currentRef.current));
+      currentRef.current = null;
+    }
+  };
   
   // Cleanup useEffect
   useEffect(() => {
@@ -167,19 +176,25 @@ const CircleGrid = ({
   const gapSize = circleSize * gapRatio;
 
   useEffect(() => {
-  // Only send score updates if game is NOT complete AND we have actual rows/cols
-  if (onScoreUpdate && !isComplete && rows > 0 && cols > 0) {
-    onScoreUpdate({
-      activeIds: activeIds,
-      totalCircles: rows * cols
-    });
-  }
-}, [activeIds, onScoreUpdate, isComplete, rows, cols]);
-
+    // Only send score updates if game is NOT complete AND we have actual rows/cols
+    if (onScoreUpdate && !isComplete && rows > 0 && cols > 0) {
+      onScoreUpdate({
+        activeIds: activeIds,
+        totalCircles: rows * cols
+      });
+    }
+  }, [activeIds, onScoreUpdate, isComplete, rows, cols]);
+  
+  // Reset hasStarted when game is reset (isComplete becomes false)
+  useEffect(() => {
+    if (!isComplete) {
+      setHasStarted(false);
+    }
+  }, [isComplete]);
   
   // THEN return the JSX
   return (
-     <div
+    <div
       ref={gridRef}
       className="circle-grid-container"
       style={{
@@ -199,7 +214,7 @@ const CircleGrid = ({
         {Array.from({ length: rows * cols }).map((_, index) => {
           const id = `c${index + 1}`;
           const custom = customCircles[id] || {};
-          const isSelected = selectedJiji?.id === id; // You'll need to pass selectedJiji from App
+          const isSelected = selectedJiji?.id === id;
           
           return (
             <Circle
