@@ -3,67 +3,89 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 const Timer = ({ 
-  lingerMs = 150000, 
-  isActive = false,
-  isComplete = false,
-  onTimerComplete 
+  activeIds = new Set(),
+  lingerMs = 150000,
+  isComplete = false
 }) => {
-  const [timeLeft, setTimeLeft] = useState(lingerMs);
-  const [isRunning, setIsRunning] = useState(false);
-  const startTimeRef = useRef(null);
+  const [timers, setTimers] = useState(new Map());
   const animationFrameRef = useRef(null);
-  const timerEndRef = useRef(null);
 
-  // Start timer when first emoji is touched
+  // Add new timers when emojis are activated
   useEffect(() => {
-    if (isActive && !isRunning && !isComplete) {
-      setIsRunning(true);
-      startTimeRef.current = Date.now();
-      timerEndRef.current = Date.now() + lingerMs;
+    if (isComplete) {
+      setTimers(new Map());
+      return;
     }
-  }, [isActive, isRunning, isComplete, lingerMs]);
 
-  // Reset timer if game is reset
-  useEffect(() => {
-    if (!isActive) {
-      setIsRunning(false);
-      setTimeLeft(lingerMs);
-      startTimeRef.current = null;
-      timerEndRef.current = null;
-    }
-  }, [isActive, lingerMs]);
+    setTimers(prevTimers => {
+      const newTimers = new Map(prevTimers);
+      
+      // Add new active emojis
+      activeIds.forEach(id => {
+        if (!newTimers.has(id)) {
+          newTimers.set(id, {
+            id,
+            endTime: Date.now() + lingerMs,
+            timeLeft: lingerMs
+          });
+        }
+      });
+      
+      // Remove deactivated emojis
+      newTimers.forEach((_, id) => {
+        if (!activeIds.has(id)) {
+          newTimers.delete(id);
+        }
+      });
+      
+      return newTimers;
+    });
+  }, [activeIds, isComplete, lingerMs]);
 
-  // Animation loop for smooth countdown
+  // Animation loop for all timers
   useEffect(() => {
-    if (!isRunning || isComplete) {
+    if (isComplete || timers.size === 0) {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
       return;
     }
 
-    const updateTimer = () => {
+    const updateTimers = () => {
       const now = Date.now();
-      const remaining = Math.max(0, timerEndRef.current - now);
+      let hasChanges = false;
       
-      setTimeLeft(remaining);
+      setTimers(prevTimers => {
+        const updatedTimers = new Map(prevTimers);
+        
+        updatedTimers.forEach((timer, id) => {
+          const timeLeft = Math.max(0, timer.endTime - now);
+          if (timeLeft !== timer.timeLeft) {
+            updatedTimers.set(id, { ...timer, timeLeft });
+            hasChanges = true;
+          }
+          
+          // Remove timer if it reached 0
+          if (timeLeft <= 0) {
+            updatedTimers.delete(id);
+            hasChanges = true;
+          }
+        });
+        
+        return hasChanges ? updatedTimers : prevTimers;
+      });
       
-      if (remaining <= 0) {
-        setIsRunning(false);
-        onTimerComplete?.();
-      } else {
-        animationFrameRef.current = requestAnimationFrame(updateTimer);
-      }
+      animationFrameRef.current = requestAnimationFrame(updateTimers);
     };
 
-    animationFrameRef.current = requestAnimationFrame(updateTimer);
+    animationFrameRef.current = requestAnimationFrame(updateTimers);
 
     return () => {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [isRunning, isComplete, onTimerComplete]);
+  }, [timers.size, isComplete]);
 
   // Format time as MM:SS
   const formatTime = (ms) => {
@@ -73,15 +95,27 @@ const Timer = ({
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  // Don't render if timer hasn't started or game is complete
-  if (!isRunning && !isComplete) return null;
-  if (isComplete) return null;
+  // Don't render if no timers or game is complete
+  if (timers.size === 0 || isComplete) return null;
+
+  // Convert timers map to array for rendering
+  const timerArray = Array.from(timers.values());
 
   return (
-    <div className="timer-container">
-      <div className="timer-display">
-        <span className="timer-text">{formatTime(timeLeft)}</span>
-      </div>
+    <div className="timers-wrapper">
+      {timerArray.map((timer, index) => (
+        <div 
+          key={timer.id} 
+          className="timer-container"
+          style={{
+            right: `${20 + (index * 120)}px` // Stack timers horizontally
+          }}
+        >
+          <div className="timer-display">
+            <span className="timer-text">{formatTime(timer.timeLeft)}</span>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

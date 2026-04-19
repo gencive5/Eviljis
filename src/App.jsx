@@ -131,10 +131,10 @@ function App() {
       
       {/* Timer Component */}
       <Timer 
-        lingerMs={150000}
-        isActive={timerActive}
-        isComplete={gameComplete}
-      />
+  activeIds={touchedEmojis}
+  lingerMs={150000}
+  isComplete={gameComplete}
+/>
       
       <CircleGrid 
         lingerMs={150000}
