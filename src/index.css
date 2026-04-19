@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(107, 107, 107, 0.87);
-  background-color: #2d1d38;
+  background-image: url(background.jpg);
+  background-size: 100% 100%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
