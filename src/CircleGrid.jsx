@@ -14,7 +14,7 @@ const CircleGrid = ({
   customCircles = {},
   lingerMs = 150000,
   svgFolder = '/emojis/',
-  svgNamePattern = 'emoji',
+  svgNamePattern = 'jiji',
   onScoreUpdate,     
   isComplete = false,
   onJijiSelect,      
@@ -75,7 +75,7 @@ const CircleGrid = ({
   // THEN helper functions
   const getSvgPath = (id) => {
     const circleNumber = parseInt(id.substring(1));
-    const svgIndex = ((circleNumber - 1) % 164) + 1;
+    const svgIndex = ((circleNumber - 1) % 161) + 1;
     return `${svgFolder}${svgNamePattern}${svgIndex}.svg`;
   };
   
