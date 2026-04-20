@@ -20,18 +20,17 @@ const SVGFilters = () => {
 
 
         {/* NEW Holographic/Rainbow Prism */}
-        <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+              <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
           <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
           <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
           <feComponentTransfer in="blur" result="rainbow">
             <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
-            <feFuncG type="discrete" tableValues="5 0 1 0 1 0"/>
-            <feFuncB type="discrete" tableValues="1 3 0 1 0 0"/>
+            <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
+            <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
           </feComponentTransfer>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
-         
-        </filter>
+        </filter>  
 
 
 
@@ -70,6 +69,29 @@ const SVGFilters = () => {
             <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
           </feComponentTransfer>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
+        </filter> */}
+
+
+         {/* pizza flash*/}
+        {/* <filter id="pizza" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
+          
+            <feComponentTransfer in="blurred" result="step1">
+  <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
+  <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
+  <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
+</feComponentTransfer>
+
+<feComponentTransfer in="step1" result="rainbow">
+  <feFuncR type="table" tableValues="1 0 1 0"/>
+  <feFuncG type="table" tableValues="0 1 0 1"/>
+  <feFuncB type="table" tableValues="0 1 1 0"/>
+</feComponentTransfer>
+          
+          <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
+         
         </filter> */}
         
       </defs>
