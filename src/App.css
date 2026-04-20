@@ -38,12 +38,13 @@ html, body, #root {
 /* Score Component Styles */
 .score-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse; /* This makes items flow right to left */
   align-items: center;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
-  justify-content: flex-end;
+  justify-content: flex-start; /* Align to the left since order is reversed */
   width: 100%;
+  padding-right: 2rem;
 }
 
 .score-display {
