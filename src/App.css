@@ -271,63 +271,71 @@ html, body, #root {
     font-size: 14px;
   }
 }
-
 /* Timer Wrapper */
 .timers-wrapper {
   position: fixed;
-  top: 0;
-  left: -12rem;
-  right: 0;
-  bottom: 0;
-  width: 120%;
-  height: 100%;
+  bottom: 5rem;
+  right: 10px;
+  left: 10px;
   z-index: 0;
   pointer-events: none;
+  transition: filter 0.5s ease;
 }
 
-/* Individual Timer Container */
-.timer-container {
-  position: absolute;
+/* Flex container - wraps timers */
+.timers-flex {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: 'Microsoft', sans-serif;
-  z-index: 0;
-  pointer-events: none;
-  transform-origin: center;
-  will-change: transform, filter;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 15px 25px;
 }
 
-.timer-display {
-  padding: 8px 16px;
+/* Individual Timer */
+.timer-item {
+  font-family: 'Microsoft', sans-serif;
+  transform: scaleY(28);
+  pointer-events: none;
+  flex-shrink: 0;
 }
+
+/* Irregular offsets via margins */
+.timer-item.offset-0 { margin-bottom: 0px; margin-right: 5px; }
+.timer-item.offset-1 { margin-bottom: 15px; margin-right: -5px; }
+.timer-item.offset-2 { margin-bottom: -10px; margin-right: 10px; }
+.timer-item.offset-3 { margin-bottom: 25px; margin-right: 0px; }
+.timer-item.offset-4 { margin-bottom: 5px; margin-right: -10px; }
 
 .timer-text {
   color: #e896d9;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 0.2rem;
-  text-shadow: 0 0 10px rgba(232, 150, 217, 0.3);
+  letter-spacing: 0.1rem;
+  display: inline-block;
 }
 
-/* Mobile adjustments */
+/* Mobile */
 @media (max-width: 768px) {
-
   .timers-wrapper {
-
-  left: -5rem;
-
-}
-  .timer-container {
-    transform: scaleY(20) !important;
+    bottom: 3rem;
   }
-
-  .timer-display {
-    padding: 4px 8px;
+  
+  .timers-flex {
+    gap: 10px 15px;
   }
-
+  
+  .timer-item {
+    transform: scaleY(28);
+  }
+  
+  .timer-item.offset-0 { margin-bottom: 0px; }
+  .timer-item.offset-1 { margin-bottom: 8px; }
+  .timer-item.offset-2 { margin-bottom: -5px; }
+  .timer-item.offset-3 { margin-bottom: 12px; }
+  .timer-item.offset-4 { margin-bottom: 3px; }
+  
   .timer-text {
     font-size: 1.2rem;
-    letter-spacing: 0.1rem;
   }
 }
