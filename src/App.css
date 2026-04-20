@@ -312,6 +312,12 @@ html, body, #root {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+
+  .timers-wrapper {
+
+  left: -5rem;
+
+}
   .timer-container {
     transform: scaleY(20) !important;
   }

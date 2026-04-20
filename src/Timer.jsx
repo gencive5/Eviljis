@@ -55,7 +55,7 @@ const Timer = ({ activeIds, lingerMs = 150000, isComplete, currentScore = 0, tot
             left: `${p.left}%`,
             bottom: `${p.bottom}%`,
             transform: `scaleY(28) rotate(${p.rotation}deg)`,
-            filter: isComplete ? 'none' : `blur(${blur}px)`,
+            filter: `blur(${blur}px)`, 
             opacity: isComplete ? 0.6 : 1
           }}>
             <span className="timer-text">{mins}:{secs.toString().padStart(2, '0')}</span>
