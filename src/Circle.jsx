@@ -58,7 +58,7 @@ const Circle = ({
       {showSvg ? (
         <img 
           src={svgPath} 
-          alt={`${id}`}
+          alt=""
           className="circle-svg"
           loading="lazy"
           style={{
