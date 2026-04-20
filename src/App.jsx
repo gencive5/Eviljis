@@ -130,10 +130,12 @@ function App() {
       )}
       
       {/* Timer Component */}
-      <Timer 
+     <Timer 
   activeIds={touchedEmojis}
   lingerMs={150000}
   isComplete={gameComplete}
+  currentScore={touchedEmojis.size}    // NEW
+  totalEmojis={totalCircles}           // NEW
 />
       
       <CircleGrid 

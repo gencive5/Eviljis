@@ -272,23 +272,33 @@ html, body, #root {
   }
 }
 
-/* Timer */
-.timer-container {
+/* Timer Wrapper */
+.timers-wrapper {
   position: fixed;
-  bottom: 20rem;
-  right: 20px;
-  z-index: 1000;
+  top: 0;
+  left: -12rem;
+  right: 0;
+  bottom: 0;
+  width: 120%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Individual Timer Container */
+.timer-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
   font-family: 'Microsoft', sans-serif;
-  transform: scaleY(28); 
   z-index: 0;
+  pointer-events: none;
+  transform-origin: center;
+  will-change: transform, filter;
 }
 
 .timer-display {
- 
   padding: 8px 16px;
 }
 
@@ -296,26 +306,22 @@ html, body, #root {
   color: #e896d9;
   font-size: 1.8rem;
   font-weight: bold;
- 
   letter-spacing: 0.2rem;
+  text-shadow: 0 0 10px rgba(232, 150, 217, 0.3);
 }
-
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .timer-container {
-    bottom: 20rem;
-    right: 10px;
-    gap: 5px;
+    transform: scaleY(20) !important;
   }
 
   .timer-display {
-    padding: 6px 12px;
+    padding: 4px 8px;
   }
 
   .timer-text {
-    font-size: 2rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
   }
-
 }
