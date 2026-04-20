@@ -8,13 +8,27 @@ const Timer = ({
   isComplete = false
 }) => {
   const [timers, setTimers] = useState(new Map());
+  const [frozenTimers, setFrozenTimers] = useState(new Map()); // Store frozen timers
   const animationFrameRef = useRef(null);
+  const wasCompleteRef = useRef(false);
 
   // Add new timers when emojis are activated
   useEffect(() => {
-    if (isComplete) {
-      setTimers(new Map());
+    // When game completes, freeze the current timers
+    if (isComplete && !wasCompleteRef.current) {
+      setFrozenTimers(new Map(timers));
+      wasCompleteRef.current = true;
       return;
+    }
+    
+    // When game is reset, clear frozen timers
+    if (!isComplete) {
+      wasCompleteRef.current = false;
+      setFrozenTimers(new Map());
+    }
+    
+    if (isComplete) {
+      return; // Don't update timers when game is complete
     }
 
     setTimers(prevTimers => {
@@ -40,7 +54,7 @@ const Timer = ({
       
       return newTimers;
     });
-  }, [activeIds, isComplete, lingerMs]);
+  }, [activeIds, isComplete, lingerMs, timers]);
 
   // Animation loop for all timers
   useEffect(() => {
@@ -95,14 +109,17 @@ const Timer = ({
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  // Don't render if no timers or game is complete
-  if (timers.size === 0 || isComplete) return null;
+  // Use frozen timers when game is complete, otherwise use active timers
+  const displayTimers = isComplete ? frozenTimers : timers;
+  
+  // Don't render if no timers to display
+  if (displayTimers.size === 0) return null;
 
   // Convert timers map to array for rendering
-  const timerArray = Array.from(timers.values());
+  const timerArray = Array.from(displayTimers.values());
 
   return (
-    <div className="timers-wrapper">
+    <div className={`timers-wrapper ${isComplete ? 'timers-frozen' : ''}`}>
       {timerArray.map((timer, index) => (
         <div 
           key={timer.id} 
