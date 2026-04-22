@@ -4,11 +4,11 @@ const Contact = () => (
   <footer className="footer">
 
      <a
-      href="mailto:vic.segen@gmail.com"
+      href="mailto:contact@genciv.es"
       className="mx-2 underline hover:opacity-80 transition-opacity"
-      style={{ color: '#1A73E8' }}
+      style={{ color: '#0084ff' }}
     >
-      Email
+      email
     </a>
   
     <a
@@ -17,7 +17,7 @@ const Contact = () => (
       rel="noopener noreferrer"
       style={{ color: '#ffffffff' }}
     >
-      Instagram
+      instagram
     </a>
   </footer>
 );

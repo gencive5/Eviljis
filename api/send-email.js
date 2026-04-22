@@ -18,8 +18,8 @@ module.exports = async (req, res) => {
   try {
     await transporter.sendMail({
       from: `"${name}" <${process.env.GMAIL_USER}>`,
-      to: 'vic.segen@gmail.com',
-      subject: `New message from ${name}`,
+      to: 'contact@genciv.es',
+      subject: `HeLLO ${name}`,
       text: message
     });
     return res.status(200).json({ success: true });

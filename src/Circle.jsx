@@ -1,6 +1,6 @@
 // components/Circle.jsx
 import React, { useState } from 'react';
-import './App.css'; // We'll create this for the indicator styles
+import './App.css'; 
 
 const Circle = ({ 
   id, 
@@ -19,7 +19,7 @@ const Circle = ({
   const [svgFailed, setSvgFailed] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
-  const activeFilter = 'url(#hologram)';
+  const activeFilter = 'url(#h2l2gram)';
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';
