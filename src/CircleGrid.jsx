@@ -7,8 +7,8 @@ import SVGFilters from './SVGFilters';
 const CircleGrid = ({
   minCircleSize = 65,
   maxCircleSize = 65,
-  mobileMinCircleSize = 40,
-  mobileMaxCircleSize = 40,
+  mobileMinCircleSize = 50,
+  mobileMaxCircleSize = 50,
   gapRatio = 0.2,
   circleStyle = {},
   customCircles = {},
@@ -20,7 +20,7 @@ const CircleGrid = ({
   onJijiSelect,      
   downloadedJiji,
   selectedJiji,
-  onTimerStart      // NEW: Callback when first emoji is touched
+  onTimerStart     
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
