@@ -1,6 +1,6 @@
 // App.jsx
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import CircleGrid from './CircleGrid';
 import Contact from './Contact';
 import Score from './Score';
@@ -13,10 +13,27 @@ function App() {
   const [selectedJiji, setSelectedJiji] = useState(null);
   const [downloadedJiji, setDownloadedJiji] = useState(null);
   const [timerActive, setTimerActive] = useState(false);
+  const [isNight, setIsNight] = useState(false);
+  
+  // Day/Night detection
+  useEffect(() => {
+    const checkTime = () => {
+      const hour = new Date().getHours();
+      // Night: 8 PM (20:00) to 6 AM (6:00)
+      setIsNight(hour >= 20 || hour < 6);
+    };
+
+    checkTime();
+    
+    // Check every 30 minutes for day/night transition
+    const interval = setInterval(checkTime, 30 * 60 * 1000);
+    
+    return () => clearInterval(interval);
+  }, []);
   
   const handleGameComplete = () => {
     setGameComplete(true);
-    setTimerActive(false); // Stop timer when game completes
+    setTimerActive(false);
   };
   
   const handleScoreUpdate = (scoreData) => {
@@ -32,7 +49,7 @@ function App() {
     setTotalCircles(0);
     setSelectedJiji(null);
     setDownloadedJiji(null);
-    setTimerActive(false); // Reset timer state
+    setTimerActive(false);
   };
 
   const handleTimerStart = () => {
@@ -54,21 +71,19 @@ function App() {
   };
 
   const downloadBothVersions = (id) => {
-    // Extract the emoji number from the id (e.g., "c42" -> "42")
     const emojiNumber = id.substring(1);
     
-    // Download original SVG as PNG
     downloadOriginalVersion(id, emojiNumber);
     
-    // Small delay then download pre-made filtered PNG
     setTimeout(() => {
       downloadFilteredVersion(id, emojiNumber);
     }, 200);
   };
 
   const downloadOriginalVersion = (id, emojiNumber) => {
-    // Create canvas from the original SVG
-    const svgPath = `/emojis/jiji${emojiNumber}.svg`;
+    // Use the correct folder based on time of day
+    const folder = isNight ? '/nightmojis/' : '/emojis/';
+    const svgPath = `${folder}jiji${emojiNumber}.svg`;
     
     const img = new Image();
     img.crossOrigin = 'anonymous';
@@ -81,7 +96,6 @@ function App() {
       canvas.height = size;
       const ctx = canvas.getContext('2d');
       
-      // Circular clip
       ctx.save();
       ctx.beginPath();
       ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
@@ -89,12 +103,11 @@ function App() {
       ctx.drawImage(img, 0, 0, size, size);
       ctx.restore();
       
-      // Download
       canvas.toBlob((blob) => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = `jiji-${id}-original.png`;
+        link.download = `jiji-${id}-${isNight ? 'night' : 'original'}.png`;
         link.click();
         URL.revokeObjectURL(url);
       }, 'image/png');
@@ -102,10 +115,8 @@ function App() {
   };
 
   const downloadFilteredVersion = (id, emojiNumber) => {
-    // Direct download of pre-made filtered PNG
     const filteredPngPath = `/emojis-filtered/jiji${emojiNumber}-hologram.png`;
     
-    // Create a link and trigger download
     const link = document.createElement('a');
     link.href = filteredPngPath;
     link.download = `jiji-${id}-hologram.png`;
@@ -115,7 +126,7 @@ function App() {
   };
   
   return (
-    <div className="main-container">
+    <div className={`main-container ${isNight ? 'night-mode' : 'day-mode'}`}>
       {totalCircles > 0 && (
         <Score 
           activeIds={touchedEmojis}
@@ -129,14 +140,13 @@ function App() {
         />
       )}
       
-      {/* Timer Component */}
-     <Timer 
-  activeIds={touchedEmojis}
-  lingerMs={150000}
-  isComplete={gameComplete}
-  currentScore={touchedEmojis.size}    // NEW
-  totalEmojis={totalCircles}           // NEW
-/>
+      <Timer 
+        activeIds={touchedEmojis}
+        lingerMs={150000}
+        isComplete={gameComplete}
+        currentScore={touchedEmojis.size}
+        totalEmojis={totalCircles}
+      />
       
       <CircleGrid 
         lingerMs={150000}
@@ -146,6 +156,7 @@ function App() {
         downloadedJiji={downloadedJiji}
         selectedJiji={selectedJiji}
         onTimerStart={handleTimerStart}
+        svgFolder={isNight ? '/nightmojis/' : '/emojis/'}
       />
       
       <Contact />
