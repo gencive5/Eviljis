@@ -156,10 +156,6 @@ html, body, #root {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.circle.selectable:hover {
-  transform: scale(1.05);
-  filter: brightness(1.2);
-}
 
 
 
@@ -329,3 +325,22 @@ html, body, #root {
     font-size: 1.2rem;
   }
 }
+
+
+/* Add to App.css - for extra dramatic expansion */
+@keyframes pulseExpand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.circle.selected .circle-svg {
+  animation: pulseExpand 0.5s ease-out 2;
+}
+

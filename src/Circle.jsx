@@ -1,4 +1,4 @@
-// components/Circle.jsx
+// Circle.jsx - NO GLOW VERSION
 import React, { useState } from 'react';
 import './App.css'; 
 
@@ -17,9 +17,11 @@ const Circle = ({
   isSelected = false
 }) => {
   const [svgFailed, setSvgFailed] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
   const activeFilter = 'url(#h2l2gram)';
+  const selectFilter = 'url(#expandDeformIntense)';
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';
@@ -28,6 +30,36 @@ const Circle = ({
   };
 
   const backgroundColor = getBackgroundColor();
+
+  // Determine which filter to apply
+  const getFilter = () => {
+    // Selected state takes priority
+    if (isSelected) return selectFilter;
+    // Hover state when selectable (game complete) gets the filter too
+    if (isSelectable && isHovered) return selectFilter;
+    // Active state for normal gameplay
+    if (isActive || forceActive) return activeFilter;
+    return 'none';
+  };
+
+  // Determine scale transform
+  const getScale = () => {
+    // Selected state scales up
+    if (isSelected) return 'scale(1.15)';
+    // Hover state when selectable scales up slightly
+    if (isSelectable && isHovered) return 'scale(1.08)';
+    return 'scale(1)';
+  };
+
+  const handleMouseEnter = (e) => {
+    setIsHovered(true);
+    if (onMouseEnter) onMouseEnter(e);
+  };
+
+  const handleMouseLeave = (e) => {
+    setIsHovered(false);
+    if (onMouseLeave) onMouseLeave(e);
+  };
 
   return (
     <div
@@ -42,8 +74,8 @@ const Circle = ({
         ...(backgroundColor && { backgroundColor }),
         ...(!svgPath && !backgroundColor && { backgroundColor: 'rgb(48, 219, 156)' }),
       }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
       {/* Indicator badge */}
@@ -67,10 +99,10 @@ const Circle = ({
             objectFit: 'contain',
             pointerEvents: 'none',
             borderRadius: '50%',
-            transition: 'filter 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease',
-            filter: (isActive || forceActive) ? activeFilter : 'none',
-            transform: isSelected ? 'scale(1.1)' : 'scale(1)',
-            boxShadow: isSelected ? '0 0 20px rgba(253, 238, 26, 0.8)' : 'none'
+            transition: 'transform 0.25s cubic-bezier(0.34, 1.2, 0.64, 1), filter 0.2s ease',
+            filter: getFilter(),
+            transform: getScale(),
+            // NO boxShadow - removed completely!
           }}
           onError={() => setSvgFailed(true)}
         />
