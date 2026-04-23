@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 118.7">
   <defs>
     <style>
       .cls-1 {
-        fill: #e89f3c;
+        fill: none;
       }
 
       .cls-2 {
-        fill: #dc4bbc;
+        fill: #6291c4;
       }
 
       .cls-3 {
-        fill: #d3d5ee;
+        fill: #aec5c3;
       }
 
       .cls-4 {
-        fill: #64c0cf;
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <rect class="cls-1" x="20.5" y="32.5" width="79" height="27"/>
-      <rect class="cls-4" x="51.5" y="73.5" width="19" height="19"/>
-      <circle class="cls-3" cx="37.53" cy="45.73" r="6.5"/>
-      <circle class="cls-3" cx="87.53" cy="45.73" r="6.5"/>
+      <circle class="cls-3" cx="57.5" cy="59.75" r="57.5"/>
+      <g>
+        <rect class="cls-1" x="3.32" y="77.33" width="50.92" height="25.9" transform="translate(-65.89 94.55) rotate(-74.9)"/>
+        <polygon class="cls-4" points="42.07 90.73 38.74 78.22 35.41 65.71 26.24 74.85 17.06 83.99 23.43 85.71 20.59 96.24 32.86 99.55 35.7 89.02 42.07 90.73"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="69.66" y="65.29" width="25.9" height="50.92" transform="translate(-20.79 24.66) rotate(-15.1)"/>
+        <polygon class="cls-4" points="69.32 91.2 72.65 78.69 75.97 66.17 85.15 75.31 94.32 84.45 87.95 86.17 90.79 96.71 78.52 100.02 75.68 89.48 69.32 91.2"/>
+      </g>
+      <circle class="cls-2" cx="36.86" cy="52" r="6.5"/>
+      <circle class="cls-2" cx="73.86" cy="52" r="6.5"/>
+      <g>
+        <rect class="cls-1" x="60.55" y="12" width="39.49" height="20.09" transform="translate(38.09 93.82) rotate(-74.9)"/>
+        <polygon class="cls-4" points="69.98 21.69 72.57 31.4 75.15 41.1 82.26 34.01 89.38 26.92 84.44 25.59 86.64 17.42 77.13 14.85 74.92 23.02 69.98 21.69"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="21.5" y="1.93" width="20.09" height="39.49" transform="translate(-4.56 8.97) rotate(-15.1)"/>
+        <polygon class="cls-4" points="41.85 21.33 39.27 31.03 36.69 40.74 29.58 33.65 22.46 26.56 27.4 25.23 25.2 17.06 34.71 14.49 36.92 22.66 41.85 21.33"/>
+      </g>
     </g>
   </g>
 </svg>

@@ -3,41 +3,29 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #e89f3c;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        fill: #d691e0;
       }
 
       .cls-2 {
-        fill: #e26748;
+        fill: #eaa7c8;
       }
 
       .cls-3 {
-        fill: #692e50;
+        fill: #a7ea9d;
       }
 
       .cls-4 {
-        fill: #64c0cf;
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-4" cx="56.5" cy="87.5" rx="8" ry="5"/>
-      <line class="cls-1" x1="21.5" y1="15.5" x2="21.5" y2="40.19"/>
-      <line class="cls-1" x1="31.99" y1="13.52" x2="31.99" y2="38.21"/>
-      <line class="cls-1" x1="40.99" y1="15.52" x2="40.99" y2="40.21"/>
-      <line class="cls-1" x1="71.99" y1="15.52" x2="71.99" y2="40.21"/>
-      <line class="cls-1" x1="80.99" y1="13.52" x2="80.99" y2="38.21"/>
-      <line class="cls-1" x1="88.99" y1="15.52" x2="88.99" y2="40.21"/>
-      <line class="cls-1" x1="101.33" y1="63.86" x2="76.65" y2="63.86"/>
-      <line class="cls-1" x1="32.33" y1="63.86" x2="7.65" y2="63.86"/>
-      <line class="cls-1" x1="32.33" y1="72.36" x2="7.65" y2="72.36"/>
-      <line class="cls-1" x1="101.33" y1="72.36" x2="76.65" y2="72.36"/>
-      <circle class="cls-2" cx="81.68" cy="48.33" r="6.5"/>
-      <circle class="cls-2" cx="31.68" cy="48.33" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <rect class="cls-2" x="20.5" y="32.5" width="79" height="27"/>
+      <rect class="cls-4" x="51.5" y="73.5" width="19" height="19"/>
+      <circle class="cls-3" cx="37.53" cy="45.73" r="6.5"/>
+      <circle class="cls-3" cx="87.53" cy="45.73" r="6.5"/>
     </g>
   </g>
 </svg>

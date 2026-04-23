@@ -3,40 +3,38 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #e26748;
+        fill: #d691e0;
       }
 
       .cls-2 {
-        fill: #692e50;
+        fill: none;
+        stroke: #b9a5d4;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
       }
 
       .cls-3 {
-        stroke: #64c0cf;
-      }
-
-      .cls-3, .cls-4 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
-      }
-
-      .cls-5 {
-        fill: #64c0cf;
+        fill: #aec5c3;
       }
 
       .cls-4 {
-        stroke: #8d9efc;
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <polyline class="cls-4" points="10.03 57.5 28 21 28 40.82 42 25 36 56 55 29 51 54 72 29 71 52 85 28 97 46 96 29 108.07 39.25"/>
-      <polyline class="cls-3" points="37.61 7 34.8 16.28 49 5 47.05 21 61.1 7 57.5 22.5 73 10 67 25.5 80 14 86.37 21 86 13"/>
-      <path class="cls-5" d="M79.83,94.56l-51.08,3.13c-4.96.38-9.29-3.3-9.68-8.26h0c-.39-4.97,3.31-9.08,8.26-9.14l51.08.21c4.96.1,9.29,3.22,9.68,6.95h0c.39,3.71-3.31,6.88-8.26,7.1Z"/>
-      <circle class="cls-1" cx="85.68" cy="53.33" r="6.5"/>
-      <circle class="cls-1" cx="24.68" cy="53.33" r="6.5"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-1" cx="77" cy="98.48" rx="8.5" ry="4.5" transform="translate(-32.43 38.04) rotate(-23.07)"/>
+      <ellipse class="cls-1" cx="35.99" cy="98.48" rx="4.5" ry="8.5" transform="translate(-68.72 93.01) rotate(-66.93)"/>
+      <line class="cls-2" x1="13" y1="26" x2="12" y2="79"/>
+      <line class="cls-2" x1="31" y1="9" x2="28.53" y2="82.73"/>
+      <line class="cls-2" x1="49" y1="3" x2="46" y2="80"/>
+      <line class="cls-2" x1="66" y1="3" x2="64" y2="79"/>
+      <line class="cls-2" x1="82" y1="8" x2="82" y2="82"/>
+      <line class="cls-2" x1="97" y1="20" x2="97" y2="83"/>
+      <circle class="cls-4" cx="70.53" cy="90.73" r="6.5"/>
+      <circle class="cls-4" cx="42.53" cy="90.73" r="6.5"/>
     </g>
   </g>
 </svg>

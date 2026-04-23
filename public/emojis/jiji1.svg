@@ -3,39 +3,47 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d3d5ee;
+        fill: #fdfad0;
       }
 
       .cls-2 {
+        fill: #afdde6;
+      }
+
+      .cls-3 {
+        stroke: #d691e0;
+      }
+
+      .cls-3, .cls-4 {
         fill: none;
-        stroke: #e47d9f;
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
-      .cls-3 {
-        fill: #8d9efc;
+      .cls-5 {
+        fill: #373536;
       }
 
       .cls-4 {
-        fill: #692e50;
-      }
-
-      .cls-5 {
-        fill: #64c0cf;
+        stroke: #eaa7c8;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <polyline class="cls-2" points="36.78 4.85 30.5 31.5 36 36.5 45.5 34.5 43.5 46.5 47.5 55.5"/>
-      <polyline class="cls-2" points="55.59 1 53.5 9.5 58 13.56 49.5 20.5 56.5 23.78 43.5 26.5 45.5 34.5"/>
-      <path class="cls-2" d="M76.5,25.5l9,6,9.57-10.5s11.83,12.5,14.13,26.5"/>
-      <polyline class="cls-2" points="25.5 42.5 28.33 53.5 19.5 54.5 22.5 68.5 13.86 68.5 8.37 84.68"/>
-      <circle class="cls-3" cx="72.02" cy="74.27" r="32.5"/>
-      <circle class="cls-5" cx="60.02" cy="71.27" r="6.5"/>
-      <circle class="cls-4" cx="81.02" cy="71.27" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <g>
+        <path class="cls-1" d="M95.5,69.5c.15,17.14-16.33,32.35-36.5,33-20.17-.66-36.65-15.86-36.5-33,0-16.96,15.28-42.5,36.5-42.99,21.22.49,36.5,26.02,36.5,42.99Z"/>
+        <path class="cls-4" d="M95.5,69.5c.15,17.14-16.33,32.35-36.5,33-20.17-.66-36.65-15.86-36.5-33,0-16.96,15.28-42.5,36.5-42.99,21.22.49,36.5,26.02,36.5,42.99Z"/>
+      </g>
+      <line class="cls-3" x1="25.13" y1="43.84" x2="11.83" y2="41.71"/>
+      <line class="cls-3" x1="20.13" y1="55.84" x2="6.83" y2="53.71"/>
+      <line class="cls-3" x1="17.13" y1="69.84" x2="3.83" y2="67.71"/>
+      <line class="cls-3" x1="94.78" y1="38.31" x2="106.71" y2="35.47"/>
+      <line class="cls-3" x1="98.48" y1="49.41" x2="110.42" y2="46.57"/>
+      <line class="cls-3" x1="100.29" y1="62.53" x2="112.22" y2="59.69"/>
+      <circle class="cls-5" cx="76.71" cy="17.3" r="6.5"/>
+      <circle class="cls-5" cx="36.71" cy="17.3" r="6.5"/>
     </g>
   </g>
 </svg>

@@ -8,7 +8,6 @@
 }
 
 
-/* Ensure the container doesn't create extra scrollbars */
 .container {
   width: 100%;
   height: 100%;
@@ -17,7 +16,6 @@
 }
 
 
-/* Remove any conflicting overflow properties */
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -35,14 +33,14 @@ html, body, #root {
 }
 
 
-/* Score Component Styles */
+/* Score Component*/
 .score-container {
   display: flex;
-  flex-direction: row-reverse; /* This makes items flow right to left */
+  flex-direction: row-reverse; 
   align-items: center;
   z-index: 1000;
   font-family: 'Universalis', sans-serif;
-  justify-content: flex-start; /* Align to the left since order is reversed */
+  justify-content: flex-start; 
   width: 100%;
   padding-right: 2rem;
   min-height: 4rem; 
@@ -94,7 +92,7 @@ html, body, #root {
 }
 
 
-/* Download Prompt Styles */
+/* Download Prompt*/
 .download-prompt {
   display: flex;
   flex-direction: row;
@@ -152,7 +150,7 @@ html, body, #root {
   height: 5rem;
 }
 
-/* Circle selection styles */
+/* Circle selection */
 .circle.selectable {
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -212,13 +210,12 @@ html, body, #root {
 }
 
 
-/* indicator styles */
+/* indicator*/
 
 .circle {
   position: relative;
 }
 
-/* Indicator badge styles */
 .circle-indicator {
   position: absolute;
   top: -5px;
@@ -240,13 +237,11 @@ html, body, #root {
 }
 
 
-
 .circle-indicator.selected-indicator .indicator-text {
   color: #ff0033;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 
 
@@ -267,6 +262,8 @@ html, body, #root {
     font-size: 14px;
   }
 }
+
+
 /* Timer Wrapper */
 .timers-wrapper {
   position: fixed;
@@ -278,7 +275,6 @@ html, body, #root {
   transition: filter 0.5s ease;
 }
 
-/* Flex container - wraps timers */
 .timers-flex {
   display: flex;
   flex-direction: row-reverse;
@@ -288,7 +284,6 @@ html, body, #root {
   gap: 15px 25px;
 }
 
-/* Individual Timer */
 .timer-item {
   font-family: 'Microsoft', sans-serif;
   transform: scaleY(28);

@@ -3,33 +3,52 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #e89f3c;
+        fill: #fdfad0;
       }
 
       .cls-2 {
-        fill: #dc4bbc;
+        fill: #b9a5d4;
       }
 
       .cls-3 {
-        fill: #e47d9f;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #d691e0;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
       }
 
       .cls-4 {
-        fill: none;
-        stroke: #e89f3c;
-        stroke-miterlimit: 10;
         stroke-width: 4px;
+      }
+
+      .cls-5 {
+        stroke: #6291c4;
+        stroke-width: 20px;
+      }
+
+      .cls-6 {
+        fill: #a7ea9d;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M32.67,101.5c-3.26-22.06,11.7-38.7,24-39,12.14-.29,27.64,15.17,26,37"/>
-      <ellipse class="cls-2" cx="88.58" cy="50.65" rx="10" ry="18.5" transform="translate(2.86 106.01) rotate(-62.61)"/>
-      <ellipse class="cls-2" cx="23.56" cy="50.65" rx="18.5" ry="10" transform="translate(-20.66 16.52) rotate(-27.39)"/>
-      <circle class="cls-1" cx="81.76" cy="24.33" r="6.5"/>
-      <circle class="cls-1" cx="33.76" cy="24.33" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M82.61,21.98s15.26,23.24,15.39,41.27"/>
+      <path class="cls-3" d="M36,21S14,38,8,55"/>
+      <path class="cls-5" d="M71.89,26.72s4.83,37.12,18.04,49.66"/>
+      <path class="cls-5" d="M46.19,27.28s-15.94,33.87-32.36,41.77"/>
+      <ellipse class="cls-6" cx="83.62" cy="40.64" rx="4.92" ry="16.85" transform="translate(-8.97 32.15) rotate(-20.68)"/>
+      <ellipse class="cls-6" cx="29.95" cy="37.82" rx="16.85" ry="4.92" transform="translate(-18.28 36.85) rotate(-50.47)"/>
+      <polyline class="cls-4" points="43.5 89.5 52.5 81.5 59.5 91.5"/>
+      <circle class="cls-2" cx="38.68" cy="29.33" r="6.5"/>
+      <circle class="cls-2" cx="78.68" cy="29.33" r="6.5"/>
     </g>
   </g>
 </svg>

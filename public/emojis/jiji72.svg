@@ -2,63 +2,32 @@
 <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3, .cls-4 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-2, .cls-4 {
-        stroke: #e89f3c;
-      }
-
-      .cls-1, .cls-3 {
-        stroke-width: 5px;
-      }
-
-      .cls-1, .cls-3, .cls-4 {
-        fill: none;
+      .cls-1 {
+        fill: #fdfad0;
       }
 
       .cls-2 {
-        fill: #d3d5ee;
-      }
-
-      .cls-2, .cls-4 {
-        stroke-width: 6px;
+        fill: #b9a5d4;
       }
 
       .cls-3 {
-        stroke: #dc4bbc;
+        fill: #aec5c3;
       }
 
-      .cls-5 {
-        fill: #488b76;
-      }
-
-      .cls-6 {
-        fill: #8d9efc;
+      .cls-4 {
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
-      <polyline class="cls-2" points="40.95 76 40.95 93.27 75 94 75 76"/>
-      <line class="cls-3" x1="71.5" y1="28.5" x2="71.5" y2="20.5"/>
-      <line class="cls-3" x1="78" y1="30" x2="83" y2="23"/>
-      <line class="cls-3" x1="87" y1="34" x2="99" y2="27"/>
-      <line class="cls-3" x1="86" y1="49" x2="100" y2="57"/>
-      <line class="cls-3" x1="80" y1="53" x2="81" y2="63"/>
-      <line class="cls-3" x1="31" y1="52" x2="23" y2="58"/>
-      <line class="cls-3" x1="27" y1="47" x2="12" y2="47"/>
-      <line class="cls-3" x1="49" y1="27" x2="57" y2="19"/>
-      <path class="cls-3" d="M40,26c-.59-.4-4.35-3.02-5-8-.54-4.2,1.49-7.28,2-8"/>
-      <path class="cls-3" d="M29,31c-3.63.16-6.87-1.91-8-5-1.29-3.52.77-6.67,1-7"/>
-      <line class="cls-4" x1="19" y1="75" x2="96" y2="77"/>
-      <line class="cls-4" x1="57" y1="76" x2="58" y2="94"/>
-      <line class="cls-4" x1="22" y1="69" x2="17" y2="84"/>
-      <line class="cls-1" x1="96" y1="68" x2="98" y2="84"/>
-      <circle class="cls-5" cx="37.53" cy="41.23" r="6.5"/>
-      <circle class="cls-5" cx="76.53" cy="41.23" r="6.5"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-2" cx="84" cy="55.12" rx="18.5" ry="7.5"/>
+      <ellipse class="cls-2" cx="33" cy="55.12" rx="18.5" ry="7.5"/>
+      <ellipse class="cls-3" cx="30" cy="68.78" rx="15.5" ry="6.28"/>
+      <ellipse class="cls-3" cx="88.97" cy="68.93" rx="15.5" ry="6.28"/>
+      <circle class="cls-1" cx="39.28" cy="55.12" r="6.5"/>
+      <circle class="cls-1" cx="90.28" cy="55.12" r="6.5"/>
     </g>
   </g>
 </svg>

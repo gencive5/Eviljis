@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dc4bbc;
+      }
+
+      .cls-2 {
+        fill: #e26748;
+      }
+
+      .cls-3 {
+        fill: #8d9efc;
+      }
+
+      .cls-4 {
+        fill: #64c0cf;
+      }
+
+      .cls-5 {
+        fill: #aba09b;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <g>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-1" cx="40.98" cy="39.25" rx="22.88" ry="9.42" transform="translate(-10.67 62.76) rotate(-68.23)"/>
+      <ellipse class="cls-1" cx="73.12" cy="38.06" rx="20.78" ry="9.36" transform="translate(-7.39 20.36) rotate(-15.1)"/>
+      <ellipse class="cls-4" cx="24" cy="71.65" rx="5.5" ry="8.5" transform="translate(-32.61 21.6) rotate(-30)"/>
+      <ellipse class="cls-4" cx="90.99" cy="71.65" rx="8.5" ry="5.5" transform="translate(-21.27 100.13) rotate(-52.45)"/>
+      <ellipse class="cls-5" cx="57.5" cy="87" rx="14.5" ry="10" transform="translate(-46.52 79.57) rotate(-52.45)"/>
+      <ellipse class="cls-2" cx="57.67" cy="88.49" rx="9.4" ry="6.49" transform="translate(-47.64 80.29) rotate(-52.45)"/>
+      <circle class="cls-3" cx="41.12" cy="38.29" r="6.5"/>
+      <circle class="cls-3" cx="73.28" cy="38.29" r="6.5"/>
+    </g>
+  </g>
+</svg>

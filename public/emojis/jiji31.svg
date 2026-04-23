@@ -3,45 +3,42 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke-width: 5px;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #488b76;
-        stroke-miterlimit: 10;
+        fill: #6291c4;
       }
 
       .cls-2 {
-        fill: #d3d5ee;
+        fill: #fdfad0;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #373536;
+        stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
-      .cls-3 {
-        fill: #e26748;
-      }
-
       .cls-4 {
-        fill: #8d9efc;
+        fill: #a7ea9d;
       }
 
       .cls-5 {
-        fill: #64c0cf;
+        fill: #629e96;
+      }
+
+      .cls-3 {
+        fill: none;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M23,100.87c9.54,7.59,21.54,12.13,34.57,12.13,14.18,0,27.13-5.36,37.03-14.19-6.22-25.86-19.8-43.81-35.56-43.81s-30.06,18.9-36.04,45.87Z"/>
-      <line class="cls-1" x1="28.39" y1="84.48" x2="88.62" y2="80"/>
-      <line class="cls-1" x1="43.11" y1="62.48" x2="41.14" y2="111.48"/>
-      <line class="cls-1" x1="58.21" y1="56" x2="60.17" y2="114"/>
-      <line class="cls-1" x1="75.87" y1="62" x2="75.87" y2="111"/>
-      <circle class="cls-3" cx="31.94" cy="30.32" r="13.68"/>
-      <circle class="cls-3" cx="82.62" cy="30.32" r="13.68"/>
-      <circle class="cls-5" cx="31.43" cy="30.32" r="6.5"/>
-      <circle class="cls-5" cx="82.43" cy="30.32" r="6.5"/>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <polygon class="cls-2" points="43.5 70.5 81.5 64.5 89.5 90.5 31.5 95.5 43.5 70.5"/>
+      <line class="cls-3" x1="54" y1="69" x2="50" y2="94"/>
+      <line class="cls-3" x1="70" y1="66" x2="68" y2="93"/>
+      <line class="cls-3" x1="38" y1="83" x2="86" y2="78"/>
+      <circle class="cls-4" cx="82.5" cy="43" r="6.5"/>
+      <circle class="cls-4" cx="21.5" cy="43" r="6.5"/>
+      <rect class="cls-1" x="18" y="24" width="71" height="10"/>
     </g>
   </g>
 </svg>
