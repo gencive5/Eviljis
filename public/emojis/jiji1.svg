@@ -12,12 +12,12 @@
 
       .cls-3 {
         stroke: #d691e0;
+        stroke-width: 4px;
       }
 
       .cls-3, .cls-4 {
         fill: none;
         stroke-miterlimit: 10;
-        stroke-width: 4px;
       }
 
       .cls-5 {
@@ -26,6 +26,7 @@
 
       .cls-4 {
         stroke: #eaa7c8;
+        stroke-width: 6px;
       }
     </style>
   </defs>
