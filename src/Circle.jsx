@@ -102,7 +102,6 @@ const Circle = ({
             transition: 'transform 0.25s cubic-bezier(0.34, 1.2, 0.64, 1), filter 0.2s ease',
             filter: getFilter(),
             transform: getScale(),
-            // NO boxShadow - removed completely!
           }}
           onError={() => setSvgFailed(true)}
         />
