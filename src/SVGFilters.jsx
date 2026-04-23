@@ -4,33 +4,7 @@ const SVGFilters = () => {
   return (
     <svg style={{ position: 'absolute', height: 0, width: 0 }} aria-hidden="true">
       <defs>
-  
-
-        {/* Liquid/Morph Effect */}
-        <filter id="liquid-morph" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
-          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
-          <feComponentTransfer in="blurred">
-            <feFuncA type="linear" slope="1.2"/>
-          </feComponentTransfer>
-        </filter>
-
-
-
-
-        {/* NEW Holographic/Rainbow Prism */}
-              <filter id="hologram" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
-          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
-          <feComponentTransfer in="blur" result="rainbow">
-            <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
-            <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
-            <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
-          </feComponentTransfer>
-          <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
-        </filter>  
+       
 
 
         {/* H2L2GRAM */}
@@ -49,21 +23,21 @@ const SVGFilters = () => {
 
 
 
-       
-
-      
-
-        {/* previous Holographic/Rainbow Prism */}
-        <filter id="h0l0gram" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="2" result="blur"/>
-          <feComponentTransfer in="blur" result="rainbow">
-            <feFuncR type="discrete" tableValues="0 1 0 0 1 0"/>
-            <feFuncG type="discrete" tableValues="0 0 1 0 1 0"/>
-            <feFuncB type="discrete" tableValues="1 0 0 1 0 0"/>
-          </feComponentTransfer>
+       {/* NIGHT H2L2GRAM */}
+         <filter id="nighth2l2gram" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
+   <feComponentTransfer in="blurred" result="step1">
+<feFuncR type="table" tableValues="1 0 0 1 0 1"/>
+<feFuncG type="table" tableValues="0 1 0 1 0 0"/>
+<feFuncB type="table" tableValues="0 0 1 0 1 0"/>
+</feComponentTransfer>
+<feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
         </filter>
 
+      
 
          {/* pizza flash*/}
         <filter id="pizza" x="-30%" y="-30%" width="160%" height="160%">
@@ -87,19 +61,9 @@ const SVGFilters = () => {
          
         </filter>
 
-          {/* H2L2GRAM */}
-         <filter id="nighth2l2gram" x="-30%" y="-30%" width="160%" height="160%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
-          <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
-   <feComponentTransfer in="blurred" result="step1">
-<feFuncR type="table" tableValues="1 0 0 1 0 1"/>
-<feFuncG type="table" tableValues="0 1 0 1 0 0"/>
-<feFuncB type="table" tableValues="0 0 1 0 1 0"/>
-</feComponentTransfer>
-<feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
-          <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
-        </filter>
+          
+
+   
         
       </defs>
     </svg>
