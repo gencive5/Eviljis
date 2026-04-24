@@ -3,41 +3,48 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #afdde6;
+        fill: #d691e0;
       }
 
       .cls-2 {
-        fill: #6291c4;
+        stroke: #6291c4;
       }
 
-      .cls-3 {
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-6 {
         fill: #373536;
       }
 
-      .cls-4 {
-        stroke: #d691e0;
-        stroke-width: 9px;
+      .cls-3 {
+        stroke: #eaa7c8;
       }
 
-      .cls-4, .cls-5 {
-        fill: none;
-        stroke-miterlimit: 10;
+      .cls-4 {
+        stroke: #afdde6;
       }
 
       .cls-5 {
         stroke: #373536;
-        stroke-width: 4px;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M12,61s29,5,29,34"/>
-      <line class="cls-5" x1="59" y1="77" x2="113.87" y2="68.89"/>
-      <line class="cls-5" x1="12.07" y1="28.63" x2="41.26" y2="26.2"/>
-      <circle class="cls-2" cx="79.5" cy="31.33" r="11"/>
-      <circle class="cls-3" cx="28.68" cy="35.83" r="6.5"/>
+      <path class="cls-5" d="M12.56,38.5c.85,1.4,6.13,9.75,17,12,10.61,2.2,18.62-3.06,20-4"/>
+      <path class="cls-5" d="M103.56,38.5c-.85,1.4-6.13,9.75-17,12-10.61,2.2-18.62-3.06-20-4"/>
+      <path class="cls-2" d="M29.56,21.43c-.22.79-1.76,6.65,2,12,4.24,6.04,11.42,6.01,12,6"/>
+      <path class="cls-2" d="M89.9,21.43c.22.79,1.76,6.65-2,12-4.24,6.04-11.42,6.01-12,6"/>
+      <polyline class="cls-4" points="10.05 58.13 17.06 74.63 25.06 68.63 35.06 81.63"/>
+      <polyline class="cls-4" points="104.59 58.13 97.58 74.63 89.58 68.63 79.58 81.63"/>
+      <polyline class="cls-3" points="43.12 91 57.12 103 71.88 91"/>
+      <circle class="cls-6" cx="30.59" cy="55.73" r="6.5"/>
+      <circle class="cls-6" cx="87.59" cy="55.73" r="6.5"/>
     </g>
   </g>
 </svg>

@@ -3,15 +3,15 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d691e0;
+        fill: #eaa7c8;
       }
 
       .cls-2 {
-        fill: #6291c4;
+        fill: #afdde6;
       }
 
       .cls-3 {
-        fill: #373536;
+        fill: #b9a5d4;
       }
 
       .cls-4 {
@@ -22,10 +22,11 @@
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-1" d="M65.94,82.73s4.11,8.22-4.11,5.48c-8.22-2.74-12.33-6.85-12.33-6.85,0,0,5.48-5.48,13.7-2.74,0,0,3.5-.16,6.54-.77,3.05-.6,5.78,2.14,1.68,3.51-4.11,1.37-5.48,1.37-5.48,1.37Z"/>
-      <circle class="cls-2" cx="26.28" cy="62.23" r="3.5"/>
-      <circle class="cls-3" cx="41.28" cy="42.73" r="6.5"/>
-      <circle class="cls-3" cx="86.28" cy="42.73" r="6.5"/>
+      <ellipse class="cls-2" cx="82.5" cy="55" rx="16" ry="6.5"/>
+      <ellipse class="cls-2" cx="38.5" cy="49" rx="16" ry="6.5"/>
+      <rect class="cls-3" x="41.5" y="81.5" width="36" height="6"/>
+      <circle class="cls-1" cx="82.28" cy="55.23" r="6.5"/>
+      <circle class="cls-1" cx="36.28" cy="49.23" r="6.5"/>
     </g>
   </g>
 </svg>

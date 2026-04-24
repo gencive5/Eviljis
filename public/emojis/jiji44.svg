@@ -3,48 +3,52 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d691e0;
+        fill: #fdfad0;
       }
 
       .cls-2 {
-        stroke: #6291c4;
-      }
-
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
-      }
-
-      .cls-6 {
-        fill: #373536;
+        fill: #b9a5d4;
       }
 
       .cls-3 {
-        stroke: #eaa7c8;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #d691e0;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
       }
 
       .cls-4 {
-        stroke: #afdde6;
+        stroke-width: 4px;
       }
 
       .cls-5 {
-        stroke: #373536;
+        stroke: #6291c4;
+        stroke-width: 20px;
+      }
+
+      .cls-6 {
+        fill: #a7ea9d;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-5" d="M12.56,38.5c.85,1.4,6.13,9.75,17,12,10.61,2.2,18.62-3.06,20-4"/>
-      <path class="cls-5" d="M103.56,38.5c-.85,1.4-6.13,9.75-17,12-10.61,2.2-18.62-3.06-20-4"/>
-      <path class="cls-2" d="M29.56,21.43c-.22.79-1.76,6.65,2,12,4.24,6.04,11.42,6.01,12,6"/>
-      <path class="cls-2" d="M89.9,21.43c.22.79,1.76,6.65-2,12-4.24,6.04-11.42,6.01-12,6"/>
-      <polyline class="cls-4" points="10.05 58.13 17.06 74.63 25.06 68.63 35.06 81.63"/>
-      <polyline class="cls-4" points="104.59 58.13 97.58 74.63 89.58 68.63 79.58 81.63"/>
-      <polyline class="cls-3" points="43.12 91 57.12 103 71.88 91"/>
-      <circle class="cls-6" cx="30.59" cy="55.73" r="6.5"/>
-      <circle class="cls-6" cx="87.59" cy="55.73" r="6.5"/>
+      <path class="cls-3" d="M82.61,21.98s15.26,23.24,15.39,41.27"/>
+      <path class="cls-3" d="M36,21S14,38,8,55"/>
+      <path class="cls-5" d="M71.89,26.72s4.83,37.12,18.04,49.66"/>
+      <path class="cls-5" d="M46.19,27.28s-15.94,33.87-32.36,41.77"/>
+      <ellipse class="cls-6" cx="83.62" cy="40.64" rx="4.92" ry="16.85" transform="translate(-8.97 32.15) rotate(-20.68)"/>
+      <ellipse class="cls-6" cx="29.95" cy="37.82" rx="16.85" ry="4.92" transform="translate(-18.28 36.85) rotate(-50.47)"/>
+      <polyline class="cls-4" points="43.5 89.5 52.5 81.5 59.5 91.5"/>
+      <circle class="cls-2" cx="38.68" cy="29.33" r="6.5"/>
+      <circle class="cls-2" cx="78.68" cy="29.33" r="6.5"/>
     </g>
   </g>
 </svg>

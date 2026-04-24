@@ -3,15 +3,18 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #d691e0;
+        fill: #eaa7c8;
       }
 
       .cls-2 {
-        fill: #fdfad0;
+        fill: #afdde6;
       }
 
       .cls-3 {
-        fill: #6291c4;
+        fill: none;
+        stroke: #fdfad0;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-4 {
@@ -21,15 +24,17 @@
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-2" cx="87" cy="51.5" rx="19" ry="29.5"/>
-      <ellipse class="cls-3" cx="87" cy="42" rx="16" ry="20"/>
-      <ellipse class="cls-4" cx="86.93" cy="35.76" rx="10.72" ry="13.24"/>
-      <ellipse class="cls-2" cx="37.74" cy="54.67" rx="33.36" ry="25.24" transform="translate(-25.64 74.58) rotate(-72.82)"/>
-      <ellipse class="cls-3" cx="40.91" cy="44.41" rx="22.62" ry="21.26" transform="translate(-13.6 70.38) rotate(-72.82)"/>
-      <ellipse class="cls-4" cx="42.66" cy="37.12" rx="14.98" ry="14.24" transform="translate(-5.4 66.91) rotate(-72.82)"/>
-      <circle class="cls-2" cx="88.5" cy="29" r="6.5"/>
-      <circle class="cls-2" cx="44.5" cy="29" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-2" cx="51.5" cy="47.5" r="46"/>
+      <path class="cls-1" d="M107.5,82.76l-6-10.42s3-10.6,3-14.85l7,13.11-3,13.89-1-1.74h0Z"/>
+      <path class="cls-1" d="M81.78,107.5l-12.28-13.21s10.24-5.66,12.28-7.55l2.05-1.89,13.03,14.23-14.43,8.41"/>
+      <path class="cls-1" d="M38.44,108.11l-3.8-9.42h19.3l6.06,12.92-21.02-1.89-.55-1.61Z"/>
+      <line class="cls-3" x1="90.78" y1="78.73" x2="100.78" y2="88.73"/>
+      <line class="cls-3" x1="99.78" y1="38.73" x2="112.78" y2="58.73"/>
+      <line class="cls-3" x1="20.78" y1="86.73" x2="32.78" y2="107.73"/>
+      <line class="cls-3" x1="60.78" y1="96.73" x2="71.78" y2="108.73"/>
+      <circle class="cls-4" cx="44.28" cy="20.23" r="6.5"/>
+      <circle class="cls-4" cx="67.28" cy="31.23" r="6.5"/>
     </g>
   </g>
 </svg>

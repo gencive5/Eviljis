@@ -3,25 +3,44 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #692e50;
+        fill: none;
+        stroke: #e89f3c;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
       }
 
       .cls-2 {
-        fill: #e47d9f;
+        stroke: #e26748;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #d3d5ee;
+      }
+
+      .cls-4 {
+        fill: #488b76;
       }
 
       .cls-3 {
-        fill: #64c0cf;
+        stroke: #dc4bbc;
+      }
+
+      .cls-5 {
+        fill: #692e50;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-3" d="M99.5,86.5c-14.91,0-27-12.09-27-27s12.09-27,27-27c3.85,0,7.51.81,10.82,2.26C101.51,14.32,81.18,0,57.5,0S12.69,14.9,4.17,36c4.54-3.45,10.19-5.5,16.33-5.5,14.91,0,27,12.09,27,27s-12.09,27-27,27c-6.14,0-11.79-2.05-16.33-5.5,8.52,21.1,29.18,36,53.33,36,21.73,0,40.64-12.06,50.42-29.85-2.65.87-5.48,1.35-8.42,1.35Z"/>
-      <ellipse class="cls-1" cx="61" cy="97.5" rx="17.5" ry="5" transform="translate(-15.98 12.05) rotate(-9.98)"/>
-      <circle class="cls-1" cx="105.28" cy="57.73" r="6.5"/>
-      <circle class="cls-1" cx="10.28" cy="57.73" r="6.5"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-3" cx="61.5" cy="74" rx="34.5" ry="27"/>
+      <ellipse class="cls-2" cx="61" cy="74" rx="24" ry="16"/>
+      <ellipse class="cls-1" cx="61.5" cy="75" rx="11" ry="6.5"/>
+      <circle class="cls-5" cx="90.15" cy="32.53" r="6.5"/>
+      <circle class="cls-5" cx="26.15" cy="32.53" r="6.5"/>
     </g>
   </g>
 </svg>

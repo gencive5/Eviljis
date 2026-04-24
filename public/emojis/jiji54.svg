@@ -3,38 +3,49 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #eaa7c8;
-      }
-
-      .cls-2 {
         fill: #afdde6;
       }
 
-      .cls-3 {
-        fill: none;
-        stroke: #fdfad0;
-        stroke-miterlimit: 10;
+      .cls-2 {
+        stroke: #e58091;
+      }
+
+      .cls-2, .cls-3 {
         stroke-width: 4px;
       }
 
-      .cls-4 {
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #fdfad0;
+        stroke: #b9a5d4;
+      }
+
+      .cls-5 {
         fill: #373536;
+      }
+
+      .cls-4 {
+        stroke: #eaa7c8;
+        stroke-width: 5px;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-2" cx="51.5" cy="47.5" r="46"/>
-      <path class="cls-1" d="M107.5,82.76l-6-10.42s3-10.6,3-14.85l7,13.11-3,13.89-1-1.74h0Z"/>
-      <path class="cls-1" d="M81.78,107.5l-12.28-13.21s10.24-5.66,12.28-7.55l2.05-1.89,13.03,14.23-14.43,8.41"/>
-      <path class="cls-1" d="M38.44,108.11l-3.8-9.42h19.3l6.06,12.92-21.02-1.89-.55-1.61Z"/>
-      <line class="cls-3" x1="90.78" y1="78.73" x2="100.78" y2="88.73"/>
-      <line class="cls-3" x1="99.78" y1="38.73" x2="112.78" y2="58.73"/>
-      <line class="cls-3" x1="20.78" y1="86.73" x2="32.78" y2="107.73"/>
-      <line class="cls-3" x1="60.78" y1="96.73" x2="71.78" y2="108.73"/>
-      <circle class="cls-4" cx="44.28" cy="20.23" r="6.5"/>
-      <circle class="cls-4" cx="67.28" cy="31.23" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-2" d="M11.5,53.52S5.5,25.17,26.5,11.48c1,29.33,26,48.89,26,48.89,0,0-15-31.29-8-49.87,12,46.93,25.32,46.93,25.32,46.93,0,0-10.32-19.56-3.32-43.02,2,15.64,5.11,17.6,5.11,17.6,0,0,1.89-11.73,3.89-16.62,6,22.49,26,33.24,26,33.24,0,0-7-15.64-7-22.49,9,14.67,12,16.62,12,16.62l-4-15.64"/>
+      <path class="cls-4" d="M78,87c-30-41-38,1-38,1"/>
+      <line class="cls-4" x1="42.5" y1="93.5" x2="74.5" y2="93.5"/>
+      <path class="cls-3" d="M44,89l31,1s-25-37-31-1Z"/>
+      <circle class="cls-5" cx="24.18" cy="41.83" r="6.5"/>
+      <circle class="cls-5" cx="78.18" cy="41.83" r="6.5"/>
     </g>
   </g>
 </svg>

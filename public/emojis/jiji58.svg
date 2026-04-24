@@ -3,43 +3,36 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fdfad0;
+        fill: #d691e0;
       }
 
       .cls-2 {
-        fill: #373536;
+        fill: #fdfad0;
       }
 
       .cls-3 {
-        fill: none;
-        stroke: #eaa7c8;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
+        fill: #eaa7c8;
       }
 
       .cls-4 {
-        fill: #629e96;
+        fill: #373536;
+      }
+
+      .cls-5 {
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="68.5" cy="11.5" r="3.5"/>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <g>
-        <path class="cls-3" d="M54.5,88.71s15,10,29-3"/>
-        <path class="cls-3" d="M55.5,89.39s-15-10-29,3"/>
-      </g>
-      <circle class="cls-1" cx="79.5" cy="26.5" r="3.5"/>
-      <circle class="cls-1" cx="61.5" cy="26.5" r="3.5"/>
-      <circle class="cls-1" cx="41.5" cy="30.5" r="3.5"/>
-      <circle class="cls-1" cx="14.5" cy="37.5" r="3.5"/>
-      <circle class="cls-1" cx="28.5" cy="21.5" r="3.5"/>
-      <circle class="cls-1" cx="47.5" cy="13.5" r="3.5"/>
-      <circle class="cls-1" cx="87.5" cy="18.5" r="3.5"/>
-      <circle class="cls-1" cx="96.5" cy="30.5" r="3.5"/>
-      <circle class="cls-2" cx="85.18" cy="45.83" r="6.5"/>
-      <circle class="cls-2" cx="30.18" cy="45.83" r="6.5"/>
+      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-2" cx="57.5" cy="53.5" rx="57" ry="49"/>
+      <ellipse class="cls-1" cx="57.5" cy="46.5" rx="55" ry="42"/>
+      <ellipse class="cls-2" cx="57" cy="35.5" rx="45.5" ry="35"/>
+      <ellipse class="cls-3" cx="56.5" cy="31" rx="39" ry="30.5"/>
+      <ellipse class="cls-2" cx="55.5" cy="19" rx="26" ry="18.5"/>
+      <circle class="cls-4" cx="62.53" cy="14.73" r="6.5"/>
+      <circle class="cls-4" cx="41.53" cy="14.73" r="6.5"/>
     </g>
   </g>
 </svg>

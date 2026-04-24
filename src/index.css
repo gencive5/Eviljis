@@ -5,14 +5,13 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(107, 107, 107, 0.87);
-  /* REMOVE the default background image from here */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Add these styles for day/night backgrounds */
+
 html.day-mode,
 body.day-mode,
 #root.day-mode,
@@ -38,7 +37,7 @@ html, body {
   place-items: center;
 }
 
-/* Add a default background color as fallback (optional) */
+
 html {
-  background-color: #1a1a1a; /* or any dark color to prevent white flash */
+  background-color: #1a1a1a; 
 }

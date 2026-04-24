@@ -3,30 +3,34 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #eaa7c8;
+        fill: none;
+        stroke: #629e96;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-2 {
-        fill: #afdde6;
+        fill: #373536;
       }
 
       .cls-3 {
-        fill: #b9a5d4;
+        fill: #e58091;
       }
 
       .cls-4 {
-        fill: #aec5c3;
+        fill: #629e96;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-2" cx="82.5" cy="55" rx="16" ry="6.5"/>
-      <ellipse class="cls-2" cx="38.5" cy="49" rx="16" ry="6.5"/>
-      <rect class="cls-3" x="41.5" y="81.5" width="36" height="6"/>
-      <circle class="cls-1" cx="82.28" cy="55.23" r="6.5"/>
-      <circle class="cls-1" cx="36.28" cy="49.23" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <polygon class="cls-4" points="27.2 31.5 44.2 53 27.2 74.5 10.2 53 27.2 31.5"/>
+      <polygon class="cls-4" points="83.44 30.09 100.44 51.59 83.44 73.09 66.44 51.59 83.44 30.09"/>
+      <polyline class="cls-1" points="43.22 20 53.33 7.7 63.05 20"/>
+      <polyline class="cls-1" points="66.7 89.35 56.6 101.64 46.87 89.35"/>
+      <circle class="cls-3" cx="83.68" cy="53.33" r="6.5"/>
+      <circle class="cls-3" cx="27.68" cy="53.33" r="6.5"/>
     </g>
   </g>
 </svg>

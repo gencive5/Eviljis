@@ -3,29 +3,40 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fdfad0;
+        fill: #afdde6;
       }
 
       .cls-2 {
-        fill: #eaa7c8;
+        fill: #b9a5d4;
       }
 
       .cls-3 {
-        fill: #373536;
+        fill: #aec5c3;
       }
 
       .cls-4 {
-        fill: #e58091;
+        fill: #a7ea9d;
+      }
+
+      .cls-5 {
+        fill: #629e96;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-1" d="M72.03,15.77c1.35,2.81,2.1,6.12,4.02,8.58,5.37,6.51,15-1.84,23.76,6.14,3.97,3.42,5.6,9.14,3.98,14.13-1.05,3.71-4.05,7.14-4.82,10.34-1.33,4.62,2.6,8.34,4.36,12.28,4.91,10.2-2.7,20.92-13.74,20.88-4.35.19-9.66-1.62-13.09,1.9-2.54,2.52-3.47,7.83-5.87,11.37-6.49,10.61-21.43,9.59-26.81-1.59-3.81-8.09-3.62-13.65-14.6-12.22-8.16,1.15-16.96-3.41-18.15-12.08-.96-5.19,1.93-9.89,4.56-14.07,2.73-4.19.71-8.01-1.93-11.64-5.62-7.08-2.77-18.22,5.58-21.88,4.37-2.24,9.46-.81,14.05-.73,4.05.13,6.68-2.68,8.19-6.13,2.19-4.93,4.7-10.49,9.36-13.25,7.8-4.95,17.77-.4,21.08,7.8l.08.17Z"/>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="18.5"/>
-      <circle class="cls-3" cx="80.78" cy="20.98" r="6.5"/>
-      <circle class="cls-3" cx="34.78" cy="20.98" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <ellipse class="cls-4" cx="40.5" cy="51.5" rx="15" ry="3"/>
+      <ellipse class="cls-4" cx="88.5" cy="51.5" rx="15" ry="3"/>
+      <ellipse class="cls-2" cx="28" cy="30" rx="2.5" ry="5.5" transform="translate(-8.32 10.91) rotate(-19.25)"/>
+      <ellipse class="cls-2" cx="39.26" cy="31.45" rx="2.5" ry="6.86" transform="translate(-8.17 14.7) rotate(-19.25)"/>
+      <ellipse class="cls-2" cx="97.21" cy="63.53" rx="2.5" ry="8.49" transform="translate(-18.74 57.12) rotate(-30)"/>
+      <ellipse class="cls-2" cx="20.71" cy="63.53" rx="8.49" ry="2.5" transform="translate(-33.35 24.26) rotate(-35.95)"/>
+      <ellipse class="cls-2" cx="88.71" cy="31.73" rx="8.49" ry="2.5" transform="translate(-1.73 58.12) rotate(-35.95)"/>
+      <ellipse class="cls-2" cx="95.71" cy="35.73" rx="8.49" ry="2.5" transform="translate(-2.75 62.99) rotate(-35.95)"/>
+      <ellipse class="cls-3" cx="55" cy="82" rx="24.5" ry="9.5"/>
+      <circle class="cls-5" cx="34.4" cy="45.86" r="6.5"/>
+      <circle class="cls-5" cx="82.28" cy="45.86" r="6.5"/>
     </g>
   </g>
 </svg>

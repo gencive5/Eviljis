@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 118.7">
   <defs>
     <style>
       .cls-1 {
-        stroke: #e26748;
-        stroke-width: 5px;
-      }
-
-      .cls-1, .cls-2 {
         fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        fill: #488b76;
-      }
-
-      .cls-4 {
-        fill: #e89f3c;
       }
 
       .cls-2 {
-        stroke: #dc4bbc;
-        stroke-width: 4px;
+        fill: #dc4bbc;
+      }
+
+      .cls-3 {
+        fill: #8d9efc;
+      }
+
+      .cls-4 {
+        fill: #64c0cf;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <line class="cls-1" x1="46" y1="28" x2="47" y2="11"/>
-      <line class="cls-1" x1="67" y1="28" x2="72" y2="12"/>
-      <line class="cls-1" x1="83" y1="36" x2="94" y2="29"/>
-      <line class="cls-1" x1="92" y1="53" x2="106" y2="51"/>
-      <line class="cls-1" x1="87" y1="70" x2="103" y2="77"/>
-      <line class="cls-1" x1="82" y1="83" x2="90" y2="96"/>
-      <line class="cls-1" x1="66" y1="91" x2="68" y2="103"/>
-      <line class="cls-1" x1="49" y1="93" x2="42" y2="106"/>
-      <line class="cls-1" x1="38" y1="86" x2="25" y2="92"/>
-      <line class="cls-1" x1="27" y1="71" x2="14" y2="73"/>
-      <line class="cls-1" x1="24" y1="53" x2="11" y2="52"/>
-      <line class="cls-1" x1="32" y1="36" x2="21" y2="24"/>
-      <line class="cls-2" x1="51" y1="77" x2="70" y2="77"/>
-      <circle class="cls-3" cx="73.53" cy="48.73" r="6.5"/>
-      <circle class="cls-3" cx="41.53" cy="48.73" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="59.75" r="57.5"/>
+      <g>
+        <rect class="cls-1" x="3.32" y="77.33" width="50.92" height="25.9" transform="translate(-65.89 94.55) rotate(-74.9)"/>
+        <polygon class="cls-3" points="42.07 90.73 38.74 78.22 35.41 65.71 26.24 74.85 17.06 83.99 23.43 85.71 20.59 96.24 32.86 99.55 35.7 89.02 42.07 90.73"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="69.66" y="65.29" width="25.9" height="50.92" transform="translate(-20.79 24.66) rotate(-15.1)"/>
+        <polygon class="cls-3" points="69.32 91.2 72.65 78.69 75.97 66.17 85.15 75.31 94.32 84.45 87.95 86.17 90.79 96.71 78.52 100.02 75.68 89.48 69.32 91.2"/>
+      </g>
+      <circle class="cls-4" cx="36.86" cy="52" r="6.5"/>
+      <circle class="cls-4" cx="73.86" cy="52" r="6.5"/>
+      <g>
+        <rect class="cls-1" x="60.55" y="12" width="39.49" height="20.09" transform="translate(38.09 93.82) rotate(-74.9)"/>
+        <polygon class="cls-3" points="69.98 21.69 72.57 31.4 75.15 41.1 82.26 34.01 89.38 26.92 84.44 25.59 86.64 17.42 77.13 14.85 74.92 23.02 69.98 21.69"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="21.5" y="1.93" width="20.09" height="39.49" transform="translate(-4.56 8.97) rotate(-15.1)"/>
+        <polygon class="cls-3" points="41.85 21.33 39.27 31.03 36.69 40.74 29.58 33.65 22.46 26.56 27.4 25.23 25.2 17.06 34.71 14.49 36.92 22.66 41.85 21.33"/>
+      </g>
     </g>
   </g>
 </svg>

@@ -3,27 +3,29 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #692e50;
+        fill: #e89f3c;
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #488b76;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        fill: #dc4bbc;
       }
 
       .cls-3 {
+        fill: #d3d5ee;
+      }
+
+      .cls-4 {
         fill: #64c0cf;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-2" d="M26.5,26.5s-8,59,42,60"/>
-      <circle class="cls-1" cx="58.28" cy="27.23" r="6.5"/>
-      <circle class="cls-1" cx="81.28" cy="40.23" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <rect class="cls-1" x="20.5" y="32.5" width="79" height="27"/>
+      <rect class="cls-4" x="51.5" y="73.5" width="19" height="19"/>
+      <circle class="cls-3" cx="37.53" cy="45.73" r="6.5"/>
+      <circle class="cls-3" cx="87.53" cy="45.73" r="6.5"/>
     </g>
   </g>
 </svg>

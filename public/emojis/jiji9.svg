@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115.32">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
   <defs>
     <style>
       .cls-1 {
@@ -7,49 +7,25 @@
       }
 
       .cls-2 {
-        fill: #eaa7c8;
+        fill: none;
+        stroke: #6291c4;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
       }
 
       .cls-3 {
-        fill: #afdde6;
-      }
-
-      .cls-4 {
-        fill: #b9a5d4;
-      }
-
-      .cls-5 {
-        fill: #6291c4;
-      }
-
-      .cls-6 {
-        fill: #e58091;
+        fill: #373536;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-5" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-3" cx="59.19" cy="63.63" r="51.69"/>
-      <ellipse class="cls-6" cx="42.46" cy="56.82" rx="15.56" ry="10.37" transform="translate(-25.24 35.66) rotate(-35.87)"/>
-      <ellipse class="cls-1" cx="28.46" cy="31.82" rx="15.56" ry="10.37" transform="translate(-13.25 22.71) rotate(-35.87)"/>
-      <ellipse class="cls-1" cx="97.46" cy="52.82" rx="15.56" ry="10.37" transform="translate(-8.8 84.38) rotate(-45)"/>
-      <ellipse class="cls-6" cx="92.46" cy="32.82" rx="10.37" ry="15.56" transform="translate(9.52 85.23) rotate(-51.83)"/>
-      <ellipse class="cls-6" cx="43.46" cy="34.82" rx="10.37" ry="15.56" transform="translate(.85 70.68) rotate(-78.79)"/>
-      <ellipse class="cls-1" cx="80.46" cy="56.82" rx="10.37" ry="15.56" transform="translate(9.08 124.69) rotate(-78.79)"/>
-      <ellipse class="cls-1" cx="29.19" cy="55.98" rx="10.37" ry="15.56" transform="translate(-31.4 73.72) rotate(-78.79)"/>
-      <ellipse class="cls-6" cx="86.46" cy="51.82" rx="12" ry="8" transform="translate(-5.47 10.48) rotate(-6.72)"/>
-      <ellipse class="cls-1" cx="74.46" cy="31.82" rx="8" ry="12" transform="translate(1.44 66.81) rotate(-48.75)"/>
-      <ellipse class="cls-1" cx="70.46" cy="44.69" rx="8" ry="12" transform="translate(-6.13 11.59) rotate(-9.02)"/>
-      <ellipse class="cls-6" cx="34.22" cy="33.82" rx="12" ry="8" transform="translate(-1.73 65.79) rotate(-86.3)"/>
-      <ellipse class="cls-1" cx="26.22" cy="42.82" rx="8" ry="12" transform="translate(-18.81 65.03) rotate(-84.77)"/>
-      <ellipse class="cls-1" cx="89.22" cy="36.82" rx="8" ry="12" transform="translate(-4.59 59.52) rotate(-36.02)"/>
-      <ellipse class="cls-1" cx="46.22" cy="44.82" rx="12" ry="8" transform="translate(-17.48 35.5) rotate(-35.8)"/>
-      <ellipse class="cls-6" cx="36.5" cy="52.5" rx="12" ry="8"/>
-      <ellipse class="cls-6" cx="80.5" cy="41.5" rx="12" ry="8"/>
-      <circle class="cls-2" cx="36" cy="45.22" r="6.5"/>
-      <circle class="cls-2" cx="81.72" cy="45.22" r="6.5"/>
-      <ellipse class="cls-4" cx="60.5" cy="94.5" rx="10" ry="4"/>
+      <circle class="cls-1" cx="58.8" cy="60.8" r="51"/>
+      <line class="cls-2" x1="26.17" y1="40.8" x2="45.17" y2="42.8"/>
+      <line class="cls-2" x1="69.17" y1="40.86" x2="99.8" y2="42.09"/>
+      <path class="cls-3" d="M57.5,0C25.74,0,0,25.74,0,57.5s25.74,57.5,57.5,57.5,57.5-25.74,57.5-57.5S89.26,0,57.5,0ZM39.5,64c-7.46,0-13.5-6.04-13.5-13.5s6.04-13.5,13.5-13.5,13.5,6.04,13.5,13.5-6.04,13.5-13.5,13.5ZM76.5,63c-7.46,0-13.5-6.04-13.5-13.5s6.04-13.5,13.5-13.5,13.5,6.04,13.5,13.5-6.04,13.5-13.5,13.5Z"/>
+      <circle class="cls-3" cx="38.3" cy="52.3" r="6.5"/>
+      <circle class="cls-3" cx="76.3" cy="52.3" r="6.5"/>
     </g>
   </g>
 </svg>

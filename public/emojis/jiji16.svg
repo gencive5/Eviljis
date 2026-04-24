@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
   <defs>
     <style>
       .cls-1 {
-        fill: #d691e0;
+        fill: #fdfad0;
       }
 
       .cls-2 {
-        fill: #eaa7c8;
+        fill: #afdde6;
       }
 
       .cls-3 {
+        stroke: #e58091;
+      }
+
+      .cls-3, .cls-4 {
         fill: none;
-        stroke: #629e96;
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }
 
+      .cls-5 {
+        fill: #373536;
+      }
+
       .cls-4 {
-        fill: #629e96;
+        stroke: #373536;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-3" d="M26.12,20.5c-12.75,14.46-16.15,34.93-8.77,52,8.69,20.1,30.77,31.86,51.64,27,21-4.89,38.49-26.07,35.08-47-2.6-15.94-16.22-24.96-19.49-27"/>
-      <circle class="cls-2" cx="36.14" cy="69.37" r="2.87"/>
-      <circle class="cls-2" cx="28.27" cy="60.01" r="2.87"/>
-      <circle class="cls-2" cx="45.27" cy="65.01" r="2.87"/>
-      <circle class="cls-2" cx="27.27" cy="46.01" r="2.87"/>
-      <circle class="cls-2" cx="75.27" cy="58.01" r="2.87"/>
-      <circle class="cls-2" cx="84.27" cy="48.01" r="2.87"/>
-      <circle class="cls-2" cx="82.27" cy="65.01" r="2.87"/>
-      <circle class="cls-2" cx="90.27" cy="61.01" r="2.87"/>
-      <circle class="cls-2" cx="94.27" cy="72.01" r="2.87"/>
-      <circle class="cls-2" cx="5.63" cy="53.01" r="2.87"/>
-      <circle class="cls-2" cx="8.63" cy="40.01" r="2.87"/>
-      <circle class="cls-4" cx="41.53" cy="44.23" r="6.5"/>
-      <circle class="cls-4" cx="70.53" cy="44.23" r="6.5"/>
+      <circle class="cls-2" cx="59" cy="59" r="59"/>
+      <path class="cls-1" d="M113.83,59.03c-19.33,9.49-41.3,4.34-49.08-11.49-7.13-14.52.16-32.97,16.31-43.26-6.82-2.75-14.26-4.28-22.07-4.28-11.47,0-22.16,3.28-31.21,8.94,18.32,9.79,27.01,29.67,19.44,45.09-7.46,15.2-27.99,20.54-46.72,12.56,3.73,28.99,28.49,51.41,58.5,51.41,32.58,0,59-26.42,59-59,0-.75-.03-1.5-.06-2.25-1.31.81-2.68,1.58-4.11,2.28Z"/>
+      <line class="cls-4" x1="34" y1="86" x2="92" y2="86"/>
+      <polyline class="cls-3" points="62 86 73.08 98.69 71.89 106"/>
+      <line class="cls-3" x1="81" y1="101" x2="73.08" y2="98.69"/>
+      <circle class="cls-5" cx="76.18" cy="44.83" r="6.5"/>
+      <circle class="cls-5" cx="38.18" cy="44.83" r="6.5"/>
     </g>
   </g>
 </svg>

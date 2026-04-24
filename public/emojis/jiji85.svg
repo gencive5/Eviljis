@@ -3,33 +3,24 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #b9a5d4;
+        fill: #6291c4;
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #373536;
-        stroke-miterlimit: 10;
-        stroke-width: 5px;
-      }
-
-      .cls-3 {
         fill: #a7ea9d;
       }
 
-      .cls-4 {
-        fill: #e58091;
+      .cls-3 {
+        fill: #629e96;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-3" cx="34.76" cy="54.72" rx="21.14" ry="10.57" transform="translate(-14.06 12.06) rotate(-16.43)"/>
-      <ellipse class="cls-3" cx="84.31" cy="58.88" rx="21.14" ry="10.57" transform="translate(-13.21 26.25) rotate(-16.43)"/>
-      <line class="cls-2" x1="53" y1="75" x2="62" y2="72"/>
-      <circle class="cls-4" cx="44.28" cy="33.23" r="6.5"/>
-      <circle class="cls-4" cx="78.28" cy="33.23" r="6.5"/>
+      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-1" d="M15.5,46.5h25.7s6.3-7,.3-12-11-2-11-2c0,0,2-9-5-9s-6,8-6,8c0,0-9,1-8,8s4,7,4,7Z"/>
+      <path class="cls-1" d="M61.5,47.5h39s4-7,1-11-11-4-11-4c0,0-2.64-10-10.32-11s-11.68,7-11.68,10c-3,0-10,1-10,7s3,9,3,9Z"/>
+      <polygon class="cls-3" points="22.04 76.58 39.81 102.5 89.22 55.5 41.73 88.58 22.04 76.58"/>
     </g>
   </g>
 </svg>

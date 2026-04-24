@@ -3,36 +3,33 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #6291c4;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
-      }
-
-      .cls-2 {
-        fill: #b9a5d4;
-      }
-
-      .cls-3 {
         fill: #6291c4;
       }
 
+      .cls-2 {
+        fill: none;
+        stroke: #373536;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        fill: #373536;
+      }
+
       .cls-4 {
-        fill: #a7ea9d;
+        fill: #e58091;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <polygon class="cls-2" points="36 17 62 52 76.76 17 36 17"/>
-      <polygon class="cls-2" points="18.29 34.5 36 57.5 7.5 71.24 18.29 34.5"/>
-      <polygon class="cls-2" points="99.99 34.5 89.78 52 109.5 66.5 99.99 34.5"/>
-      <line class="cls-1" x1="21.5" y1="23.5" x2="57.5" y2="72.5"/>
-      <line class="cls-1" x1="92" y1="22" x2="71" y2="70"/>
-      <line class="cls-1" x1="30.5" y1="100.5" x2="94.5" y2="97.5"/>
-      <circle class="cls-3" cx="81.03" cy="71.73" r="6.5"/>
-      <circle class="cls-3" cx="44.53" cy="71.73" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <circle class="cls-4" cx="30" cy="57" r="19.5"/>
+      <circle class="cls-4" cx="87" cy="57" r="19.5"/>
+      <path class="cls-2" d="M67.5,89.5h-18,18Z"/>
+      <circle class="cls-3" cx="30.53" cy="34.23" r="6.5"/>
+      <circle class="cls-3" cx="85.53" cy="34.23" r="6.5"/>
     </g>
   </g>
 </svg>
