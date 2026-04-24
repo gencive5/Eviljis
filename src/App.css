@@ -81,7 +81,7 @@ html, body, #root {
   width: 100%;
   padding: 0.5rem 1rem;
   gap: 0.5rem;
-  height: 8%;
+  height: 5rem;
   box-sizing: border-box;
   z-index: 1000;
   color: #2dffb2;
@@ -165,19 +165,22 @@ html, body, #root {
   }
   
   .download-message {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-weight: bold;
     letter-spacing: 0.2rem;
     text-align: center;
   }
   
   .download-button {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-weight: bold;
     letter-spacing: 0.2rem;
     padding: 0;
   }
   
   .download-complete {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
     letter-spacing: 0.2rem;
     text-align: center;
   }

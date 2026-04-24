@@ -10,7 +10,7 @@ const Score = ({
     selectedJiji,
     downloadedJiji,
     onDownload,
-    isNight  // NEW: accept isNight prop
+    isNight  
 }) => {
     const currentScore = activeIds.size;
     const gameIsComplete = currentScore === totalEmojis;
@@ -61,7 +61,7 @@ const Score = ({
         if (downloadedJiji) {
             return (
                 <div className="download-complete">
-                    <p>✓ Jiji downloaded! ✓</p>
+                    <p>Jiji downloaded!</p>
                 </div>
             );
         }
