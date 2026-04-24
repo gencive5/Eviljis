@@ -59,11 +59,12 @@ const SVGFilters = () => {
           <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
           <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
    <feComponentTransfer in="blurred" result="step1">
-<feFuncR type="table" tableValues="1 0 0 1 0 1"/>
-          <feFuncG type="table" tableValues="0 1 0 1 0 0"/>
-          <feFuncB type="table" tableValues="0 0 1 0 1 0"/>
+
+<feFuncR type="table" tableValues="1 0 0 1 0 1 "/>
+<feFuncG type="table" tableValues="0 1 0 1 0 0 0 0"/>
+<feFuncB type="table" tableValues="0 0 1 0 1 0 "/>
 </feComponentTransfer>
-<feColorMatrix type="saturate" values="7" in="step1" result="rainbow"/>
+<feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
         </filter>    
 
@@ -89,11 +90,11 @@ const SVGFilters = () => {
           />
             <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
             <feComponentTransfer in="blurred" result="step1">
-          <feFuncR type="table" tableValues="1 0 0 1 0 1"/>
-          <feFuncG type="table" tableValues="0 1 0 1 0 0"/>
-          <feFuncB type="table" tableValues="0 0 1 0 1 0"/>
+          <feFuncR type="table" tableValues="1 0 0 1 0 1 "/>
+          <feFuncG type="table" tableValues="0 1 0 1 0 0 0 0"/>
+          <feFuncB type="table" tableValues="0 0 1 0 1 0 "/>
           </feComponentTransfer>
-          <feColorMatrix type="saturate" values="7" in="step1" result="rainbow"/>
+          <feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
 
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>          
          
@@ -112,3 +113,6 @@ export default SVGFilters;
 
 
 
+{/* <feFuncR type="table" tableValues="1 0 0 1 0 1 "/>
+<feFuncG type="table" tableValues="0 1 0 1 0 0 0"/>
+<feFuncB type="table" tableValues="1 0 1 0 1 0"/> */}
