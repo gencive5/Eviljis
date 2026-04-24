@@ -15,15 +15,17 @@ const Circle = ({
   forceActive = false,
   isSelectable = false,
   isSelected = false,
-  isNight = false     // NEW: accept isNight prop
+  isNight = false     
 }) => {
   const [svgFailed, setSvgFailed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
-  // Choose filter based on day/night mode
+
   const activeFilter = isNight ? 'url(#nighth2l2gram)' : 'url(#h2l2gram)';
-  const selectFilter = 'url(#expandDeformIntense)';
+  
+  // CHOOSE EXPAND FILTER BASED ON DAY/NIGHT MODE
+  const expandFilter = isNight ? 'url(#NightExpandDeformIntense)' : 'url(#expandDeformIntense)';
   
   const getBackgroundColor = () => {
     if (showSvg) return 'transparent';
@@ -34,8 +36,8 @@ const Circle = ({
   const backgroundColor = getBackgroundColor();
 
   const getFilter = () => {
-    if (isSelected) return selectFilter;
-    if (isSelectable && isHovered) return selectFilter;
+    if (isSelected) return expandFilter;        // Uses day/night expand filter
+    if (isSelectable && isHovered) return expandFilter;  // Uses day/night expand filter
     if (isActive || forceActive) return activeFilter;
     return 'none';
   };
