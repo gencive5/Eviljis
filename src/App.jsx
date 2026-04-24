@@ -15,17 +15,25 @@ function App() {
   const [timerActive, setTimerActive] = useState(false);
   const [isNight, setIsNight] = useState(false);
   
-  // Day/Night detection
+  // Day/Night detection with favicon swapping
   useEffect(() => {
     const checkTime = () => {
       const hour = new Date().getHours();
-      // Night: 8 PM (20:00) to 6 AM (6:00)
-      setIsNight(hour >= 20 || hour < 6);
+      const night = hour >= 20 || hour < 6;
+      setIsNight(night);
+      
+      // Change favicon based on time of day
+      const favicon = document.getElementById('favicon');
+      
+      if (night) {
+        if (favicon) favicon.href = '/faviconight.ico';
+      } else {
+        if (favicon) favicon.href = '/favicon.ico';
+      }
     };
 
     checkTime();
     
-    // Check every 30 minutes for day/night transition
     const interval = setInterval(checkTime, 30 * 60 * 1000);
     
     return () => clearInterval(interval);
