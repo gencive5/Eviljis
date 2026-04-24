@@ -20,6 +20,11 @@ const Score = ({
         }
     }, [gameIsComplete, onComplete]);
 
+    // Helper to get display-friendly ID (remove 'c' prefix)
+    const getDisplayId = (id) => {
+        return id?.startsWith('c') ? id.substring(1) : id;
+    };
+
     return (
         <div className="score-container">
             {/* Score display */}
@@ -34,7 +39,7 @@ const Score = ({
                 <div className="download-prompt">
                     <p className="download-message">
                         {selectedJiji 
-                            ? `jiji ${selectedJiji.id} selected,` 
+                            ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
                             : 'Choose a jiji to download'}
                     
                     {selectedJiji && (
