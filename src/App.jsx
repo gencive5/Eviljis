@@ -14,6 +14,7 @@ function App() {
   const [downloadedJiji, setDownloadedJiji] = useState(null);
   const [timerActive, setTimerActive] = useState(false);
   const [isNight, setIsNight] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false); // Add this
   
   // Day/Night detection with favicon swapping
   useEffect(() => {
@@ -22,13 +23,23 @@ function App() {
       const night = hour >= 20 || hour < 6;
       setIsNight(night);
       
-      const favicon = document.getElementById('favicon');
+      // Apply class to html element immediately
+      if (night) {
+        document.documentElement.classList.add('night-mode');
+        document.documentElement.classList.remove('day-mode');
+      } else {
+        document.documentElement.classList.add('day-mode');
+        document.documentElement.classList.remove('night-mode');
+      }
       
+      const favicon = document.getElementById('favicon');
       if (night) {
         if (favicon) favicon.href = '/faviconight.ico';
       } else {
         if (favicon) favicon.href = '/favicon.ico';
       }
+      
+      setIsInitialized(true);
     };
 
     checkTime();
@@ -37,6 +48,11 @@ function App() {
     
     return () => clearInterval(interval);
   }, []);
+  
+  // Don't render anything until we know if it's day or night
+  if (!isInitialized) {
+    return null; // or a loading spinner
+  }
   
   const handleGameComplete = () => {
     setGameComplete(true);
