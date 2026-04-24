@@ -22,7 +22,6 @@ function App() {
       const night = hour >= 20 || hour < 6;
       setIsNight(night);
       
-      // Change favicon based on time of day
       const favicon = document.getElementById('favicon');
       
       if (night) {
@@ -134,28 +133,19 @@ function App() {
   
   return (
     <div className={`main-container ${isNight ? 'night-mode' : 'day-mode'}`}>
-      {/* Top bar with icon and score */}
-      <div className="top-bar">
-        <div className="mode-icon">
-          <img 
-            src={isNight ? '/nightcon.svg' : '/daycon.svg'} 
-            alt={isNight ? 'Night mode' : 'Day mode'}
-            className="mode-icon-svg"
-          />
-        </div>
-        {totalCircles > 0 && (
-          <Score 
-            activeIds={touchedEmojis}
-            totalEmojis={totalCircles}
-            onComplete={handleGameComplete}
-            onReset={handleReset}
-            isComplete={gameComplete}
-            selectedJiji={selectedJiji}
-            downloadedJiji={downloadedJiji}
-            onDownload={handleJijiDownload}
-          />
-        )}
-      </div>
+      {totalCircles > 0 && (
+        <Score 
+          activeIds={touchedEmojis}
+          totalEmojis={totalCircles}
+          onComplete={handleGameComplete}
+          onReset={handleReset}
+          isComplete={gameComplete}
+          selectedJiji={selectedJiji}
+          downloadedJiji={downloadedJiji}
+          onDownload={handleJijiDownload}
+          isNight={isNight}  // Pass isNight to Score
+        />
+      )}
       
       <Timer 
         activeIds={touchedEmojis}

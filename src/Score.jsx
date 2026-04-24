@@ -9,7 +9,8 @@ const Score = ({
     isComplete,
     selectedJiji,
     downloadedJiji,
-    onDownload
+    onDownload,
+    isNight  // NEW: accept isNight prop
 }) => {
     const currentScore = activeIds.size;
     const gameIsComplete = currentScore === totalEmojis;
@@ -20,13 +21,21 @@ const Score = ({
         }
     }, [gameIsComplete, onComplete]);
 
-    // Helper to get display-friendly ID (remove 'c' prefix)
     const getDisplayId = (id) => {
         return id?.startsWith('c') ? id.substring(1) : id;
     };
 
     return (
         <div className="score-container">
+            {/* Mode icon on the left */}
+            <div className="mode-icon">
+                <img 
+                    src={isNight ? '/nightcon.svg' : '/daycon.svg'} 
+                    alt={isNight ? 'Night mode' : 'Day mode'}
+                    className="mode-icon-svg"
+                />
+            </div>
+
             {/* Score display */}
             <div className="score-display">
                 <span className="score-value">
