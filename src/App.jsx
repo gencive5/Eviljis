@@ -143,7 +143,7 @@ function App() {
           selectedJiji={selectedJiji}
           downloadedJiji={downloadedJiji}
           onDownload={handleJijiDownload}
-          isNight={isNight}  // Pass isNight to Score
+          isNight={isNight}  
         />
       )}
       
