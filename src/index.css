@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Night mode background - when the body or root has night-mode class */
+
 body.night-mode,
 #root.night-mode,
 .night-mode {

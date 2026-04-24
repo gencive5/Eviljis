@@ -81,7 +81,6 @@ function App() {
   };
 
   const downloadOriginalVersion = (id, emojiNumber) => {
-    // Use the correct folder based on time of day
     const folder = isNight ? '/nightmojis/' : '/emojis/';
     const svgPath = `${folder}jiji${emojiNumber}.svg`;
     
@@ -127,18 +126,28 @@ function App() {
   
   return (
     <div className={`main-container ${isNight ? 'night-mode' : 'day-mode'}`}>
-      {totalCircles > 0 && (
-        <Score 
-          activeIds={touchedEmojis}
-          totalEmojis={totalCircles}
-          onComplete={handleGameComplete}
-          onReset={handleReset}
-          isComplete={gameComplete}
-          selectedJiji={selectedJiji}
-          downloadedJiji={downloadedJiji}
-          onDownload={handleJijiDownload}
-        />
-      )}
+      {/* Top bar with icon and score */}
+      <div className="top-bar">
+        <div className="mode-icon">
+          <img 
+            src={isNight ? '/nightcon.svg' : '/daycon.svg'} 
+            alt={isNight ? 'Night mode' : 'Day mode'}
+            className="mode-icon-svg"
+          />
+        </div>
+        {totalCircles > 0 && (
+          <Score 
+            activeIds={touchedEmojis}
+            totalEmojis={totalCircles}
+            onComplete={handleGameComplete}
+            onReset={handleReset}
+            isComplete={gameComplete}
+            selectedJiji={selectedJiji}
+            downloadedJiji={downloadedJiji}
+            onDownload={handleJijiDownload}
+          />
+        )}
+      </div>
       
       <Timer 
         activeIds={touchedEmojis}

@@ -24,6 +24,65 @@ html, body, #root {
   overflow: hidden;
 }
 
+/* Top Bar - contains mode icon and score */
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  min-height: 4rem;
+  height: 4rem;
+}
+
+/* Mode Icon Container */
+.mode-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  z-index: 1001;
+}
+
+.mode-icon-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.5s ease;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+/* When in night mode, subtle glow effect */
+.night-mode .mode-icon-svg {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+}
+
+/* Adjust score container to work with top bar */
+.top-bar .score-container {
+  flex: 1;  /* Takes remaining space */
+  padding-right: 2rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .top-bar {
+    min-height: 3rem;
+    height: 3rem;
+  }
+  
+  .mode-icon {
+    padding-left: 1rem;
+  }
+  
+  .mode-icon-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .top-bar .score-container {
+    padding-right: 1rem;
+  }
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
