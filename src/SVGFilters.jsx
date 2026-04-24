@@ -63,7 +63,7 @@ const SVGFilters = () => {
           <feFuncG type="table" tableValues="0 1 0 1 0 0"/>
           <feFuncB type="table" tableValues="0 0 1 0 1 0"/>
 </feComponentTransfer>
-<feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
+<feColorMatrix type="saturate" values="7" in="step1" result="rainbow"/>
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>
         </filter>    
 
@@ -93,7 +93,7 @@ const SVGFilters = () => {
           <feFuncG type="table" tableValues="0 1 0 1 0 0"/>
           <feFuncB type="table" tableValues="0 0 1 0 1 0"/>
           </feComponentTransfer>
-          <feColorMatrix type="saturate" values="8" in="step1" result="rainbow"/>
+          <feColorMatrix type="saturate" values="7" in="step1" result="rainbow"/>
 
           <feBlend mode="screen" in="rainbow" in2="SourceGraphic"/>          
          
