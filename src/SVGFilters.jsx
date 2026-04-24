@@ -40,7 +40,7 @@ const SVGFilters = () => {
             yChannelSelector="G" 
             result="displaced"
           />
-            <feGaussianBlur in="doubleDisplaced" stdDeviation="1" result="blurred"/>
+            <feGaussianBlur in="Displaced" stdDeviation="1" result="blurred"/>
             <feComponentTransfer in="blurred" result="step1">
         <feFuncR type="table" tableValues="1 0 0 1 0 1 1 1 1"/>
         <feFuncG type="table" tableValues="0 1 0 0 0 1 0 0 1"/>
@@ -87,7 +87,7 @@ const SVGFilters = () => {
             yChannelSelector="G" 
             result="displaced"
           />
-            <feGaussianBlur in="doubleDisplaced" stdDeviation="1" result="blurred"/>
+            <feGaussianBlur in="Displaced" stdDeviation="1" result="blurred"/>
             <feComponentTransfer in="blurred" result="step1">
           <feFuncR type="table" tableValues="1 0 0 1 0 1"/>
           <feFuncG type="table" tableValues="0 1 0 1 0 0"/>
