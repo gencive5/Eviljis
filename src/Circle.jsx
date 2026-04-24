@@ -1,4 +1,4 @@
-// Circle.jsx - NO GLOW VERSION
+// Circle.jsx - DAY/NIGHT FILTER VERSION
 import React, { useState } from 'react';
 import './App.css'; 
 
@@ -14,13 +14,15 @@ const Circle = ({
   onClick,
   forceActive = false,
   isSelectable = false,
-  isSelected = false
+  isSelected = false,
+  isNight = false     // NEW: accept isNight prop
 }) => {
   const [svgFailed, setSvgFailed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const showSvg = svgPath && !svgFailed;
   
-  const activeFilter = 'url(#h2l2gram)';
+  // Choose filter based on day/night mode
+  const activeFilter = isNight ? 'url(#nighth2l2gram)' : 'url(#h2l2gram)';
   const selectFilter = 'url(#expandDeformIntense)';
   
   const getBackgroundColor = () => {
@@ -31,22 +33,15 @@ const Circle = ({
 
   const backgroundColor = getBackgroundColor();
 
-  // Determine which filter to apply
   const getFilter = () => {
-    // Selected state takes priority
     if (isSelected) return selectFilter;
-    // Hover state when selectable (game complete) gets the filter too
     if (isSelectable && isHovered) return selectFilter;
-    // Active state for normal gameplay
     if (isActive || forceActive) return activeFilter;
     return 'none';
   };
 
-  // Determine scale transform
   const getScale = () => {
-    // Selected state scales up
     if (isSelected) return 'scale(1.15)';
-    // Hover state when selectable scales up slightly
     if (isSelectable && isHovered) return 'scale(1.08)';
     return 'scale(1)';
   };
@@ -78,7 +73,6 @@ const Circle = ({
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
-      {/* Indicator badge */}
       {isSelectable && (
         <div className={`circle-indicator ${isSelected ? 'selected-indicator' : ''}`}>
           <span className="indicator-text">

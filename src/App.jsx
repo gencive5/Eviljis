@@ -174,6 +174,7 @@ function App() {
         selectedJiji={selectedJiji}
         onTimerStart={handleTimerStart}
         svgFolder={isNight ? '/nightmojis/' : '/emojis/'}
+        isNight={isNight} 
       />
       
       <Contact />

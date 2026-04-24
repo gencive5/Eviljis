@@ -20,7 +20,8 @@ const CircleGrid = ({
   onJijiSelect,      
   downloadedJiji,
   selectedJiji,
-  onTimerStart     
+  onTimerStart,
+  isNight = false     // NEW: accept isNight prop
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -33,7 +34,7 @@ const CircleGrid = ({
   const [rows, setRows] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [activeIds, setActiveIds] = useState(new Set());
-  const [hasStarted, setHasStarted] = useState(false); // NEW
+  const [hasStarted, setHasStarted] = useState(false);
   
   // THEN useEffect hooks
   useEffect(() => {
@@ -82,20 +83,16 @@ const CircleGrid = ({
   };
   
   const getLinger = (id) => {
-    // If game is complete, return 0 (no delay)
     if (isComplete) return 0;
-    // Otherwise use the normal delay
     return customCircles?.[id]?.linger ?? lingerMs;
   };
   
   const activate = (id) => {
-    // Don't allow new activations when game is complete
     if (isComplete) return;
     
-    // Start timer on first activation
     if (!hasStarted) {
       setHasStarted(true);
-      onTimerStart?.(); // Notify parent that timer should start
+      onTimerStart?.();
     }
     
     if (timeoutsRef.current[id]) {
@@ -125,7 +122,6 @@ const CircleGrid = ({
     }
   };
   
-  // THEN event handlers
   const handleMouseEnter = (id) => activate(id);
   
   const handleMouseLeave = (id) => {
@@ -168,7 +164,6 @@ const CircleGrid = ({
     }
   };
   
-  // Cleanup useEffect
   useEffect(() => {
     return () => Object.values(timeoutsRef.current).forEach(clearTimeout);
   }, []);
@@ -176,7 +171,6 @@ const CircleGrid = ({
   const gapSize = circleSize * gapRatio;
 
   useEffect(() => {
-    // Only send score updates if game is NOT complete AND we have actual rows/cols
     if (onScoreUpdate && !isComplete && rows > 0 && cols > 0) {
       onScoreUpdate({
         activeIds: activeIds,
@@ -185,14 +179,12 @@ const CircleGrid = ({
     }
   }, [activeIds, onScoreUpdate, isComplete, rows, cols]);
   
-  // Reset hasStarted when game is reset (isComplete becomes false)
   useEffect(() => {
     if (!isComplete) {
       setHasStarted(false);
     }
   }, [isComplete]);
   
-  // THEN return the JSX
   return (
     <div
       ref={gridRef}
@@ -231,6 +223,7 @@ const CircleGrid = ({
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={() => handleMouseLeave(id)}
               onClick={() => handleCircleClick(id)}
+              isNight={isNight}     // Pass isNight to Circle
             />
           );
         })}
