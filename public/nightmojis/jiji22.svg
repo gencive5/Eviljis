@@ -7,29 +7,20 @@
       }
 
       .cls-2 {
-        fill: none;
-        stroke: #e89f3c;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        fill: #d3d5ee;
       }
 
       .cls-3 {
         fill: #64c0cf;
-      }
-
-      .cls-4 {
-        fill: #aba09b;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <circle class="cls-3" cx="34.5" cy="51.5" r="17"/>
-      <circle class="cls-3" cx="86.5" cy="47.5" r="17"/>
-      <polyline class="cls-2" points="44.5 90.5 44.5 80.16 80.5 80.16 80.5 93.69"/>
-      <circle class="cls-4" cx="28.74" cy="48.66" r="6.5"/>
-      <circle class="cls-4" cx="85.51" cy="48.66" r="6.5"/>
+      <path class="cls-2" d="M78.4,22.34c-10.67-.17-19.68,7.28-21.86,17.32-3.59-7-10.82-11.85-19.24-11.99-12.15-.2-22.16,9.49-22.35,21.64-.2,12.15,9.49,22.16,21.64,22.35,10.67.17,19.68-7.28,21.86-17.32,3.59,7,10.82,11.85,19.24,11.99,12.15.2,22.16-9.49,22.35-21.64.2-12.15-9.49-22.16-21.64-22.35Z"/>
+      <circle class="cls-3" cx="37.28" cy="46.73" r="6.5"/>
+      <circle class="cls-3" cx="76.28" cy="46.73" r="6.5"/>
     </g>
   </g>
 </svg>

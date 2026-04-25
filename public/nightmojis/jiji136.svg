@@ -3,44 +3,24 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #e89f3c;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-miterlimit: 10;
-        stroke-width: 5px;
+        fill: #e89f3c;
       }
 
       .cls-2 {
-        stroke: #e26748;
-      }
-
-      .cls-2, .cls-3 {
-        fill: #d3d5ee;
-      }
-
-      .cls-4 {
-        fill: #488b76;
+        fill: #e26748;
       }
 
       .cls-3 {
-        stroke: #dc4bbc;
-      }
-
-      .cls-5 {
-        fill: #692e50;
+        fill: #8d9efc;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
-      <ellipse class="cls-3" cx="61.5" cy="74" rx="34.5" ry="27"/>
-      <ellipse class="cls-2" cx="61" cy="74" rx="24" ry="16"/>
-      <ellipse class="cls-1" cx="61.5" cy="75" rx="11" ry="6.5"/>
-      <circle class="cls-5" cx="90.15" cy="32.53" r="6.5"/>
-      <circle class="cls-5" cx="26.15" cy="32.53" r="6.5"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <polygon class="cls-1" points="57.5 50.5 64.66 70.07 89.96 65.12 71.82 79.74 89.96 94.36 64.66 89.42 57.5 108.99 50.34 89.42 25.04 94.36 43.18 79.74 25.04 65.12 50.34 70.07 57.5 50.5"/>
+      <circle class="cls-2" cx="88.15" cy="35.03" r="6.5"/>
+      <circle class="cls-2" cx="26.15" cy="35.03" r="6.5"/>
     </g>
   </g>
 </svg>

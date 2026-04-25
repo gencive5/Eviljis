@@ -3,21 +3,29 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #dc4bbc;
+        stroke: #64c0cf;
+        stroke-width: 3px;
       }
 
-      .cls-2 {
-        fill: #8d9efc;
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
       }
 
       .cls-3 {
-        fill: #692e50;
+        fill: #488b76;
       }
 
       .cls-4 {
-        fill: none;
-        stroke: #e26748;
-        stroke-miterlimit: 10;
+        fill: #dc4bbc;
+      }
+
+      .cls-5 {
+        fill: #e26748;
+      }
+
+      .cls-2 {
+        stroke: #dc4bbc;
         stroke-width: 4px;
       }
     </style>
@@ -25,13 +33,19 @@
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M87.57,41.94c2.82-4.67,2.31-10.53-1.11-14.31-2.81-3.1-7.21-4.39-11.46-3.44"/>
-      <path class="cls-4" d="M48.54,26.02c-4.71-2.76-10.56-2.17-14.29,1.31-3.06,2.85-4.29,7.27-3.29,11.5"/>
-      <path class="cls-4" d="M46.29,93.75c2.32,4.94,7.47,7.77,12.52,7.02,4.13-.62,7.66-3.56,9.22-7.62"/>
-      <path class="cls-1" d="M82,81l9-15s6-10,11-6.8c5,3.2,0,9.8,0,9.8,0,0,6-2,9,2,0,0,3,6-4,8s-25,2-25,2Z"/>
-      <path class="cls-1" d="M36.32,76.25l-17.44-1.38s-11.63-.92-10.99-6.82c.64-5.9,8.77-4.36,8.77-4.36,0,0-4.46-4.48-2.22-8.95,0,0,4.04-5.36,8.94.02s12.93,21.49,12.93,21.49Z"/>
-      <circle class="cls-2" cx="34.18" cy="38.33" r="6.5"/>
-      <circle class="cls-2" cx="85.18" cy="38.33" r="6.5"/>
+      <rect class="cls-4" x="10.5" y="47.41" width="35" height="13" rx="6.5" ry="6.5"/>
+      <rect class="cls-4" x="71.5" y="47.41" width="35" height="13" rx="6.5" ry="6.5" transform="translate(178 107.83) rotate(-180)"/>
+      <path class="cls-2" d="M21.5,85.5c5.93,3.57,20.71,11.4,41,11,18.55-.36,32.05-7.41,38-11"/>
+      <line class="cls-1" x1="14.5" y1="28.5" x2="14.5" y2="42.5"/>
+      <line class="cls-1" x1="22" y1="20" x2="22" y2="44"/>
+      <line class="cls-1" x1="32" y1="15" x2="32" y2="42"/>
+      <line class="cls-1" x1="42" y1="15" x2="42" y2="42"/>
+      <polyline class="cls-1" points="53 8 53.71 28.5 71.5 40.8"/>
+      <polyline class="cls-1" points="67 12 65 25 79 38"/>
+      <polyline class="cls-1" points="75 10 71.5 23.95 86.27 38"/>
+      <polyline class="cls-1" points="86 15 83.59 28.5 97.42 38"/>
+      <circle class="cls-5" cx="38.68" cy="53.91" r="6.5"/>
+      <circle class="cls-5" cx="77.68" cy="53.91" r="6.5"/>
     </g>
   </g>
 </svg>

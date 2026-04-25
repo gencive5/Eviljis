@@ -11,12 +11,16 @@
       }
 
       .cls-3 {
-        fill: #692e50;
+        fill: #e47d9f;
       }
 
       .cls-4 {
+        fill: #64c0cf;
+      }
+
+      .cls-5 {
         fill: none;
-        stroke: #692e50;
+        stroke: #e89f3c;
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }
@@ -24,30 +28,12 @@
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-2" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M31,94l26.5-7s3.5-1,4.5-2"/>
-      <circle class="cls-1" cx="33.27" cy="36.71" r="2.21"/>
-      <circle class="cls-1" cx="21.48" cy="42.91" r="2.21"/>
-      <circle class="cls-1" cx="42.48" cy="48.91" r="2.21"/>
-      <circle class="cls-1" cx="40.48" cy="22.91" r="2.21"/>
-      <circle class="cls-1" cx="31.48" cy="14.4" r="2.21"/>
-      <circle class="cls-1" cx="50.27" cy="32.72" r="2.21"/>
-      <circle class="cls-1" cx="55.27" cy="45.72" r="2.21"/>
-      <circle class="cls-1" cx="64.27" cy="41.72" r="2.21"/>
-      <circle class="cls-1" cx="67.27" cy="50.72" r="2.21"/>
-      <circle class="cls-1" cx="73.27" cy="43.72" r="2.21"/>
-      <circle class="cls-1" cx="47.27" cy="65.57" r="2.21"/>
-      <circle class="cls-1" cx="26.27" cy="68.57" r="2.21"/>
-      <circle class="cls-1" cx="14.27" cy="57.57" r="2.21"/>
-      <circle class="cls-1" cx="75.27" cy="68.89" r="2.21"/>
-      <circle class="cls-1" cx="57.27" cy="57.89" r="2.21"/>
-      <circle class="cls-1" cx="81.27" cy="59.89" r="2.21"/>
-      <circle class="cls-1" cx="84.05" cy="83.89" r="2.21"/>
-      <circle class="cls-1" cx="92.05" cy="48.51" r="2.21"/>
-      <circle class="cls-1" cx="106.84" cy="48.51" r="2.21"/>
-      <circle class="cls-1" cx="105.84" cy="62.51" r="2.21"/>
-      <circle class="cls-3" cx="22.68" cy="26.83" r="6.5"/>
-      <circle class="cls-3" cx="91.68" cy="69.83" r="6.5"/>
+      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-2" d="M18.27,25.99c-14.16,7.63-5.01,20.13,9.51,21.4,7.52,1.01,15.48.75,23.09,1.27,9.93.57,19.66,2.29,29.54,3.23,6.4.66,34.98,2.12,28.37-5.22-2.77-3.3-7.62-7.33-9.34-11.68-3.36-6.21-1.07-15.4-7.59-16.37-7.4-1.01-24.03,3.26-33.83,3.33-14.08.95-27.72-1.95-39.55,3.93l-.19.1Z"/>
+      <path class="cls-5" d="M28.5,72.5s17.53,15,43.77,15"/>
+      <path class="cls-4" d="M28.89,29.4c-11.44,7.39-3.85,14.26,6.7,15.49,6.51.93,13.76.87,20.52.96,10,.04,20.87.42,28.09.42,5.66.05,14.86-.13,10.32-8.14-3.76-5.96-11.98-10.06-19.14-12.53-14.08-4.83-33.75-3.8-46.35,3.71l-.13.09Z"/>
+      <circle class="cls-1" cx="34.78" cy="36.23" r="6.5"/>
+      <circle class="cls-1" cx="79.78" cy="36.23" r="6.5"/>
     </g>
   </g>
 </svg>

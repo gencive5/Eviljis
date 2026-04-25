@@ -3,51 +3,24 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #64c0cf;
-        stroke-width: 9px;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-4 {
-        fill: #488b76;
-      }
-
-      .cls-5 {
-        fill: #e26748;
-      }
-
-      .cls-6 {
-        fill: #8d9efc;
+        fill: #e89f3c;
       }
 
       .cls-2 {
-        stroke: #dc4bbc;
-      }
-
-      .cls-2, .cls-3 {
-        stroke-width: 4px;
+        fill: #e26748;
       }
 
       .cls-3 {
-        stroke: #e26748;
+        fill: #64c0cf;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-6" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-4" d="M52,.5c-11.87,0-21.5,9.63-21.5,21.5s9.63,21.5,21.5,21.5c.06,0,.11,0,.17,0-8.78-.09-15.87-7.23-15.87-16.04s7.18-16.04,16.04-16.04,16.04,7.18,16.04,16.04c0,8.02-5.89,14.67-13.58,15.85,10.55-1.37,18.7-10.39,18.7-21.31,0-11.87-9.63-21.5-21.5-21.5Z"/>
-      <path class="cls-3" d="M10.5,39.5s0,10,9,10,12,5,12,12"/>
-      <path class="cls-3" d="M87.5,38.5s0,10-9,10c-9,0-12,5-12,12"/>
-      <line class="cls-2" x1="36.5" y1="93.5" x2="73.5" y2="91.18"/>
-      <path class="cls-1" d="M5.67,51.5s-5.17,16,9.83,28"/>
-      <path class="cls-1" d="M99.8,35.5s7.2,22.29-13.7,39.01"/>
-      <circle class="cls-5" cx="27.68" cy="60.83" r="6.5"/>
-      <circle class="cls-5" cx="70.68" cy="60.83" r="6.5"/>
+      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
+      <rect class="cls-2" x="15.5" y="75.5" width="46" height="17" rx="8" ry="8"/>
+      <circle class="cls-3" cx="32.44" cy="38.1" r="6.5"/>
+      <circle class="cls-3" cx="84.97" cy="39.33" r="6.5"/>
     </g>
   </g>
 </svg>

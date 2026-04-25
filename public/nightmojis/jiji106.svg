@@ -3,35 +3,32 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #488b76;
-      }
-
-      .cls-2 {
         fill: #dc4bbc;
       }
 
-      .cls-3 {
+      .cls-2 {
         fill: #64c0cf;
       }
 
-      .cls-4 {
-        fill: #d3d5ee;
-        stroke: #aba09b;
+      .cls-3 {
+        fill: none;
+        stroke: #e89f3c;
         stroke-miterlimit: 10;
         stroke-width: 4px;
+      }
+
+      .cls-4 {
+        fill: #aba09b;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <polygon class="cls-1" points="75 105.5 58 88.5 41 105.5 75 105.5"/>
-      <polygon class="cls-1" points="40.65 7.5 57.65 24.5 74.65 7.5 40.65 7.5"/>
-      <polygon class="cls-1" points="8.5 74.61 25.5 57.61 8.5 40.61 8.5 74.61"/>
-      <polygon class="cls-1" points="106.5 40.61 89.5 57.61 106.5 74.61 106.5 40.61"/>
-      <rect class="cls-4" x="47.5" y="66.5" width="22" height="15"/>
-      <circle class="cls-2" cx="70.68" cy="41.83" r="6.5"/>
-      <circle class="cls-2" cx="44.68" cy="41.83" r="6.5"/>
+      <circle class="cls-4" cx="57.5" cy="57.5" r="57.5"/>
+      <path class="cls-3" d="M12,32c2.66-7.57,5.67-14.34,8-14,3.5.51,3.12,16.75,6,17,3.39.29,6.31-22.02,11-22,4.55.02,6.56,21.02,11,21,4.54-.02,6.55-22,11-22,4.45,0,6.57,22.02,11,22,4.23-.02,6.28-20.1,10-20,3.87.11,5.19,21.93,9,22,3.28.06,5.03-16.07,8-16,2.05.05,3.69,7.76,5,18"/>
+      <circle class="cls-2" cx="55.5" cy="78.5" r="19"/>
+      <circle class="cls-1" cx="27.68" cy="46.83" r="6.5"/>
+      <circle class="cls-1" cx="84.68" cy="46.83" r="6.5"/>
     </g>
   </g>
 </svg>

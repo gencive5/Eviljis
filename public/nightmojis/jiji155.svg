@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.05 115">
   <defs>
     <style>
       .cls-1 {
-        fill: #8d9efc;
+        stroke: #8d9efc;
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
       }
 
       .cls-2 {
-        fill: #692e50;
+        stroke: #e26748;
+        stroke-width: 5px;
       }
 
       .cls-3 {
-        fill: none;
-        stroke: #e89f3c;
-        stroke-miterlimit: 10;
-        stroke-width: 4px;
+        fill: #dc4bbc;
+      }
+
+      .cls-4 {
+        fill: #692e50;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
-      <circle class="cls-1" cx="57.5" cy="57.5" r="57.5"/>
-      <path class="cls-3" d="M41.5,80.5c2.53,6.67,8.95,11.07,16,11,7.31-.07,13.81-4.94,16-12"/>
-      <path class="cls-3" d="M44.25,21.79c-6.5-2.93-14.16-1.5-19.09,3.54-5.11,5.22-6.28,13.26-2.83,19.8"/>
-      <path class="cls-3" d="M96.73,47.21c2.93-6.5,1.5-14.16-3.54-19.09-5.22-5.11-13.26-6.28-19.8-2.83"/>
-      <path class="cls-3" d="M22,87c1.7,2.2,13.47,16.96,34,18,17.48.89,29.38-8.77,32-11"/>
-      <path class="cls-3" d="M58.24,7.85c-2.76-.36-21.52-2.47-36.77,11.31-12.98,11.73-14.58,26.98-14.85,30.41"/>
-      <path class="cls-3" d="M110.11,60.08c.36-2.76,2.47-21.52-11.31-36.77-11.73-12.98-26.98-14.58-30.41-14.85"/>
-      <circle class="cls-2" cx="36.68" cy="38.33" r="6.5"/>
-      <circle class="cls-2" cx="81.68" cy="38.33" r="6.5"/>
+      <circle class="cls-4" cx="57.55" cy="57.5" r="57.5"/>
+      <path class="cls-1" d="M2.55,49.5c1.52,1.62,9.41,9.7,22,10,15.78.38,25.12-11.81,26-13"/>
+      <path class="cls-1" d="M62.78,45.73c1.52,1.62,9.41,9.7,22,10,15.78.38,25.12-11.81,26-13"/>
+      <line class="cls-1" x1="10.05" y1="74" x2="17.05" y2="60"/>
+      <line class="cls-1" x1="26.05" y1="77" x2="25.05" y2="61"/>
+      <line class="cls-1" x1="45.05" y1="75" x2="36.05" y2="57"/>
+      <line class="cls-1" x1="62.05" y1="66" x2="76.05" y2="56"/>
+      <line class="cls-1" x1="81.05" y1="77" x2="88.05" y2="57"/>
+      <line class="cls-1" x1="103.05" y1="74" x2="97.05" y2="54"/>
+      <ellipse class="cls-3" cx="57.89" cy="98.75" rx="8.17" ry="5.25"/>
+      <path class="cls-2" d="M4.55,46.15c1.39,1.19,8.63,7.12,20.17,7.34,14.47.28,23.02-8.67,23.83-9.55"/>
+      <path class="cls-2" d="M64.87,42.34c1.39,1.19,8.63,7.12,20.17,7.34,14.47.28,23.02-8.67,23.83-9.55"/>
     </g>
   </g>
 </svg>

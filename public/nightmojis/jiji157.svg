@@ -3,49 +3,44 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #64c0cf;
-        stroke-width: 3px;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        fill: #488b76;
-      }
-
-      .cls-4 {
-        fill: #dc4bbc;
-      }
-
-      .cls-5 {
         fill: #e26748;
       }
 
       .cls-2 {
-        stroke: #dc4bbc;
+        fill: #8d9efc;
+      }
+
+      .cls-3 {
+        fill: #e47d9f;
+      }
+
+      .cls-4 {
+        stroke: #e89f3c;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
         stroke-width: 4px;
+      }
+
+      .cls-5 {
+        stroke: #8d9efc;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
     <g>
       <circle class="cls-3" cx="57.5" cy="57.5" r="57.5"/>
-      <rect class="cls-4" x="10.5" y="47.41" width="35" height="13" rx="6.5" ry="6.5"/>
-      <rect class="cls-4" x="71.5" y="47.41" width="35" height="13" rx="6.5" ry="6.5" transform="translate(178 107.83) rotate(-180)"/>
-      <path class="cls-2" d="M21.5,85.5c5.93,3.57,20.71,11.4,41,11,18.55-.36,32.05-7.41,38-11"/>
-      <line class="cls-1" x1="14.5" y1="28.5" x2="14.5" y2="42.5"/>
-      <line class="cls-1" x1="22" y1="20" x2="22" y2="44"/>
-      <line class="cls-1" x1="32" y1="15" x2="32" y2="42"/>
-      <line class="cls-1" x1="42" y1="15" x2="42" y2="42"/>
-      <polyline class="cls-1" points="53 8 53.71 28.5 71.5 40.8"/>
-      <polyline class="cls-1" points="67 12 65 25 79 38"/>
-      <polyline class="cls-1" points="75 10 71.5 23.95 86.27 38"/>
-      <polyline class="cls-1" points="86 15 83.59 28.5 97.42 38"/>
-      <circle class="cls-5" cx="38.68" cy="53.91" r="6.5"/>
-      <circle class="cls-5" cx="77.68" cy="53.91" r="6.5"/>
+      <path class="cls-4" d="M28,21s-10,11-2,18,16-5,16-5l12,13"/>
+      <path class="cls-4" d="M92.63,21.03s10,11,2,18c-8,7-16-5-16-5l-12,13"/>
+      <path class="cls-4" d="M72,62s20.91,7.06,37.46-14.97"/>
+      <path class="cls-4" d="M51.6,61.83s-20.91,7.06-37.46-14.97"/>
+      <path class="cls-5" d="M41.19,91.79s-22.07-.47-30.14-26.81"/>
+      <path class="cls-5" d="M75.85,90.69s22.07-.47,30.14-26.81"/>
+      <circle class="cls-1" cx="56" cy="102" r="5.5"/>
+      <circle class="cls-2" cx="78.68" cy="75.83" r="6.5"/>
+      <circle class="cls-2" cx="34.68" cy="75.83" r="6.5"/>
     </g>
   </g>
 </svg>
