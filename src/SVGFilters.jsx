@@ -60,7 +60,7 @@ const SVGFilters = () => {
           <feGaussianBlur in="displaced" stdDeviation="1" result="blurred"/>
    <feComponentTransfer in="blurred" result="step1">
 
-<feFuncR type="table" tableValues="1 0 0 1 0 1 "/>
+<feFuncR type="table" tableValues="1 0 0 1 1 1 "/>
 <feFuncG type="table" tableValues="0 1 0 1 0 0 0 0"/>
 <feFuncB type="table" tableValues="0 0 1 0 1 0 "/>
 </feComponentTransfer>

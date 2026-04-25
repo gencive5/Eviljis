@@ -21,7 +21,7 @@ const CircleGrid = ({
   downloadedJiji,
   selectedJiji,
   onTimerStart,
-  isNight = false     // NEW: accept isNight prop
+  isNight = false     
 }) => {
   // ALL useRef hooks FIRST
   const gridRef = useRef(null);
@@ -223,7 +223,7 @@ const CircleGrid = ({
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={() => handleMouseLeave(id)}
               onClick={() => handleCircleClick(id)}
-              isNight={isNight}     // Pass isNight to Circle
+              isNight={isNight}    
             />
           );
         })}
