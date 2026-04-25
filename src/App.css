@@ -85,7 +85,6 @@ html, body, #root {
   box-sizing: border-box;
   z-index: 1000;
   color: #2dffb2;
-
   font-weight: bold;
   letter-spacing: 1rem;
 }
@@ -131,6 +130,7 @@ html, body, #root {
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
   font-family: 'Microsoft', sans-serif;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -143,6 +143,7 @@ html, body, #root {
   background: transparent;
   border: none;
   font-family: 'Microsoft', sans-serif;
+  font-weight: bold;
 }
 
 .download-button:hover {
@@ -155,6 +156,7 @@ html, body, #root {
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
   font-family: 'Microsoft', sans-serif;
+  font-weight: bold;
 }
 
 /* Mobile download adjustments */
@@ -165,22 +167,22 @@ html, body, #root {
   }
   
   .download-message {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bolder;
     letter-spacing: 0.2rem;
     text-align: center;
   }
   
   .download-button {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bolder;
     letter-spacing: 0.2rem;
     padding: 0;
   }
   
   .download-complete {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bolder;
     letter-spacing: 0.2rem;
     text-align: center;
   }
@@ -308,7 +310,7 @@ html, body, #root {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  gap: 15px 25px;
+  gap: 10px 10px;
 }
 
 .timer-item {
