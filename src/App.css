@@ -165,7 +165,7 @@ html, body, #root {
 @media (max-width: 768px) {
   .download-prompt {
     flex-direction: row;
-    
+    gap: 0.25rem;
   }
   
   .download-message {
@@ -190,8 +190,6 @@ html, body, #root {
     font-size: 1rem;
     font-weight: bolder;
     letter-spacing: 0.2rem;
-    margin: 0;
-    padding: 0;
   }
 }
 
