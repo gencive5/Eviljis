@@ -83,52 +83,57 @@ const Score = ({
     }
 
     // Mobile layout: everything in a compact view
-    return (
-        <div className="score-container mobile">
-            {/* Top row: Icon left, Score right */}
-            <div className="mobile-row-1">
-                <div className="mode-icon">
-                    <img 
-                        src={isNight ? '/nightcon.svg' : '/daycon.svg'} 
-                        alt={isNight ? 'Night mode' : 'Day mode'}
-                        className="mode-icon-svg"
-                    />
-                </div>
-                <div className="score-display">
-                    <span className="score-value">
-                        {currentScore} / {totalEmojis}
-                    </span>
-                </div>
+    // Mobile layout: everything in a compact view
+return (
+    <div className="score-container mobile">
+        {/* Top row: Icon left, Score right */}
+        <div className="mobile-row-1">
+            <div className="mode-icon">
+                <img 
+                    src={isNight ? '/nightcon.svg' : '/daycon.svg'} 
+                    alt={isNight ? 'Night mode' : 'Day mode'}
+                    className="mode-icon-svg"
+                />
             </div>
-            
-            {/* Bottom row: Download content (either prompt OR complete message, not both) */}
-            {isComplete && (
-                <div className="mobile-row-2">
-                    {!downloadedJiji ? (
-                        <div className="download-prompt">
-                            <p className="download-message">
-                                {selectedJiji 
-                                    ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
-                                    : 'Choose a jiji to download'}
-                            </p>
-                            {selectedJiji && (
-                                <button 
-                                    className="download-button"
-                                    onClick={onDownload}
-                                >
-                                    Download ⟨evil⟩jiji
-                                </button>
-                            )}
-                        </div>
-                    ) : (
-                        <div className="download-complete">
-                            <p>Jiji downloaded!</p>
-                        </div>
-                    )}
-                </div>
-            )}
-        </div>
-    );
+            <div className="score-display">
+                <span className="score-value">
+                    {currentScore} / {totalEmojis}
+                </span>
+            </div>
+        </div>  {/* ← CLOSE mobile-row-1 HERE */}
+        
+        {/* Bottom row: Download content - NOW SEPARATE */}
+        {isComplete && (
+            <div className="mobile-row-2">
+                {!downloadedJiji ? (
+                    <div className="download-prompt">
+                        <p className="download-message">
+                            {selectedJiji 
+                                ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
+                                : 'Choose a jiji to download'}
+                        </p>
+                        {selectedJiji && (
+                            <button 
+                                className="download-button"
+                                onClick={onDownload}
+                            >
+                                Download ⟨evil⟩jiji
+                            </button>
+                        )}
+                    </div>
+                ) : (
+                    <div className="download-prompt download-complete-state">
+                        <p className="download-message complete-message">
+                            Jiji downloaded!
+                        </p>
+                        <button className="download-button invisible-button" disabled>
+                        </button>
+                    </div>
+                )}
+            </div>
+        )}
+    </div>
+);
 };
 
 export default Score;
