@@ -68,7 +68,7 @@ const Score = ({
                         )}
                         {downloadedJiji && (
                             <div className="download-complete">
-                                <p>Jiji duo downloaded!</p>
+                                <p>Jiji downloaded!</p>
                             </div>
                         )}
                     </div>
