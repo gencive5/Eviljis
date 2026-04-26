@@ -36,39 +36,6 @@ const Score = ({
         return id?.startsWith('c') ? id.substring(1) : id;
     };
 
-    // Render download content (reused in both layouts)
-    const renderDownloadContent = () => {
-        if (isComplete && !downloadedJiji) {
-            return (
-                <div className="download-prompt">
-                    <p className="download-message">
-                        {selectedJiji 
-                            ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
-                            : 'Choose a jiji to download'}
-                    </p>
-                    {selectedJiji && (
-                        <button 
-                            className="download-button"
-                            onClick={onDownload}
-                        >
-                            Download ⟨evil⟩jiji
-                        </button>
-                    )}
-                </div>
-            );
-        }
-        
-        if (downloadedJiji) {
-            return (
-                <div className="download-complete">
-                    <p>Jiji downloaded!</p>
-                </div>
-            );
-        }
-        
-        return null;
-    };
-
     // Desktop layout: single row with icon left, download center/right, score right
     if (!isMobile) {
         return (
@@ -82,7 +49,28 @@ const Score = ({
                         />
                     </div>
                     <div className="desktop-download-wrapper">
-                        {renderDownloadContent()}
+                        {isComplete && !downloadedJiji && (
+                            <div className="download-prompt">
+                                <p className="download-message">
+                                    {selectedJiji 
+                                        ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
+                                        : 'Choose a jiji to download'}
+                                </p>
+                                {selectedJiji && (
+                                    <button 
+                                        className="download-button"
+                                        onClick={onDownload}
+                                    >
+                                        Download ⟨evil⟩jiji
+                                    </button>
+                                )}
+                            </div>
+                        )}
+                        {downloadedJiji && (
+                            <div className="download-complete">
+                                <p>Jiji duo downloaded!</p>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="score-display">
@@ -94,10 +82,10 @@ const Score = ({
         );
     }
 
-    // Mobile layout: two rows
+    // Mobile layout: everything in a compact view
     return (
         <div className="score-container mobile">
-            {/* Row 1: Icon left, Score right */}
+            {/* Top row: Icon left, Score right */}
             <div className="mobile-row-1">
                 <div className="mode-icon">
                     <img 
@@ -113,10 +101,30 @@ const Score = ({
                 </div>
             </div>
             
-            {/* Row 2: Download prompt */}
-            {renderDownloadContent() && (
+            {/* Bottom row: Download content (either prompt OR complete message, not both) */}
+            {isComplete && (
                 <div className="mobile-row-2">
-                    {renderDownloadContent()}
+                    {!downloadedJiji ? (
+                        <div className="download-prompt">
+                            <p className="download-message">
+                                {selectedJiji 
+                                    ? `jiji${getDisplayId(selectedJiji.id)} selected,` 
+                                    : 'Choose a jiji to download'}
+                            </p>
+                            {selectedJiji && (
+                                <button 
+                                    className="download-button"
+                                    onClick={onDownload}
+                                >
+                                    Download ⟨evil⟩jiji
+                                </button>
+                            )}
+                        </div>
+                    ) : (
+                        <div className="download-complete">
+                            <p>Jiji downloaded!</p>
+                        </div>
+                    )}
                 </div>
             )}
         </div>
