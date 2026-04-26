@@ -1,4 +1,4 @@
-// App.jsx - Updated version
+// App.jsx - Sequential downloads without zip
 import './App.css';
 import { useState, useEffect } from 'react';
 import CircleGrid from './CircleGrid';
@@ -87,20 +87,22 @@ function App() {
 
   const handleJijiDownload = () => {
     if (selectedJiji && !downloadedJiji) {
-      downloadBothVersions(selectedJiji.id);
+      downloadBothVersionsSequentially(selectedJiji.id);
       setDownloadedJiji(selectedJiji.id);
       setSelectedJiji(null);
     }
   };
 
-  const downloadBothVersions = async (id) => {
+  const downloadBothVersionsSequentially = async (id) => {
     const emojiNumber = id.substring(1); // Remove 'c' prefix
     
-    // Download both versions simultaneously
-    await Promise.all([
-      downloadOriginalVersion(emojiNumber),
-      downloadEvilVersion(emojiNumber)
-    ]);
+    // Download original first
+    await downloadOriginalVersion(emojiNumber);
+    
+    // Small delay to ensure first download starts, then download evil
+    setTimeout(() => {
+      downloadEvilVersion(emojiNumber);
+    }, 500);
   };
 
   const downloadOriginalVersion = (emojiNumber) => {
@@ -108,8 +110,6 @@ function App() {
       // Choose folder based on day/night
       const folder = isNight ? '/nightmojis/' : '/emojis/';
       const svgPath = `${folder}jiji${emojiNumber}.svg`;
-      
-      console.log('Downloading original from:', svgPath);
       
       const img = new Image();
       img.crossOrigin = 'anonymous';
@@ -142,32 +142,34 @@ function App() {
         }, 'image/png');
       };
       
-      img.onerror = (error) => {
-        console.error(`Failed to load original emoji: ${svgPath}`, error);
-        resolve(); // Resolve anyway to not block the evil download
+      img.onerror = () => {
+        console.error(`Failed to load original emoji: ${svgPath}`);
+        resolve();
       };
     });
   };
 
   const downloadEvilVersion = (emojiNumber) => {
-    return new Promise((resolve) => {
-      // Choose evil folder based on day/night - these are PNG files
-      const evilFolder = isNight ? '/evilnightmojis/' : '/evildaymojis/';
-      const evilPath = `${evilFolder}evilji${emojiNumber}.png`;
-      
-      console.log('Downloading evil from:', evilPath);
-      
-      // Since it's a PNG, we can download it directly
-      const link = document.createElement('a');
-      link.href = evilPath;
-      link.download = `evilji${emojiNumber}-${isNight ? 'evilnight' : 'evilday'}.png`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // Small delay to ensure the download starts
-      setTimeout(resolve, 100);
-    });
+    // Choose evil folder based on day/night - these are PNG files
+    const evilFolder = isNight ? '/evilnightmojis/' : '/evildaymojis/';
+    const evilPath = `${evilFolder}evilji${emojiNumber}.png`;
+    
+    // For mobile, we need to use a fetch approach to ensure the download works
+    fetch(evilPath)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `evilji${emojiNumber}-${isNight ? 'evilnight' : 'evilday'}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      })
+      .catch(error => {
+        console.error(`Failed to load evil emoji: ${evilPath}`, error);
+      });
   };
   
   return (
