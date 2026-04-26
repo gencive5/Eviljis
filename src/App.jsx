@@ -1,10 +1,11 @@
-// App.jsx - Sequential downloads without zip
+// App.jsx
 import './App.css';
 import { useState, useEffect } from 'react';
 import CircleGrid from './CircleGrid';
 import Contact from './Contact';
 import Score from './Score';
 import Timer from './Timer';
+import JSZip from 'jszip';
 
 function App() {
   const [touchedEmojis, setTouchedEmojis] = useState(new Set());
@@ -85,29 +86,49 @@ function App() {
     }
   };
 
-  const handleJijiDownload = () => {
+  const handleJijiDownload = async () => {
     if (selectedJiji && !downloadedJiji) {
-      downloadBothVersionsSequentially(selectedJiji.id);
+      await downloadBothVersionsAsZip(selectedJiji.id);
       setDownloadedJiji(selectedJiji.id);
       setSelectedJiji(null);
     }
   };
 
-  const downloadBothVersionsSequentially = async (id) => {
+  const downloadBothVersionsAsZip = async (id) => {
     const emojiNumber = id.substring(1); // Remove 'c' prefix
+    const zip = new JSZip();
     
-    // Download original first
-    await downloadOriginalVersion(emojiNumber);
+    // Show downloading indicator in console (optional)
+    console.log('Creating your Jiji duo pack...');
     
-    // Small delay to ensure first download starts, then download evil
-    setTimeout(() => {
-      downloadEvilVersion(emojiNumber);
-    }, 500);
+    try {
+      // Get both emojis as blobs
+      const originalBlob = await getOriginalEmojiBlob(emojiNumber);
+      const evilBlob = await getEvilEmojiBlob(emojiNumber);
+      
+      // Add to zip with nice filenames
+      zip.file(`jiji${emojiNumber}.png`, originalBlob);
+      zip.file(`evilji${emojiNumber}.png`, evilBlob);
+      
+      // Generate and download the zip
+      const zipBlob = await zip.generateAsync({ type: 'blob' });
+      const url = URL.createObjectURL(zipBlob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `jiji-duo-${emojiNumber}.zip`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      
+      console.log('Download complete!');
+    } catch (error) {
+      console.error('Failed to create duo pack:', error);
+    }
   };
 
-  const downloadOriginalVersion = (emojiNumber) => {
-    return new Promise((resolve) => {
-      // Choose folder based on day/night
+  const getOriginalEmojiBlob = (emojiNumber) => {
+    return new Promise((resolve, reject) => {
       const folder = isNight ? '/nightmojis/' : '/emojis/';
       const svgPath = `${folder}jiji${emojiNumber}.svg`;
       
@@ -130,46 +151,35 @@ function App() {
         ctx.restore();
         
         canvas.toBlob((blob) => {
-          const url = URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = url;
-          link.download = `jiji${emojiNumber}-${isNight ? 'night' : 'day'}.png`;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-          URL.revokeObjectURL(url);
-          resolve();
+          resolve(blob);
         }, 'image/png');
       };
       
       img.onerror = () => {
-        console.error(`Failed to load original emoji: ${svgPath}`);
-        resolve();
+        reject(new Error(`Failed to load: ${svgPath}`));
       };
     });
   };
 
-  const downloadEvilVersion = (emojiNumber) => {
-    // Choose evil folder based on day/night - these are PNG files
-    const evilFolder = isNight ? '/evilnightmojis/' : '/evildaymojis/';
-    const evilPath = `${evilFolder}evilji${emojiNumber}.png`;
-    
-    // For mobile, we need to use a fetch approach to ensure the download works
-    fetch(evilPath)
-      .then(response => response.blob())
-      .then(blob => {
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = `evilji${emojiNumber}-${isNight ? 'evilnight' : 'evilday'}.png`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-      })
-      .catch(error => {
-        console.error(`Failed to load evil emoji: ${evilPath}`, error);
-      });
+  const getEvilEmojiBlob = (emojiNumber) => {
+    return new Promise((resolve, reject) => {
+      const evilFolder = isNight ? '/evilnightmojis/' : '/evildaymojis/';
+      const evilPath = `${evilFolder}evilji${emojiNumber}.png`;
+      
+      fetch(evilPath)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          return response.blob();
+        })
+        .then(blob => {
+          resolve(blob);
+        })
+        .catch(error => {
+          reject(new Error(`Failed to load evil emoji: ${evilPath}`));
+        });
+    });
   };
   
   return (

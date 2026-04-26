@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.10.5",
+    "jszip": "^3.10.1",
     "nodemailer": "^7.0.3",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
