@@ -1,4 +1,4 @@
-// App.jsx
+// App.jsx - Updated version
 import './App.css';
 import { useState, useEffect } from 'react';
 import CircleGrid from './CircleGrid';
@@ -14,7 +14,7 @@ function App() {
   const [downloadedJiji, setDownloadedJiji] = useState(null);
   const [timerActive, setTimerActive] = useState(false);
   const [isNight, setIsNight] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false); // Add this
+  const [isInitialized, setIsInitialized] = useState(false);
   
   // Day/Night detection with favicon swapping
   useEffect(() => {
@@ -51,7 +51,7 @@ function App() {
   
   // Don't render anything until we know if it's day or night
   if (!isInitialized) {
-    return null; // or a loading spinner
+    return null;
   }
   
   const handleGameComplete = () => {
@@ -93,58 +93,81 @@ function App() {
     }
   };
 
-  const downloadBothVersions = (id) => {
-    const emojiNumber = id.substring(1);
+  const downloadBothVersions = async (id) => {
+    const emojiNumber = id.substring(1); // Remove 'c' prefix
     
-    downloadOriginalVersion(id, emojiNumber);
-    
-    setTimeout(() => {
-      downloadFilteredVersion(id, emojiNumber);
-    }, 200);
+    // Download both versions simultaneously
+    await Promise.all([
+      downloadOriginalVersion(emojiNumber),
+      downloadEvilVersion(emojiNumber)
+    ]);
   };
 
-  const downloadOriginalVersion = (id, emojiNumber) => {
-    const folder = isNight ? '/nightmojis/' : '/emojis/';
-    const svgPath = `${folder}jiji${emojiNumber}.svg`;
-    
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.src = svgPath;
-    
-    img.onload = () => {
-      const canvas = document.createElement('canvas');
-      const size = 1024;
-      canvas.width = size;
-      canvas.height = size;
-      const ctx = canvas.getContext('2d');
+  const downloadOriginalVersion = (emojiNumber) => {
+    return new Promise((resolve) => {
+      // Choose folder based on day/night
+      const folder = isNight ? '/nightmojis/' : '/emojis/';
+      const svgPath = `${folder}jiji${emojiNumber}.svg`;
       
-      ctx.save();
-      ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-      ctx.clip();
-      ctx.drawImage(img, 0, 0, size, size);
-      ctx.restore();
+      console.log('Downloading original from:', svgPath);
       
-      canvas.toBlob((blob) => {
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = `jiji-${id}-${isNight ? 'night' : 'original'}.png`;
-        link.click();
-        URL.revokeObjectURL(url);
-      }, 'image/png');
-    };
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.src = svgPath;
+      
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const size = 1024;
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.clip();
+        ctx.drawImage(img, 0, 0, size, size);
+        ctx.restore();
+        
+        canvas.toBlob((blob) => {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `jiji${emojiNumber}-${isNight ? 'night' : 'day'}.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          resolve();
+        }, 'image/png');
+      };
+      
+      img.onerror = (error) => {
+        console.error(`Failed to load original emoji: ${svgPath}`, error);
+        resolve(); // Resolve anyway to not block the evil download
+      };
+    });
   };
 
-  const downloadFilteredVersion = (id, emojiNumber) => {
-    const filteredPngPath = `/emojis-filtered/jiji${emojiNumber}-hologram.png`;
-    
-    const link = document.createElement('a');
-    link.href = filteredPngPath;
-    link.download = `jiji-${id}-hologram.png`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const downloadEvilVersion = (emojiNumber) => {
+    return new Promise((resolve) => {
+      // Choose evil folder based on day/night - these are PNG files
+      const evilFolder = isNight ? '/evilnightmojis/' : '/evildaymojis/';
+      const evilPath = `${evilFolder}evilji${emojiNumber}.png`;
+      
+      console.log('Downloading evil from:', evilPath);
+      
+      // Since it's a PNG, we can download it directly
+      const link = document.createElement('a');
+      link.href = evilPath;
+      link.download = `evilji${emojiNumber}-${isNight ? 'evilnight' : 'evilday'}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Small delay to ensure the download starts
+      setTimeout(resolve, 100);
+    });
   };
   
   return (
