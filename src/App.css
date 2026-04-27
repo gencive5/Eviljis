@@ -79,9 +79,9 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 5rem; 
   padding: 1rem 1rem;
   gap: 0.5rem;
-  height: 4rem;
   box-sizing: border-box;
   z-index: 1000;
   color: #2dffb2;
@@ -95,15 +95,15 @@ html, body, #root {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 2rem;
 }
+
 
 .mobile-row-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 2rem;
     margin-bottom: 1rem;
+    min-height: 2rem;
   }
 
 /* Mobile score adjustments */
@@ -117,7 +117,7 @@ html, body, #root {
   height: 2rem;
 }
 
-/* Download prompt styles - works for both layouts */
+
 .download-prompt {
   display: flex;
   flex-direction: row;
@@ -159,68 +159,52 @@ html, body, #root {
   font-weight: bold;
 }
 
-/* Mobile download adjustments */
 @media (max-width: 768px) {
   .download-prompt {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 0.25rem;
-    padding-bottom: 1.4rem;
+    flex-wrap: wrap;
+    /* REMOVE: padding-bottom: 1.4rem; */
+    /* REMOVE: position relative, top, left, transform */
   }
   
   .download-message {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bolder;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     text-align: center;
+    white-space: nowrap;
   }
   
   .download-button {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bolder;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     padding: 0;
     margin: 0;
+    white-space: nowrap;
   }
   
   .download-complete {
-   font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bolder;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     text-align: center;
-    
+  }
+  
+  /* Hide invisible button */
+  .invisible-button {
+    display: none;
+  }
+  
+  .complete-message {
+    color: #2dffb2;
   }
 }
 
-@media (max-width: 768px) {
-  .mobile-row-2 {
-    position: relative;
-    min-height: 3rem;
-  }
-  
-  .download-prompt,
-  .download-complete {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  
-  .download-prompt {
-    flex-direction: row;
-  }
-  
-  .download-complete {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 .mode-icon {
   display: flex;

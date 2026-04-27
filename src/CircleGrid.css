@@ -64,8 +64,8 @@
 @media (max-width: 768px) {
   .circle-grid-container {
     width: 100vw;
-    height: 90svh;
     padding: 0.5rem;
+    min-height: 0;
   }
 
   
