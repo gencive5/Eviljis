@@ -79,7 +79,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 5rem; 
+  height: 4rem; 
   padding: 1rem 1rem;
   gap: 0.5rem;
   box-sizing: border-box;
